@@ -1,37 +1,32 @@
 <template>
   <div class="home-page">
-
-
-
-
-
-    <div class="container-fluid ">
+    <div class="container-fluid">
       <div class="row intros no-gutters justify-content-center">
-           <div class="col-lg-3">
-             <div class="titles">
-               the title pf our application
-             </div>
-           </div>
-           <div class="col-lg-3">
-             <div class="period">
-               the time of year
-             </div>
-           </div>
-           <div class="col-lg-3">
-             <div class="reminder">
-               <p>remember you do it</p>
-             </div>
-           </div>
+        <div class="col-lg-2">
+          <div class="titles">
+            <p class="titl">The productive me</p>
+            <p>Fealess courage <span>Fight harder</span></p>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="period">
+            <p class="timtitl">Today is Thursday</p>
+            <p class="dti">03 Mar 2022</p>
+          </div>
+        </div>
+        <div class="col-lg-2">
+          <div class="reminder">
+            <p class="rder">Overdue <span class="ress">47 Tasks</span></p>
+          </div>
+        </div>
       </div>
     </div>
-
-
 
     <div class="container-fluid">
       <div class="row no-gutters card-row justify-content-center">
         <div class="col-lg-2">
           <router-link to="about">
-            <div class="card firs">
+            <div class="card">
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">
