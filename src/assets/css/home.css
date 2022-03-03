@@ -1,0 +1,34 @@
+*{
+    padding:0;
+    margin:0;
+    font-family: Poppins;
+  }
+
+.card{
+    margin:1rem;
+    min-height:25vh;
+    border-radius:8px;
+    border: none;
+  
+}
+
+.home-page{
+    background-color: rgb(238, 235, 245);
+}
+
+/* removes the text decoration in router link */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.card-title{
+    color: rgb(39, 39, 56);
+    font-size:1rem;
+    
+}
+
+.card-text{
+    font-weight:400;
+    font-size:13px;
+    }
