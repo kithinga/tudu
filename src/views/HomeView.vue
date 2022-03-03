@@ -6,7 +6,7 @@
           <div class="titles">
             <p class="titl">The productive me</p>
             <p>Fealess courage <span>Fight harder</span></p>
-          </div>
+          </div>                                                            
         </div>
         <div class="col-lg-3">
           <div class="period">
@@ -21,14 +21,15 @@
         </div>
       </div>
     </div>
-
-    <div class="container-fluid">
+                               
+ <!-- tudu cards for tas*                    -->
+    <div class="container-fluid">                      
       <div class="row no-gutters card-row justify-content-center">
         <div class="col-lg-2">
           <router-link to="about">
             <div class="card">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+                <h5 class="card-title">Todays tasks</h5>
                 <p class="card-text">
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
@@ -41,7 +42,7 @@
         <div class="col-lg-2">
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
+              <h5 class="card-title">Futures</h5>
               <p class="card-text">
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
@@ -53,7 +54,7 @@
         <div class="col-lg-2">
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
+              <h5 class="card-title">Pending</h5>
               <p class="card-text">
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
@@ -64,7 +65,7 @@
         <div class="col-lg-2">
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
+              <h5 class="card-title">Perfomance</h5>
               <p class="card-text">
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
