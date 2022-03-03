@@ -48,8 +48,8 @@ span {
 }
 .titl {
   font-weight: 600;
-  font-size: 1.8rem;
-  /* letter-spacing: -1px;   */
+  font-size: 1.15rem;
+  letter-spacing: -0.5px;  
 }
 
 .titles {
@@ -62,7 +62,7 @@ span {
 }
 
 .card {
-  padding-top: 2rem;
+  padding-top: 1rem;
   min-height: 25vh;
   border-radius: 8px;
   border: none;
@@ -88,4 +88,12 @@ a {
 .card-text {
   font-weight: 400;
   font-size: 13px;
+}
+.card-title{
+  font-size:1.1rem;
+  letter-spacing: -0.5px;
+}
+
+.icn{
+  margin-top:10px;
 }
