@@ -1,10 +1,37 @@
 <template>
   <div class="home-page">
+
+
+
+
+
+    <div class="container-fluid ">
+      <div class="row intros no-gutters justify-content-center">
+           <div class="col-lg-3">
+             <div class="titles">
+               the title pf our application
+             </div>
+           </div>
+           <div class="col-lg-3">
+             <div class="period">
+               the time of year
+             </div>
+           </div>
+           <div class="col-lg-3">
+             <div class="reminder">
+               <p>remember you do it</p>
+             </div>
+           </div>
+      </div>
+    </div>
+
+
+
     <div class="container-fluid">
       <div class="row no-gutters card-row justify-content-center">
         <div class="col-lg-2">
           <router-link to="about">
-            <div class="card">
+            <div class="card firs">
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">

@@ -4,20 +4,38 @@
   font-family: Poppins;
 }
 
+.reminder,.period,.titles{
+    min-height:16vh;
+    border-radius: 2px;
+    padding-top: 2rem;
+}
+
+.reminder{
+    background-color: blue;
+}
+.period{
+    background-color:red;
+}
+.titles{
+    background-color:purple;
+}
+
 .card-row {
   margin-top: 8rem;
   margin-bottom: 5rem;
 }
 
 .card {
+  padding-top:2rem;
   min-height: 25vh;
   border-radius: 8px;
   border: none;
 }
 
 .home-page {
-  background-color: rgb(238, 235, 245);
+  background-color: rgb(246, 244, 250);
   padding: 1rem;
+  min-height:95vh;
 }
 
 /* removes the text decoration in router link */
@@ -34,4 +52,8 @@ a {
 .card-text {
   font-weight: 400;
   font-size: 13px;
+}
+
+.firs{
+    background-color:rgb(16, 114, 114);
 }
