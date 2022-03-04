@@ -1,6 +1,9 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import TasksView from '../views/TasksView.vue'
+import FutureView from '../views/FutureView.vue'
+import PendingView from '../views/PendingView.vue'
+import PerfomanceView from '../views/PerfomanceView.vue'
 
 const routes = [
   {
@@ -13,6 +16,21 @@ const routes = [
     path: '/tasks',
     name: 'tasks',
     component: TasksView
+  },
+  {
+    path: '/future',
+    name: 'future',
+    component: FutureView
+  },
+  {
+    path: '/pending',
+    name: 'pending',
+    component: PendingView
+  },
+  {
+    path: '/perfomance',
+    name: 'perfomance',
+    component: PerfomanceView
   },
 
   {

@@ -13,7 +13,7 @@
             <form action="">
               <input type="text" class="ser-input" placeholder="search . . ." />
               <button type="submit" class="ser-btn material-icons md-32">
-                search f
+                search 
               </button>
             </form>
           </div>
