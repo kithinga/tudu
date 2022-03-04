@@ -3,18 +3,77 @@
     margin: 0;
     font-family: Poppins;
 }
-.hoicn{
-    font-size:1.6rem;
-    border: 1px grey solid;
-    border-radius:6px;
-    padding:0.5rem;
 
+.tudu-logo{
+    font-size:1rem;
+    font-weight:800;
+    border: 1px rgb(230, 222, 222) solid;
+    border-radius:3rem;
+    color: rgb(26, 187, 199);
+    padding:0.5rem;
+    padding-left:1.5rem;
+    padding-right:1.5rem;
+}
+nav{
+    padding:2rem;
+}
+.cnav{
+    /* background-color:#00B4CC; */
+    padding-top:1.3rem;
 }
 
-.ser-form {
-    color: #555;
-    display: flex;
-    padding: 2px;
-    border: 1px solid currentColor;
-    border-radius: 5px;
+.lgnbtn{
+    background-color:#cfe4e7;
+    border: none;
+    border-radius: 3rem;
+    width:6rem;
+    height:2.7rem
+}
+
+.ser-input{
+    border: none;
+    height:2.8rem;
+    border: solid 1px rgb(236, 236, 236);
+    padding-left: 3rem;
+    border-top-left-radius:3rem;
+    border-bottom-left-radius:3rem;
+    border-right: none;
+}
+.ser-input:focus{
+    outline: none;
+    border: solid 1px 
+}
+
+  form{
+  padding: 0;
+  margin: 0;
   }
+
+  .ser-input:focus{
+    color: #2b8f9c;
+    height: 2.5rem;
+    border: solid 1px rgb(227, 227, 235);
+  }
+  
+  .ser-btn{
+    width:3.6rem;
+    height: 2.8rem;
+    position:absolute;
+    border: solid 1px rgb(227, 227, 235);   
+    background-color:white;
+    text-align: center;
+    color: rgb(73, 187, 216);
+    border-radius: 0 5px 5px 0;
+    border-top-right-radius:3rem;
+    border-bottom-right-radius:3rem;
+    cursor: pointer;
+    padding-left:1rem;
+    padding-top: 3px;
+    padding-right:1rem;
+    border-left: none;
+  }
+  
+ 
+
+ 
+  

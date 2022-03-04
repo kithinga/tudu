@@ -11,18 +11,16 @@
 
         <div class="col-lg-3">
           <div class="reminder">
-            <p class="rder">Overdue <span class="ress">47 Tasks</span></p>
+            <p class="rder">Overdue Tasks <span class="ress"> 47</span></p>
           </div>
         </div>
 
-          <div class="col-lg-2">
-        <div class="period">
-          <p class="dti">03 Mar 2022</p>
+        <div class="col-lg-2">
+          <div class="period">
+            <p class="dti"> <span>Fri</span> 03 Mar 2022</p>
+          </div>
         </div>
       </div>
-      </div>
-
-    
     </div>
 
     <!-- tudu cards for tas*                    -->
