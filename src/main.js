@@ -7,6 +7,8 @@ import router from './router'
 import "bootstrap/dist/css/bootstrap.min.css"
 import "bootstrap"
 import "./assets/css/home.css"
+import "./assets/css/tasks.css"
+import "./assets/css/app.css"
 
 
 // Vue.use(BootstrapVue)

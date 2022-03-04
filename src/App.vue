@@ -1,7 +1,11 @@
 <template>
   <nav>
-    <router-link to="/"> Tudu</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link class="navbar-brand material-icons md-32 hoicn" to="/">arrow_back home</router-link>   
+    <form class="ser-form">
+      <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn material-icons md-32" type="submit">search</button>
+    </form>
+    <!-- <router-link to="/about">About</router-link> -->
   </nav>
   <router-view/>
 </template>

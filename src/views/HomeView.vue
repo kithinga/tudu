@@ -29,7 +29,7 @@
     <div class="container-fluid">
       <div class="row no-gutters card-row justify-content-center">
         <div class="col-lg-2">
-          <router-link to="about">
+          <router-link to="/tasks">
             <div class="card">
               <div class="card-body">
                 <h5 class="card-title">Todays tasks</h5>
