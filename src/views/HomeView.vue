@@ -11,7 +11,7 @@
 
         <div class="col-lg-3">
           <div class="reminder">
-            <p class="rder">Overdue Tasks <span class="ress"> 47</span></p>
+            <!-- <p class="rder">Overdue Tasks <span class="ress"> 47</span></p> -->
           </div>
         </div>
 

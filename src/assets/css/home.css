@@ -26,8 +26,7 @@ P {
   letter-spacing: -1px;
   color: rgb(19, 187, 89);
 }
-.reminder {
-}
+
 .rder {
   font-weight: 500;
   color: rgb(42, 39, 48);
@@ -55,10 +54,6 @@ span {
   font-weight: 600;
   font-size: 1.15rem;
   letter-spacing: -0.5px;  
-}
-
-.titles {
-  /* background-color:purple; */
 }
 
 .card-row {
