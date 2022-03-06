@@ -42,14 +42,12 @@ nav{
     height:2.8rem;
     border: solid 1px rgb(236, 236, 236);
     padding-left: 3rem;
-    border-top-left-radius:3rem;
-    border-bottom-left-radius:3rem;
+    border-top-left-radius:1.2rem;
+    border-bottom-left-radius:  1.2rem;
     border-right: none;
+    font-size:14px;
 }
-.ser-input:focus{
-    outline: none;
-    border: solid 1px 
-}
+
 
   form{
   padding: 0;
@@ -57,9 +55,9 @@ nav{
   }
 
   .ser-input:focus{
-    color: #2b8f9c;
-    height: 2.5rem;
-    border: solid 1px rgb(227, 227, 235);
+    color: #208e9c;
+    outline: none;
+    border: solid 1px rgb(152, 197, 193);
   }
   
   .ser-btn{

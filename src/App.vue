@@ -20,7 +20,7 @@
         </div>
         <div class="col-sm-2">
           <div>
-            <button class="lgnbtn">Login</button>
+            <button class="lgnbtn rounded">Login</button>
           </div>
         </div>
       </div>
