@@ -29,7 +29,7 @@
         
         <div class="col-lg-2">
           <router-link to="/tasks">
-            <div class="card">
+            <div class="card shadow-sm">
               <div class="card-body">
                 <h5 class="card-title">Todays tasks</h5>
                 <p class="material-icons md-32 icn">task</p>
@@ -45,7 +45,7 @@
 
         <div class="col-lg-2">
           <router-link to="/future">
-            <div class="card">
+            <div class="card shadow-sm">
               <div class="card-body">
                 <h5 class="card-title">Futures</h5>
                 <p class="material-icons icn">next_plan</p>
@@ -61,7 +61,7 @@
 
         <div class="col-lg-2">
           <router-link to="/pending">
-            <div class="card">
+            <div class="card shadow-sm">
               <div class="card-body">
                 <h5 class="card-title">Pending</h5>
                 <p class="material-icons icn">pending_actions</p>
@@ -77,7 +77,7 @@
 
         <div class="col-lg-2">
           <router-link to="/perfomance">
-            <div class="card">
+            <div class="card shadow-sm">
               <div class="card-body">
                 <h5 class="card-title">Perfomance</h5>
                 <p class="material-icons icn">timeline</p>

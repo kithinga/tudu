@@ -10,7 +10,7 @@
           </router-link>
           <router-link to="/tasks">
             <button class="nvbt">
-              <span class="material-icons">task</span>Task
+              <span class="material-icons">task</span>Tasks
             </button>
           </router-link>
           <router-link to="/future">
@@ -65,8 +65,9 @@
 }
 
 .nvbt:hover {
-  background-color: rgb(244, 252, 250);
+  background-color: rgb(247, 255, 253);
   border: rgb(176, 240, 215) solid 1px;
+box-shadow: 3px 3px 3px #f3f2f2;
 }
 
 

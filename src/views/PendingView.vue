@@ -1,6 +1,7 @@
 
 <template>
   <Navigator />
+  <div><h4 class="tihead">Pending</h4></div>
     <div class="container-fluid">
         <div class="row">
             <div class="col">
