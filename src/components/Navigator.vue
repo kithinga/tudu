@@ -1,45 +1,40 @@
 <template>
   <div class="container-fluid">
     <div class="row no-gutters">
-
+      <!--  -->
       <div class="col">
         <div class="tsk">
           <router-link to="/tasks">
             <button class="nvbt">Tasks</button>
           </router-link>
-        </div>
-      </div>
-
-      <div class="col">
-        <div class="fute">
-          <router-link to="/future">
+           <router-link to="/future">
             <button class="nvbt">Futures</button>
           </router-link>
-        </div>
-      </div>
-
-      <div class="col">
-        <div class="pend">
-          <router-link to="/pending">
+           <router-link to="/pending">
             <button class="nvbt">Pending</button>
           </router-link>
-        </div>
-      </div>
-
-      <div class="col">
-        <div class="perf">
           <router-link to="/perfomance">
             <button class="nvbt">Perfomance</button>
           </router-link>
         </div>
       </div>
-
     </div>
   </div>
   <router-view />
 </template>
 
 <style>
-
+     .nvbt{
+       /* height:2.3rem; */
+       border: none;background-color:rgb(236, 243, 242);
+       border-radius:3px;
+       font-weight:500;
+       font-size:13px;
+       padding: 0.7rem;
+       padding-left: 1rem;
+       padding-right: 1rem;
+       margin:5px;
+       border: solid 1px rgb(230, 231, 231);
+     }
 </style>
 
