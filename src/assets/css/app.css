@@ -5,11 +5,12 @@
 }
 
 .tudu-logo{
-    font-size:1.1rem;
+    font-size:1.2rem;
     font-weight:800;
-    border: 1px rgb(230, 222, 222) solid;
-    border-radius:6px;
-    color: rgb(22, 165, 165);
+    border: 1px rgb(229, 235, 236) solid;
+    /* background-color:rgb(238, 248, 248); */
+    border-radius:5px;
+    color: rgb(22, 155, 165);
     padding:0.5rem;
     padding-left:1.5rem;
     padding-right:1.5rem;
@@ -23,11 +24,16 @@ nav{
 }
 
 .lgnbtn{
-    background-color:#cfe4e7;
+    background-color:#ebf7f6;
     border: none;
-    border-radius: 3rem;
-    width:6rem;
-    height:2.6rem
+    border-radius:6px;  
+    width:5.7rem;
+    height:2.6rem;
+    font-size:13px;
+    font-weight:500;
+    color:rgb(26, 93, 95);
+    border: solid 1px rgb(231, 236, 236);
+    
 }
 
 .ser-input{

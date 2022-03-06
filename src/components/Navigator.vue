@@ -36,5 +36,9 @@
        margin:5px;
        border: solid 1px rgb(230, 231, 231);
      }
+     .nvbt:hover{
+       background-color:rgb(244, 252, 250);
+       border: rgb(176, 240, 215) solid 1px;
+     }
 </style>
 
