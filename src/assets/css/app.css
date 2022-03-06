@@ -6,17 +6,18 @@
 
 .tudu-logo{
     font-size:1.2rem;
-    font-weight:800;
-    border: 1px rgb(229, 235, 236) solid;
+    font-weight:900;
+    /* border: 1px rgb(229, 235, 236) solid; */
     /* background-color:rgb(238, 248, 248); */
     border-radius:5px;
-    color: rgb(22, 155, 165);
+    color: rgb(16, 120, 128);
     padding:0.5rem;
     padding-left:1.5rem;
     padding-right:1.5rem;
 }
 nav{
     padding:2rem;
+    border-bottom: 1px solid rgb(236, 241, 241);
 }
 .cnav{
     /* background-color:#00B4CC; */

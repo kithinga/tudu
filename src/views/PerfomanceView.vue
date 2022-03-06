@@ -4,7 +4,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col">
-                <h3>Perfomance dsfdsf</h3>
+                <h3>Perfomance and success rate</h3>
             </div>
         </div>
     </div>

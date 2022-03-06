@@ -5,7 +5,7 @@
         <div class="col-lg-2">
           <div class="titles">
             <p class="titl">Enthusiasm and ambition</p>
-            <p>Manage tasks: <span>self mastery</span></p>
+            <p>Manage tasks: <span class="selm">self mastery</span></p>
           </div>
         </div>
 
