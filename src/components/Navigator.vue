@@ -1,4 +1,4 @@
-<template>
+ <template>
   <div class="container-fluid">
     <div class="row no-gutters">
       <div class="col">
