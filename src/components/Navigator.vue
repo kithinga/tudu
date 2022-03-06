@@ -16,6 +16,15 @@
   </div>
 </template>
 
+<script>
+export default {
+  components: {
+    name: 'Navigator'
+  }
+}
+</script>
+
+
 
 <style>
   

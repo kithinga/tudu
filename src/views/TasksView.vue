@@ -1,4 +1,6 @@
+
 <template>
+<Navigator />.
   <div class="container-fluid">
     <div class="row no-gutters justify-content-center">
       <div class="col-lg-2">
@@ -39,3 +41,13 @@
     </div>
   </div>
 </template>
+<script>
+
+import Navigator from "../components/Navigator";
+
+export default {
+  components: {
+    name: 'Navigator'
+  }
+}
+</script>
