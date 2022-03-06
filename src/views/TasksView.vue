@@ -1,6 +1,7 @@
 
 <template>
-<Navigator />.
+<Navigator />
+<div><h4 class="tihead">Daily tasks</h4></div>
   <div class="container-fluid">
     <div class="row no-gutters justify-content-center">
       <div class="col-lg-2">
@@ -41,13 +42,15 @@
     </div>
   </div>
 </template>
-<script>
 
-import Navigator from "../components/Navigator";
+<script>
+// @ serves as src alias
+import Navigator from '@/components/Navigator.vue'
 
 export default {
   components: {
-    name: 'Navigator'
-  }
+    Navigator
+  },
+
 }
 </script>

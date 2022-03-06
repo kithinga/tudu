@@ -1,9 +1,22 @@
+
 <template>
+  <Navigator />
     <div class="container-fluid">
         <div class="row">
             <div class="col">
-                <p>This page belongs to tasks which have not been completed yet</p>
+                <h3>These are the pending tasks</h3>
             </div>
         </div>
     </div>
+
 </template>
+
+
+<script>
+import Navigator from '@/components/Navigator.vue'
+export default {
+    components: {
+        Navigator
+    }
+}
+</script>

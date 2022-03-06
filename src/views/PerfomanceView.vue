@@ -1,10 +1,22 @@
 
 <template>
+  <Navigator />
     <div class="container-fluid">
         <div class="row">
             <div class="col">
-                <p>This page shows the perfomancer through time</p>
+                <h3>Perfomance dsfdsf</h3>
             </div>
         </div>
     </div>
+
 </template>
+
+
+<script>
+import Navigator from '@/components/Navigator.vue'
+export default {
+    components: {
+        Navigator
+    }
+}
+</script>
