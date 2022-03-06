@@ -1,24 +1,41 @@
 <template>
   <div class="container-fluid">
-      <div class="row">
-          <div class="col">
-              <div class="tsk01">
-                  <h4>Short me one</h4>
-                  <p>Fuck daddy and daughter onedks</p>
-              </div>
-          </div>
-          <div class="col">
-              jifunze kunyamaza
-          </div>
-          <div class="col">
-              jifunze kunyamaza
-          </div>
-          <div class="col">
-              jifunze kunyamaza
-          </div>
-          <div class="col">
-              jifunze kunyamaza
-          </div>
+    <div class="row no-gutters justify-content-center">
+      <div class="col-lg-2">
+        <div class="tsk01">
+          <h4>Short me one</h4>
+          <p>One rule for the alphas, we move quick</p>
+          <span class="material-icons"> open_in_full </span>
+        </div>
       </div>
+      <div class="col-lg-2">
+        <div class="tsk01">
+          <h4>Short me one</h4>
+          <p>One rule for the alphas, we move quick</p>
+          <span class="material-icons"> open_in_full </span>
+        </div>
+      </div>
+      <div class="col-lg-2">
+        <div class="tsk01">
+          <h4>Short me one</h4>
+          <p>One rule for the alphas, we move quick</p>
+          <span class="material-icons"> open_in_full </span>
+        </div>
+      </div>
+      <div class="col-lg-2">
+        <div class="tsk01">
+          <h4>Short me one</h4>
+          <p>One rule for the alphas, we move quick</p>
+          <span class="material-icons justify-content-right"> open_in_full </span>
+        </div>
+      </div>
+      <div class="col-lg-2">
+        <div class="tsk01">
+          <h4>Short me one</h4>
+          <p>One rule for the alphas, we move quick</p>
+          <span class="material-icons"> open_in_full </span>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
