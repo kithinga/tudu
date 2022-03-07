@@ -54,15 +54,20 @@
                   demonstrate the <code>.accordion-flush</code> class. This is
                   the first item's accordion body.
                 </div>
-                <button type="button" class="btn-close" disabled aria-label="Close"></button>
+                <button
+                  type="button"
+                  class="btn-close"
+                  disabled
+                  aria-label="Close"
+                ></button>
               </div>
             </div>
           </div>
         </div>
       </div>
-
     </div>
   </div>
+ 
 </template>
 
 <script>
@@ -72,6 +77,6 @@ import Navigator from "@/components/Navigator.vue";
 export default {
   components: {
     Navigator,
-  },
+  },  
 };
 </script>

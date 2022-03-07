@@ -25,14 +25,21 @@
         </div>
       </div>
     </div>
-  </nav>
-  <p>dsfdsfkl</p>
-  <div>
-      <div v-for="post in posts" v-bind:key="post.id">
-      <h2>{{ post.title }}</h2>
-      <p>{{ post.body }}</p>
-    </div>
-  </div>
+  </nav>  
+  <p>orem check</p>
+   <table border="1px">
+    <tr>
+      <td>Name</td>
+      <td>Salary</td>
+      <td>Age</td>
+    </tr>
+    <tr v-for="item in list" v-bind:key="item.id">
+      <td>Name</td>
+      <td>Salary</td>
+      <td>Age</td>
+      a
+    </tr>
+  </table>
   <router-view />
  
 
@@ -59,24 +66,20 @@ nav a.router-link-exact-active {
 
 <script>
 export default {
-  data() {
+    data() {
     return {
-      posts: [],
+      list: undefined,
     };
   },
 
-  methods: {
-    async getData() {
-      try {
-        const response = await this.$http.get(
-          "http://jsonplaceholder.typicode.com/posts"
-        );
-        // JSON responses are automatically parsed.
-        this.posts = response.data;
-      } catch (error) {
-        console.log(error);
-      }
-    },
+  mounted() {
+    Vue.axios
+      .get("https://dummy.restapiexample.com/api/v1/employees")
+      .then((resp) => {
+        this.list = resp.data.data;
+        console.warn(resp.data.data);
+      });
   },
-};
+}
 </script>
+

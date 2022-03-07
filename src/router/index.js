@@ -35,7 +35,6 @@ const routes = [
     component: PerfomanceView
   },
 
-  // components from components
   // {
   //   path: '/navigator',
   //   name: 'navigator',
