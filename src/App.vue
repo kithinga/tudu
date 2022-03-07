@@ -26,7 +26,16 @@
       </div>
     </div>
   </nav>
+  <p>dsfdsfkl</p>
+  <div>
+      <div v-for="post in posts" v-bind:key="post.id">
+      <h2>{{ post.title }}</h2>
+      <p>{{ post.body }}</p>
+    </div>
+  </div>
   <router-view />
+ 
+
 </template>
 
 <style >
@@ -46,7 +55,28 @@ nav a {
 nav a.router-link-exact-active {
   color: #0ebea7;
 }
-
-
-
 </style>
+
+<script>
+export default {
+  data() {
+    return {
+      posts: [],
+    };
+  },
+
+  methods: {
+    async getData() {
+      try {
+        const response = await this.$http.get(
+          "http://jsonplaceholder.typicode.com/posts"
+        );
+        // JSON responses are automatically parsed.
+        this.posts = response.data;
+      } catch (error) {
+        console.log(error);
+      }
+    },
+  },
+};
+</script>

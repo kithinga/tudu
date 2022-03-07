@@ -23,6 +23,9 @@
           </span>
         </button>
       </div>
+      <q>pendinf ==g view</q>
+      <s>old price 100</s>
+      <details>too much details here</details>
     </div>
   </div>
 </template>

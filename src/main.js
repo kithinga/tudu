@@ -4,6 +4,9 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
 
+// Axios import /
+import axios from 'axios'   
+
 import "bootstrap/dist/css/bootstrap.min.css"
 import "bootstrap"
 import "./assets/css/app.css"
@@ -16,4 +19,4 @@ import "./assets/css/perfomance.css"
 
 // Vue.use(BootstrapVue)
 
-createApp(App).use(router).mount('#app')
+createApp(App).use(router,axios).mount('#app')
