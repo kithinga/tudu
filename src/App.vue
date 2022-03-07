@@ -13,7 +13,7 @@
             <form action="">
               <input type="text" class="ser-input" placeholder="search . . ." />
               <button type="submit" class="ser-btn material-icons md-32">
-                search 
+                search
               </button>
             </form>
           </div>
@@ -25,9 +25,9 @@
         </div>
       </div>
     </div>
-  </nav>  
+  </nav>
   <p>orem check</p>
-   <table border="1px">
+  <table border="1px">
     <tr>
       <td>Name</td>
       <td>Salary</td>
@@ -41,8 +41,6 @@
     </tr>
   </table>
   <router-view />
- 
-
 </template>
 
 <style >
@@ -66,20 +64,19 @@ nav a.router-link-exact-active {
 
 <script>
 export default {
-    data() {
+  data() {
     return {
-      list: undefined,
+      todos:[]
     };
   },
-
-  mounted() {
-    Vue.axios
-      .get("https://dummy.restapiexample.com/api/v1/employees")
-      .then((resp) => {
-        this.list = resp.data.data;
-        console.warn(resp.data.data);
-      });
-  },
-}
+  async created() {
+    try{
+      const res = await axios.get(`http://localhost:3000/todos`);
+      this.todos = res.data;
+    }catch(e) {
+      console.log(e);
+    }
+  }
+};
 </script>
 
