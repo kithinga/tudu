@@ -33,12 +33,6 @@
       <td>Salary</td>
       <td>Age</td>
     </tr>
-    <tr v-for="item in list" v-bind:key="item.id">
-      <td>Name</td>
-      <td>Salary</td>
-      <td>Age</td>
-      a
-    </tr>
   </table>
   <router-view />
 </template>
@@ -62,21 +56,4 @@ nav a.router-link-exact-active {
 }
 </style>
 
-<script>
-export default {
-  data() {
-    return {
-      todos:[]
-    };
-  },
-  async created() {
-    try{
-      const res = await axios.get(`http://localhost:3000/todos`);
-      this.todos = res.data;
-    }catch(e) {
-      console.log(e);
-    }
-  }
-};
-</script>
 
