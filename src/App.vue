@@ -27,7 +27,7 @@
     </div>
   </nav>
   <p>orem check</p>
-
+    
   <router-view />
 </template>
 
@@ -49,6 +49,7 @@ nav a.router-link-exact-active {
   color: #0ebea7;
 }
 </style>
+
 
 
 
