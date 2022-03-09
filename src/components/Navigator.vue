@@ -66,6 +66,7 @@
 
 .nvbt:hover {
   background-color: rgb(247, 255, 253);
+  /* background-color: rgb(4, 112, 49); */
   border: rgb(176, 240, 215) solid 1px;
 box-shadow: 3px 3px 3px #f3f2f2;
 }
