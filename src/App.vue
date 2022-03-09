@@ -27,13 +27,7 @@
     </div>
   </nav>
   <p>orem check</p>
-  <table border="1px">
-    <tr>
-      <td>Name</td>
-      <td>Salary</td>
-      <td>Age</td>
-    </tr>
-  </table>
+
   <router-view />
 </template>
 
@@ -55,5 +49,6 @@ nav a.router-link-exact-active {
   color: #0ebea7;
 }
 </style>
+
 
 

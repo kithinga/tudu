@@ -19,6 +19,8 @@ import "./assets/css/future.css"
 import "./assets/css/perfomance.css"
 
 
+
+
 // Vue.use(BootstrapVue)
 
 createApp(App).use(router,VueAxios,axios).mount('#app')
