@@ -4,25 +4,17 @@
   <div><h4 class="tihead">Daily tasks</h4></div>
   <div class="container-fluid">
     <div class="row no-gutters justify-content-center">
-      <div class="col-lg-2" v-for="post in posts" v-bind:key="post.id">
-        <div class="tsk01">
+      <div class="col-lg-2" v-for="post in posts" v-bind:key="post.id" data-aos="fade-right">
+        <div class="tsk01" >
           <div>
-            <h2>{{ post.title }}</h2>
-            <p>{{ post.body }}</p>
+            <h4>{{ post.id }}</h4>
+            <p>{{ post.body}}</p>
+            <p>{{ post.details}}</p>
           </div>
         </div>
       </div>
     </div>
   </div>
-
-      
-      <div class="col-lg-2">
-        <div class="tsk01">
-          <h4>Short me one</h4>
-          <p>One rule for the alphas, we move quick</p>
-          <span class="material-icons"> open_in_full </span>
-        </div>
-      </div>
 </template>
 
 <script>
@@ -41,7 +33,8 @@ export default {
   methods: {
     async getData() {
       try {
-        let response = await fetch("http://jsonplaceholder.typicode.com/posts");
+        let response = await fetch("http://jsonplaceholder.typicode.com/posts"); 
+        // let response = await fetch("http://localhost:8080/posts");
         this.posts = await response.json();
       } catch (error) {
         console.log(error);

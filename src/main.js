@@ -19,4 +19,6 @@ import "./assets/css/perfomance.css"
 
 // Vue.use(BootstrapVue)
 
+AOS.init();
+
 createApp(App).use(router,axios).mount('#app')
