@@ -43,7 +43,7 @@
           </router-link>
         </div>
 
-        <div class="col-lg-2">
+        <div class="col-lg-2" >
           <router-link to="/future">
             <div class="card shadow-sm">
               <div class="card-body">

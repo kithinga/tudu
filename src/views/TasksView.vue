@@ -4,7 +4,7 @@
   <div><h4 class="tihead">Daily tasks</h4></div>
   <div class="container-fluid">
     <div class="row no-gutters justify-content-center">
-      <div class="col-lg-2" v-for="post in posts" v-bind:key="post.id" data-aos="fade-right">
+      <div class="col-lg-2" v-for="post in posts" v-bind:key="post.id" data-aos="fade-up">
         <div class="tsk01" >
           <div>
             <h4>{{ post.id }}</h4>
@@ -33,8 +33,9 @@ export default {
   methods: {
     async getData() {
       try {
+          // let response = await fetch("http://localhost:8080/posts");
         let response = await fetch("http://jsonplaceholder.typicode.com/posts"); 
-        // let response = await fetch("http://localhost:8080/posts");
+      
         this.posts = await response.json();
       } catch (error) {
         console.log(error);
