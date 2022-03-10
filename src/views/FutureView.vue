@@ -5,7 +5,8 @@
     <div class="row">
       <div class="col-lg-2" v-for="fute in futures" :key="fute.id">
         <div>
-           <p>{{fute.id}}</p>
+          <p>{{ fute.id }}</p>
+          <p>{{ fute.name }}</p>
           <h4>{{ fute.title }}</h4>
           <p>{{ fute.body }}</p>
         </div>
@@ -17,27 +18,25 @@
 
 <script>
 import Navigator from "@/components/Navigator.vue";
+import axios from "axios";
 export default {
   components: {
     Navigator,
   },
   data() {
-      return {
-        futures: [
-        ]
-      }
+    return {
+      futures: [],
+    };
   },
-    methods:{
-      async getData(){
-        try {
-          const response = await this.$http.get(
-            'http://localhost:3000/futures'
-          );
-          this.futures = response.data;
-        }catch (e) {
-          console.error(e)
-        }
-      }
+  async created() {
+    try {
+      const resp = await axios.get(`http://localhost:3000/futures`);
+      this.futures = resp.data;
+    } catch (e) {
+      console.error(e);
     }
+  },
 };
 </script>
+
+
