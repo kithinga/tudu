@@ -1,34 +1,19 @@
 {
-    "posts": [
-        {
-            "id": "BO3426",
-            "name": "Meet me on the east-side",
-            "details":"Move all the old content from.."
-        },
-      
-        {
-            "id": "BO3426",
-            "name": "Meet me on the east-side",
-            "details":"Move all the old content from.."
-        },
-      
-        {
-            "id": "BO3426",
-            "name": "Meet me on the east-side",
-            "details":"Move all the old content from.."
-        },
-      
-        {
-            "id": "BO3426",
-            "name": "Meet me on the east-side",
-            "details":"Move all the old content from.."
-
-        },
-      
-        {
-            "id": "BO3ws26",
-            "name": "Meet me on the east-side",
-            "details":"Move all the old content from.."
-        }
-    ]
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
 }
