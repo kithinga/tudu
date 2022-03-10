@@ -67,14 +67,16 @@ P {
   border-radius: 8px;
   border: none;
   margin-top:0.5rem;
+  border: solid 1px rgb(242, 241, 248);
 }
 
 .card:hover{
-  border: solid 1px rgb(222, 237, 243);
+  border: solid 1px rgb(220, 232, 243);
+  background-color: rgb(250, 252, 255);
 }
 
 .home-page {
-  background-color: rgb(246, 244, 250);
+  background-color: rgb(245, 245, 252);
   padding: 1rem;
   min-height: 95vh;
 }

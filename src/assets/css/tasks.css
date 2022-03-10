@@ -2,15 +2,35 @@
     padding:0;
     margin: 0;
     font-family: Poppins;
+} 
+.tid-task{
+    text-align:center;
+    padding: 3rem;
+    padding-top: 4rem;
+}
+.tid-btn{
+    text-align:center;
+    padding: 3rem;
+}
+.tid-btn span{
+    font-size:2rem;
+    font-weight:500;
+    color:rgb(124, 126, 255);
+}
+
+.btn-addtask{
+    border: solid 1px rgb(213, 213, 241);
+    background-color:rgb(255, 255, 255);
+    border-radius:1.4rem;
+    padding: 0.3rem;
+    width:3.5rem;
+    text-align: center;
 }
 .tihead{
-    color: rgb(103, 88, 238);
-    text-align:left;
-    font-size:1.3rem;
+    color: rgb(120, 107, 238);
+    font-size:1.4rem;
     letter-spacing: -0.5px;
-    font-weight:700;
-    padding:3rem;
-    padding-left: 11rem;
+    font-weight:700;    
 }
 
 .tsk01{
