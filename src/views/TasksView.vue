@@ -3,10 +3,9 @@
   <Navigator />
   <div><h4 class="tihead">Daily tasks</h4></div>
   <div class="container-fluid">
-    <p>Emptying tasks here</p>
     <div class="row no-gutters justify-content-center">
       <div class="col-lg-2" v-for="post of posts" :key="post.id">
-        <div class="tsk01">
+        <div class="tsk01 shadow-sm">
           <h4>{{ post.id }}</h4>
           <p>{{ post.name }}</p>
         </div>
@@ -28,14 +27,14 @@ export default {
       posts: [],
     };
   },
-      async      created() {
-      try        {
-      const      res       =   await axios.get(`http://localhost:3000/posts`);
-      this.posts =         res.data;
-      }          catch     (e) {
+  async created() {
+    try {
+      const res = await axios.get(`http://localhost:3000/posts`);
+      this.posts = res.data;
+    } catch (e) {
       console.log(e);
-      }
-      },
+    }
+  },
 };
 </script>
 

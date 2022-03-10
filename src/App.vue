@@ -26,8 +26,6 @@
       </div>
     </div>
   </nav>
-  <p>orem check</p>
-    
   <router-view />
 </template>
 

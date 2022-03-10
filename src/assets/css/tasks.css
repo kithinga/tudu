@@ -4,7 +4,7 @@
     font-family: Poppins;
 }
 .tihead{
-    color: rgb(15, 165, 132);
+    color: rgb(13, 153, 172);
     text-align:left;
     font-size:1.3rem;
     letter-spacing: -0.5px;
@@ -15,16 +15,17 @@
 
 .tsk01{
     min-height:4rem;
-    border: solid 1px rgb(236, 238, 240);
+    border: solid 1px rgb(231, 245, 247);
     border-radius:0.4rem;
     padding: 1.2rem;
     font-size:12px;
     margin-top: 0.5rem;
-    background-color:rgb(250, 253, 255);
+    /* background-color:rgb(250, 253, 255); */
+    /* box-shadow: 0px 2px 4px rgb(238, 245, 245); */
 }
 
 .tsk01 h4{
     font-size:13px;
-    color: rgb(14, 160, 165);
+    color: rgb(4, 160, 147);
     font-weight:600;
 }
