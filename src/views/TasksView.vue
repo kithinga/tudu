@@ -3,14 +3,12 @@
   <Navigator />
   <div><h4 class="tihead">Daily tasks</h4></div>
   <div class="container-fluid">
+    <p>Emptying tasks here</p>
     <div class="row no-gutters justify-content-center">
-      <div class="col-lg-2" v-for="post in posts" v-bind:key="post.id" data-aos="fade-up">
-        <div class="tsk01" >
-          <div>
-            <h4>{{ post.id }}</h4>
-            <p>{{ post.body}}</p>
-            <p>{{ post.details}}</p>
-          </div>
+      <div class="col-lg-2" v-for="post of posts" :key="post.id">
+        <div class="tsk01">
+            <h4>{{post.id}}</h4>
+            <p>{{post.name }}</p>
         </div>
       </div>
     </div>
@@ -20,32 +18,27 @@
 <script>
 // @ serves as src alias
 import Navigator from "@/components/Navigator.vue";
-
+import axios from "axios"
 export default {
   components: {
     Navigator,
   },
   data() {
     return {
-      posts: [],
+      posts: [
+      
+      ],
     };
   },
-  methods: {
-    async getData() {
-      try {
-          // let response = await fetch("http://localhost:8080/posts");
-        let response = await fetch("http://jsonplaceholder.typicode.com/posts"); 
-      
-        this.posts = await response.json();
-      } catch (error) {
-        console.log(error);
-      }
-    },
-  },
-
-  created() {
-    this.getData();
-  },
+  async created() {
+    try{
+      const res = await axios.get(`http://localhost:3000/posts`);
+      this.posts = res.data;
+    }catch(e){
+      console.log(e)
+    }
+  }
+  
 };
 </script>
 
