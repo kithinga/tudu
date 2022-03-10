@@ -1,7 +1,7 @@
 
 <template>
   <Navigator />
-  <div><h4 class="tihead">Daily tasks</h4></div>
+  <div><h4 class="tihead">Tasks</h4></div>
   <div class="container-fluid">
     <div class="row no-gutters justify-content-center">
       <div class="col-lg-2" v-for="post of posts" :key="post.id">

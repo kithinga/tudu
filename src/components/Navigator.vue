@@ -9,22 +9,22 @@
             </button>
           </router-link>
           <router-link to="/tasks">
-            <button class="nvbt">
+            <button class="nvbt task-btn rounded">
               <span class="material-icons">task</span>Tasks
             </button>
           </router-link>
           <router-link to="/future">
-            <button class="nvbt">
+            <button class="nvbt future-btn">
               <span class="material-icons">next_plan</span>Future
             </button>
           </router-link>
           <router-link to="/pending">
-            <button class="nvbt">
+            <button class="nvbt pending-btn">
               <span class="material-icons">pending_actions</span>Pending
             </button>
           </router-link>
           <router-link to="/perfomance">
-            <button class="nvbt">
+            <button class="nvbt perfomance-btn">
               <span class="material-icons">timeline</span>Perfomance
             </button>
           </router-link>
@@ -43,24 +43,24 @@
 .nvbt {
   /* height:2.3rem; */
   border: none;
-  background-color: rgb(246, 252, 251);
-  border-radius: 3px;
+  background-color: rgb(248, 255, 255);
+  border-radius: 8px;
   font-weight: 500;
   font-size: 13px;
   padding: 0.4rem;
-  padding-left:0.6rem;
-  padding-right:0.6rem;
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
   margin: 5px;
-  border: solid 1px rgb(230, 231, 231);
+  border: solid 1px rgb(234, 231, 238);
 }
-.nvbt span{
-  color: rgb(57, 156, 123);
+.nvbt span {
+  /* color: rgb(57, 156, 123); */
   margin-right: 0.5rem;
 }
 
-.bthome{
-  border-radius:50rem;
-  padding-left:17px;
+.bthome {
+  border-radius: 50rem;
+  padding-left: 17px;
   margin-right: 2rem;
 }
 
@@ -68,10 +68,25 @@
   background-color: rgb(247, 255, 253);
   /* background-color: rgb(4, 112, 49); */
   border: rgb(176, 240, 215) solid 1px;
-box-shadow: 3px 3px 3px #f3f2f2;
+  box-shadow: 3px 3px 3px #f3f2f2;
 }
 
+.task-btn span {
+  color:rgb(163, 163, 228);
 
+}
+.future-btn span {
+  color:rgb(115, 175, 202);
+
+}
+.pending-btn span {
+  color:rgb(218, 165, 129);
+
+}
+.perfomance-btn span {
+  color:rgb(201, 165, 8);
+
+}
 
 </style>
 

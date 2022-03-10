@@ -4,7 +4,7 @@
     font-family: Poppins;
 }
 .tihead{
-    color: rgb(13, 153, 172);
+    color: rgb(103, 88, 238);
     text-align:left;
     font-size:1.3rem;
     letter-spacing: -0.5px;
@@ -26,6 +26,6 @@
 
 .tsk01 h4{
     font-size:13px;
-    color: rgb(4, 160, 147);
-    font-weight:600;
+    color: rgb(90, 74, 236);
+    font-weight:500;
 }
