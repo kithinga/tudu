@@ -1,4 +1,3 @@
-
 <template>
   <Navigator />
 
@@ -16,7 +15,7 @@
             data-bs-toggle="modal"
             data-bs-target="#exampleModal"
           >
-              <span class="material-icons">add</span>
+            <span class="material-icons">add</span>
           </button>
         </div>
       </div>
@@ -30,16 +29,27 @@
     tabindex="-1"
     aria-labelledby="exampleModalLabel"
     aria-hidden="true"
-   >
+  >
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
-          <h6 class="modal-title" id="exampleModalLabel">  <span class="material-icons">task</span>Tasks Add tasks</h6>
+          <h6 class="modal-title" id="exampleModalLabel">
+            <span class="material-icons syi">task</span>Tasks Add tasks
+          </h6>
         </div>
         <div class="modal-body">
-             <form action="">
-               <input type="text">
-             </form>
+          <form class="task-form" autocomplete="off">
+            <label for="name">Task title</label><br />
+            <input type="text" id="name" v-model="taskName" placeholder="Task title" /><br />
+            <label for="details">Details</label><br />
+            <input type="text" id="details" name="details" placeholder="Details" />
+            <label for="date">Date</label><br />
+            <input type="date" id="date" name="date" placeholder="Date"/>
+            <button type="submit" class="submit shadow-sm" @click="addTask">Addtask</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+
         </div>
       </div>
     </div>
@@ -80,16 +90,15 @@ export default {
       console.log(e);
     }
   },
+  // Ading task
   methods: {
     async addTask() {
       const res = await axios.post(baseURL, { name: this.taskName });
-      this.posts = [...this.todo, { name: this.taskName }];
+      this.posts = [...this.todo, res.data];
+      this.taskName = ''
     },
   },
 };
-
 </script>
 
-
-
-
+a
