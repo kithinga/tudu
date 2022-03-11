@@ -45,11 +45,12 @@
               id="name"
               v-model="taskName"
               placeholder="Task title"
+              required
             /><br />
             <label for="details">Details</label><br />
-            <input type="text" id="details" name="details" placeholder="Details" />
+            <input type="text" id="details"   v-model="Details" name="details" placeholder="Details" required />
             <label for="date">Date</label><br />
-            <input type="date" id="date" name="date" placeholder="Date" />
+            <input type="date" id="date" name="date"   v-model="TDate" placeholder="Date"  required/>
             <button type="submit" class="submit shadow-sm" @click="addTask">
               Addtask
             </button>
@@ -67,12 +68,12 @@
           <h4>{{ post.id }}</h4>
           <h6>{{ post.name }}</h6>
           <p>{{ post.details }}</p>
+          <p>{{ post.date}}</p>
           <br />
           <div class="card-foot">
             <div class="btn-group">
               <button
-                class="btn btn-secondary dropdown-toggle"
-                type="button"
+                class="btn dropdown-toggle"
                 id="dropdownMenuClickableInside"
                 data-bs-toggle="dropdown"
                 data-bs-auto-close="outside"
@@ -81,8 +82,8 @@
                 Clickable inside
               </button>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenuClickableInside">
-                <li><div class="material-icons">edit</div></li>
-                <li><div class="material-icons">close</div></li>
+                <li><div class="material-icons" data-bs-toggle="tooltip" title="Edit">edit</div></li>
+                <li><div class="material-icons" data-bs-toggle="tooltip" title="Close">close</div></li>
               </ul>
             </div>
           </div>
@@ -105,6 +106,8 @@ export default {
     return {
       posts: [],
       taskName: "",
+      Details: "",
+      TDate: "",
     };
   },
   async created() {
@@ -118,9 +121,11 @@ export default {
   // Ading task
   methods: {
     async addTask() {
-      const res = await axios.post(baseURL, { name: this.taskName });
+      const res = await axios.post(baseURL, { name: this.taskName});
       this.posts = [...this.todo, res.data];
       this.taskName = "";
+      this.Details = "";
+      this.TDate = "";
     },
   },
 };

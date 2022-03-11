@@ -136,11 +136,27 @@
 
 .card-foot{
     min-height:3rem;
+    text-align:right;
     /* background-color:rgb(250, 249, 253); */
+}
+.card-foot ul{
+    width:100%;
+    /* background-color:grey; */
+    padding:0.3rem;
+    text-align:center;
+    padding-left:2rem;
+    padding-top:0.8rem;
+    padding: bottom 0.8rem;
 }
 .card-foot li{
     text-decoration: none;
     list-style: none;
     display: inline;
-    color:rgb(111, 103, 122);
+    color:rgb(156, 152, 177);
+    margin-right: 2rem;
+    /* border-bottom: solid 2px rgb(169, 178, 194); */
+    padding:3px;
+    border-radius:2rem;
+ 
+    
 }
