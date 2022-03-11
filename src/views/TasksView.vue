@@ -60,7 +60,13 @@
       <div class="col-lg-2" v-for="post of posts" :key="post.id">
         <div class="tsk01 shadow-sm">
           <h4>{{ post.id }}</h4>
-          <p>{{ post.name }}</p>
+          <h6>{{ post.name }}</h6>
+          <p>{{ post.details }}</p>
+            <br>
+          <div class="card-foot">
+            <li><span class="material-icons">edit</span></li>
+            <li><span class="material-icons">delete</span></li>
+          </div>
         </div>
       </div>
     </div>
