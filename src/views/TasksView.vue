@@ -42,15 +42,16 @@
             <label for="name">Task title</label><br />
             <input
               type="text"
+              name="name"
               id="name"
               v-model="taskName"
               placeholder="Task title"
               required
             /><br />
             <label for="details">Details</label><br />
-            <input type="text" id="details"   v-model="Details" name="details" placeholder="Details" required />
+            <input type="text" id="details" name="details"  v-model="taskDetails" placeholder="Details" required />
             <label for="date">Date</label><br />
-            <input type="date" id="date" name="date"   v-model="TDate" placeholder="Date"  required/>
+            <input type="date" id="date" name="date"  v-model="taskDate" placeholder="Due-Date"  required/>
             <button type="submit" class="submit shadow-sm" @click="addTask">
               Addtask
             </button>
@@ -65,27 +66,29 @@
     <div class="row no-gutters justify-content-center">
       <div class="col-lg-2" v-for="post of posts" :key="post.id">
         <div class="tsk01 shadow-sm">
+          <div class="card-head">
+              <div class="btn-group">
+              <button
+                class="btn"
+                id="dropdownMenuClickableInside"
+                data-bs-toggle="dropdown"
+              >
+                <div class="material-icons ver">more_vert</div>
+              </button>
+              <div class="dropdown-menu shadow-sm" >
+                <div class="material-icons done" data-bs-toggle="tooltip" title="done">done</div>
+                <div class="material-icons edit" data-bs-toggle="tooltip" title="Edit">edit</div>
+                <div class="material-icons close" data-bs-toggle="tooltip" title="Close">close</div>
+              </div>
+            </div>
+          </div>
           <h4>{{ post.id }}</h4>
           <h6>{{ post.name }}</h6>
           <p>{{ post.details }}</p>
           <p>{{ post.date}}</p>
           <br />
           <div class="card-foot">
-            <div class="btn-group">
-              <button
-                class="btn dropdown-toggle"
-                id="dropdownMenuClickableInside"
-                data-bs-toggle="dropdown"
-                data-bs-auto-close="outside"
-                aria-expanded="false"
-              >
-                Clickable inside
-              </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuClickableInside">
-                <li><div class="material-icons" data-bs-toggle="tooltip" title="Edit">edit</div></li>
-                <li><div class="material-icons" data-bs-toggle="tooltip" title="Close">close</div></li>
-              </ul>
-            </div>
+          
           </div>
         </div>
       </div>
@@ -106,8 +109,8 @@ export default {
     return {
       posts: [],
       taskName: "",
-      Details: "",
-      TDate: "",
+      taskDetails: "",
+      taskDate: "",
     };
   },
   async created() {
@@ -121,11 +124,12 @@ export default {
   // Ading task
   methods: {
     async addTask() {
-      const res = await axios.post(baseURL, { name: this.taskName});
+      const res = await axios.post(baseURL, { name: this.taskName, details: this.taskDetails, date: this.taskDate});
       this.posts = [...this.todo, res.data];
       this.taskName = "";
-      this.Details = "";
-      this.TDate = "";
+      this.taskDetails = details;
+      this.taskDate = dat
+      e;
     },
   },
 };
