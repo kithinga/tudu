@@ -3,6 +3,10 @@ import 'mutationobserver-shim'
 import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
+// Axios import /
+import axios from 'axios';
+// import VueAxios from 'vue-axios'
+// Vue.prototype.$http = axios
 
 import "bootstrap/dist/css/bootstrap.min.css"
 import "bootstrap"
@@ -13,7 +17,8 @@ import "./assets/css/pending.css"
 import "./assets/css/future.css"
 import "./assets/css/perfomance.css"
 
-
 // Vue.use(BootstrapVue)
 
-createApp(App).use(router).mount('#app')
+AOS.init();
+
+createApp(App).use(router,axios).mount('#app')

@@ -13,7 +13,7 @@
             <form action="">
               <input type="text" class="ser-input" placeholder="search . . ." />
               <button type="submit" class="ser-btn material-icons md-32">
-                search 
+                search
               </button>
             </form>
           </div>
@@ -46,7 +46,8 @@ nav a {
 nav a.router-link-exact-active {
   color: #0ebea7;
 }
-
-
-
 </style>
+
+
+
+

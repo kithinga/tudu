@@ -51,7 +51,7 @@ P {
   font-weight: 700;
 }
 .titl {
-  font-weight: 600;
+  font-weight:700;
   font-size: 1.15rem;
   letter-spacing: -0.5px;  
 }
@@ -67,14 +67,16 @@ P {
   border-radius: 8px;
   border: none;
   margin-top:0.5rem;
+  border: solid 1px rgb(242, 241, 248);
 }
 
 .card:hover{
-  border: solid 1px rgb(222, 237, 243);
+  border: solid 1px rgb(220, 232, 243);
+  background-color: rgb(250, 252, 255);
 }
 
 .home-page {
-  background-color: rgb(246, 244, 250);
+  background-color: rgb(245, 245, 252);
   padding: 1rem;
   min-height: 95vh;
 }
@@ -86,12 +88,13 @@ a {
 }
 
 .card-title {
-  color: rgb(39, 39, 56);
+  /* color: rgb(108, 108, 245); */
   font-size: 1rem;
+  font-weight: 700;
 }
 
 .card-text {
-  font-weight: 400;
+  font-weight:500;
   font-size: 13px;
 }
 .card-title{
@@ -101,4 +104,23 @@ a {
 
 .icn{
   margin-top:10px;
+  padding: 6px;
+  border-radius: 1rem;;
+  box-shadow: 1px 2px 6px rgb(240, 236, 236);
+}
+
+
+.tasks{
+  color: rgb(108, 108, 245);
+}
+.future{
+  color: rgb(11, 146, 199);
+}
+.pending{
+  color: orangered;
+
+}
+.perfomance{
+  /* color: rgb(167, 185, 0); */
+  color: rgb(238, 155, 1);
 }
