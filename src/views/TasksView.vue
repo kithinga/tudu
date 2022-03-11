@@ -40,17 +40,22 @@
         <div class="modal-body">
           <form class="task-form" autocomplete="off">
             <label for="name">Task title</label><br />
-            <input type="text" id="name" v-model="taskName" placeholder="Task title" /><br />
+            <input
+              type="text"
+              id="name"
+              v-model="taskName"
+              placeholder="Task title"
+            /><br />
             <label for="details">Details</label><br />
             <input type="text" id="details" name="details" placeholder="Details" />
             <label for="date">Date</label><br />
-            <input type="date" id="date" name="date" placeholder="Date"/>
-            <button type="submit" class="submit shadow-sm" @click="addTask">Addtask</button>
+            <input type="date" id="date" name="date" placeholder="Date" />
+            <button type="submit" class="submit shadow-sm" @click="addTask">
+              Addtask
+            </button>
           </form>
         </div>
-        <div class="modal-footer">
-
-        </div>
+        <div class="modal-footer"></div>
       </div>
     </div>
   </div>
@@ -62,10 +67,24 @@
           <h4>{{ post.id }}</h4>
           <h6>{{ post.name }}</h6>
           <p>{{ post.details }}</p>
-            <br>
+          <br />
           <div class="card-foot">
-            <li><span class="material-icons">edit</span></li>
-            <li><span class="material-icons">delete</span></li>
+            <div class="btn-group">
+              <button
+                class="btn btn-secondary dropdown-toggle"
+                type="button"
+                id="dropdownMenuClickableInside"
+                data-bs-toggle="dropdown"
+                data-bs-auto-close="outside"
+                aria-expanded="false"
+              >
+                Clickable inside
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuClickableInside">
+                <li><div class="material-icons">edit</div></li>
+                <li><div class="material-icons">close</div></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -101,7 +120,7 @@ export default {
     async addTask() {
       const res = await axios.post(baseURL, { name: this.taskName });
       this.posts = [...this.todo, res.data];
-      this.taskName = ''
+      this.taskName = "";
     },
   },
 };
