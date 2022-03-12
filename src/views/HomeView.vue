@@ -5,7 +5,7 @@
         <div class="col-lg-2">
           <div class="titles">
             <p class="titl">TODOS FOR <span class="sel"> Better me</span></p>
-            <p class="ru">Consitency for <span class="selm">Self mastery</span></p>
+            <p class="ru">Consistency for - <span class="selm">Self Mastery . .</span></p>
           </div>
         </div>
 

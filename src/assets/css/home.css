@@ -57,7 +57,7 @@ P {
 .time{
   font-weight:900;
   font-size:2.4rem;
-  color:rgb(102, 93, 131);
+  color:rgb(108, 98, 141);
   text-shadow: 2px 2px 2px rgb(174, 174, 197);
   word-spacing:0.4rem;
   letter-spacing:2px;
@@ -86,8 +86,9 @@ P {
   font-size:2rem;
 }
 .selm{
-  color: rgb(15, 199, 255);
+  color: rgb(25, 155, 206);
   font-weight: 700;
+
  
 }
 .titl {
@@ -164,5 +165,5 @@ a {
 }
 .perfomance{
   /* color: rgb(167, 185, 0); */
-  color: rgb(132, 187, 99);
+  color: rgb(136, 161, 89);
 }

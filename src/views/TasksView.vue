@@ -153,7 +153,6 @@ export default {
     }
   },
 
-
   methods: {
     //Adding task
     async addTask() {
@@ -162,13 +161,16 @@ export default {
         details: this.taskDetails,
         date: this.taskDate,
       });
-      this.posts = [...this.todo, res.data];
+      this.posts = [...this.posts, res.data];
       this.taskName = "";
       this.taskDetails = details;
       this.taskDate = date;
     },
-
+    //  Delete tasks
   },
+ 
+
+ 
 };
 </script>
 
