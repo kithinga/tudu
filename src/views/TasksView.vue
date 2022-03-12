@@ -49,9 +49,23 @@
               required
             /><br />
             <label for="details">Details</label><br />
-            <input type="text" id="details" name="details"  v-model="taskDetails" placeholder="Details" required />
+            <input
+              type="text"
+              id="details"
+              name="details"
+              v-model="taskDetails"
+              placeholder="Details"
+              required
+            />
             <label for="date">Date</label><br />
-            <input type="date" id="date" name="date"  v-model="taskDate" placeholder="Due-Date"  required/>
+            <input
+              type="date"
+              id="date"
+              name="date"
+              v-model="taskDate"
+              placeholder="Due-Date"
+              required
+            />
             <button type="submit" class="submit shadow-sm" @click="addTask">
               Addtask
             </button>
@@ -67,7 +81,7 @@
       <div class="col-lg-2" v-for="post of posts" :key="post.id">
         <div class="tsk01 shadow-sm">
           <div class="card-head">
-              <div class="btn-group">
+            <div class="btn-group">
               <button
                 class="btn"
                 id="dropdownMenuClickableInside"
@@ -75,21 +89,38 @@
               >
                 <div class="material-icons ver">more_vert</div>
               </button>
-              <div class="dropdown-menu shadow-sm" >
-                <div class="material-icons done" data-bs-toggle="tooltip" title="done">done</div>
-                <div class="material-icons edit" data-bs-toggle="tooltip" title="Edit">edit</div>
-                <div class="material-icons close" @click="deleteTask" data-bs-toggle="tooltip" title="Close">close</div>
+              <div class="dropdown-menu shadow-sm">
+                <div
+                  class="material-icons done"
+                  data-bs-toggle="tooltip"
+                  title="done"
+                >
+                  done
+                </div>
+                <div
+                  class="material-icons edit"
+                  data-bs-toggle="tooltip"
+                  title="Edit"
+                >
+                  edit
+                </div>
+                <div
+                  class="material-icons close"
+                  @click="deleteTask"
+                  data-bs-toggle="tooltip"
+                  title="Close"
+                >
+                  close
+                </div>
               </div>
             </div>
           </div>
           <h4>{{ post.id }}</h4>
           <h6>{{ post.name }}</h6>
           <p>{{ post.details }}</p>
-          <p>{{ post.date}}</p>
+          <p>{{ post.date }}</p>
           <br />
-          <div class="card-foot">
-          
-          </div>
+          <div class="card-foot"></div>
         </div>
       </div>
     </div>
@@ -111,7 +142,6 @@ export default {
       taskName: "",
       taskDetails: "",
       taskDate: "",
-      deleteResult: null
     };
   },
   async created() {
@@ -122,18 +152,22 @@ export default {
       console.log(e);
     }
   },
-  
+
+
   methods: {
     //Adding task
     async addTask() {
-      const res = await axios.post(baseURL, { name: this.taskName, details: this.taskDetails, date: this.taskDate});
+      const res = await axios.post(baseURL, {
+        name: this.taskName,
+        details: this.taskDetails,
+        date: this.taskDate,
+      });
       this.posts = [...this.todo, res.data];
       this.taskName = "";
       this.taskDetails = details;
       this.taskDate = date;
     },
-  // Delete task
-    
+
   },
 };
 </script>
