@@ -62,6 +62,7 @@
   border-radius: 50rem;
   padding-left: 17px;
   margin-right: 2rem;
+  color:rgb(85, 86, 95);
 }
 
 .nvbt:hover {

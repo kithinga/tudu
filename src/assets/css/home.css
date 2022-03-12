@@ -24,7 +24,7 @@ P {
   font-size: 2.5rem;
   font-weight: 200;
   letter-spacing: -1px;
-  color: rgb(19, 187, 89);
+  color: rgb(18, 111, 134);
 }
 
 .rder {
@@ -89,7 +89,7 @@ P {
 }
 
 .home-page {
-  background-color: rgb(245, 245, 252);
+  background-color: rgb(246, 244, 250);
   padding: 1rem;
   min-height: 95vh;
 }
