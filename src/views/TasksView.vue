@@ -139,6 +139,7 @@ export default {
   data() {
     return {
       posts: [],
+      id:"",
       taskName: "",
       taskDetails: "",
       taskDate: "",
@@ -155,6 +156,7 @@ export default {
 
   methods: {
     //Adding task
+
     async addTask() {
       const res = await axios.post(baseURL, {
         name: this.taskName,
@@ -167,10 +169,15 @@ export default {
       this.taskDate = date;
     },
     //  Delete tasks
+    //  async deleteTask() {
+    //     await axios.delete(`http://localhost:3000/posts/${id}`)
+    //          .then(response => {
+    //              console.log(response);
+    //              alert(response);
+    //          });
+    // }
   },
- 
-
- 
+  
 };
 </script>
 
