@@ -78,7 +78,7 @@
               <div class="dropdown-menu shadow-sm" >
                 <div class="material-icons done" data-bs-toggle="tooltip" title="done">done</div>
                 <div class="material-icons edit" data-bs-toggle="tooltip" title="Edit">edit</div>
-                <div class="material-icons close" data-bs-toggle="tooltip" title="Close">close</div>
+                <div class="material-icons close" @click="deleteTask" data-bs-toggle="tooltip" title="Close">close</div>
               </div>
             </div>
           </div>
@@ -128,9 +128,16 @@ export default {
       this.posts = [...this.todo, res.data];
       this.taskName = "";
       this.taskDetails = details;
-      this.taskDate = dat
+      this.taskDate = date;
       e;
     },
+  // Delete task
+    async deleteTask() {
+        await axios.delete(`http://localhost:3000/posts/${id}`)
+             .then(response => {
+                 console.log(response);
+             });
+    }
   },
 };
 </script>
