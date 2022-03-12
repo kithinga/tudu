@@ -17,7 +17,9 @@
 
         <div class="col-lg-2">
           <div class="period">
-            <p class="dti"><span>Fri</span> 03 Mar 2022</p>
+            <p class="time"></p>
+            <p class="day">03 Mar 2022</p>
+            <p class="date">date</p>
           </div>
         </div>
       </div>
