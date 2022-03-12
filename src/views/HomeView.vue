@@ -4,8 +4,7 @@
       <div class="row intros no-gutters justify-content-center">
         <div class="col-lg-2">
           <div class="titles">
-            <p class="titl">TODOS FOR <span class="sel"> Better me</span></p>
-            <p>CONSISTENCY,  <span class="selm">SELF MASTERY</span></p>
+            <p class="ru">Consitency for <span class="selm">Self mastery</span></p>
           </div>
         </div>
 

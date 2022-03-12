@@ -46,16 +46,23 @@ P {
   padding-top: 2rem;
   margin-top: 3rem;
 }
+.ru{
+  font-weight: 500;
+  color: rgb(89, 87, 110);
+  font-size: 13px;
+}
 .sel{
   color: rgb(18, 143, 201);
-  font-weight: 300;
+  font-weight: 00;
   font-size:2rem;
 }
 .selm{
-  color: rgb(9, 155, 199);
+  color: rgb(15, 199, 255);
   font-weight: 700;
+ 
 }
 .titl {
+  word-spacing: 5px;
   font-weight:900;
   font-size: 2.5rem;
   letter-spacing: -0.5px;  
