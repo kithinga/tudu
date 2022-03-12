@@ -111,6 +111,7 @@ export default {
       taskName: "",
       taskDetails: "",
       taskDate: "",
+      deleteResult: null
     };
   },
   async created() {
@@ -121,23 +122,18 @@ export default {
       console.log(e);
     }
   },
-  // Ading task
+  
   methods: {
+    //Adding task
     async addTask() {
       const res = await axios.post(baseURL, { name: this.taskName, details: this.taskDetails, date: this.taskDate});
       this.posts = [...this.todo, res.data];
       this.taskName = "";
       this.taskDetails = details;
       this.taskDate = date;
-      e;
     },
   // Delete task
-    async deleteTask() {
-        await axios.delete(`http://localhost:3000/posts/${id}`)
-             .then(response => {
-                 console.log(response);
-             });
-    }
+    
   },
 };
 </script>

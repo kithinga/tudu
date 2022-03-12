@@ -117,6 +117,7 @@
     color: rgb(91, 78, 204);
 }
 
+
 .task-form label{
     text-align:left;
     font-size:13px;
@@ -143,6 +144,7 @@
     border-bottom-left-radius:0.7rem;
    /* border: solid 1px rgb(243, 241, 253); */
 }
+
 button{
     outline: none;
 }
@@ -163,6 +165,11 @@ padding:1rem;
 }
 .done,.edit,.close{
   margin:0.55rem;
+  cursor: pointer;
+}
+.done:hover,.edit:hover,.close:hover{
+  transform:scale(1.4);
+  
 }
 
 .close{
@@ -174,4 +181,7 @@ padding:1rem;
 }
 .ver{
     color: rgb(146, 138, 156);
+}
+.done{
+    color: rgb(94, 64, 128);
 }
