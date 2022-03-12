@@ -17,9 +17,9 @@
 
         <div class="col-lg-2">
           <div class="period">
-            <p class="time"></p>
-            <p class="day">03 Mar 2022</p>
-            <p class="date">date</p>
+            <p class="time">00  10</p>
+            <p class="day">Sunday</p>
+            <p class="date">13   03   2022</p>
           </div>
         </div>
       </div>
@@ -84,7 +84,7 @@
                 <h5 class="card-title">Perfomance</h5>
                 <p class="material-icons icn">timeline</p>
                 <img
-                  src="../assets/images/Perfomance.png"
+                  src="../assets/images/Perfomance01.png"
                   class="img-fluid"
                   alt=""
                 />

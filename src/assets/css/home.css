@@ -44,13 +44,35 @@ P {
   min-height: 16vh;
   border-radius: 2px;
   padding-top: 2rem;
-  margin-top: 3rem;
+  margin-top: 2.5rem;
 }
 
 .period{
-  background-color:grey;
+  /* background-color:rgb(255, 255, 255); */
+  border-radius:7.5px;
+  /* border: solid rgb(233, 240, 240) 1px; */
+  margin-top: 3rem;
+  text-align: center;
 }
+.time{
+  font-weight:900;
+  font-size:2.4rem;
+  color:rgb(102, 93, 131);
+  text-shadow: 2px 2px 2px rgb(174, 174, 197);
+  word-spacing:0.4rem;
+  letter-spacing:2px;
+}
+.day{
+  color:rgb(99, 86, 160);
+  margin-left: 5px;
+  letter-spacing:8px;
+}
+.date{
+  color: rgb(14, 124, 197);
+  word-spacing: 0.8rem;
 
+
+}
 
 
 .ru{
@@ -137,10 +159,10 @@ a {
   color: rgb(11, 146, 199);
 }
 .pending{
-  color: orangered;
+  color: rgb(192, 102, 70);
 
 }
 .perfomance{
   /* color: rgb(167, 185, 0); */
-  color: rgb(238, 155, 1);
+  color: rgb(132, 187, 99);
 }
