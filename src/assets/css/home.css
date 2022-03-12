@@ -46,14 +46,20 @@ P {
   padding-top: 2rem;
   margin-top: 3rem;
 }
+.sel{
+  color: rgb(18, 143, 201);
+  font-weight: 300;
+  font-size:2rem;
+}
 .selm{
-  color: rgb(29, 201, 121);
+  color: rgb(9, 155, 199);
   font-weight: 700;
 }
 .titl {
-  font-weight:700;
-  font-size: 1.15rem;
+  font-weight:900;
+  font-size: 2.5rem;
   letter-spacing: -0.5px;  
+  color: rgb(78, 78, 121);
 }
 
 .card-row {

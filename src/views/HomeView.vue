@@ -4,8 +4,8 @@
       <div class="row intros no-gutters justify-content-center">
         <div class="col-lg-2">
           <div class="titles">
-            <p class="titl">Enthusiasm and ambition</p>
-            <p>Manage tasks: <span class="selm">self mastery</span></p>
+            <p class="titl">TODOS FOR <span class="sel"> Better me</span></p>
+            <p>CONSISTENCY,  <span class="selm">SELF MASTERY</span></p>
           </div>
         </div>
 
