@@ -139,13 +139,12 @@ export default {
   data() {
     return {
       posts: [],
-      id:"",
       taskName: "",
       taskDetails: "",
       taskDate: "",
     };
   },
-  async created() {
+    async created() {
     try {
       const res = await axios.get(baseURL);
       this.posts = res.data;
@@ -154,7 +153,9 @@ export default {
     }
   },
 
+
   methods: {
+    
     //Adding task
 
     async addTask() {
@@ -168,17 +169,18 @@ export default {
       this.taskDetails = details;
       this.taskDate = date;
     },
+
     //  Delete tasks
-    //  async deleteTask() {
-    //     await axios.delete(`http://localhost:3000/posts/${id}`)
-    //          .then(response => {
-    //              console.log(response);
-    //              alert(response);
-    //          });
-    // }
+       async deleteTask(id) {
+         const res = axios.delete(baseURL+id)
+             .then(res=> {
+                 console.log(res);
+                 alert(response);
+             });
+    }
   },
   
 };
 </script>
 
-a
+
