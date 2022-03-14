@@ -81,14 +81,9 @@
       <div class="col-lg-2" v-for="post of posts" :key="post.id">
         <div class="tsk01 shadow-sm">
           <!-- Close task func -->
-          <div
-            class="material-icons close"
-            @click="deleteTask"
-            data-bs-toggle="tooltip"
-            title="Close"
-          >
+          <button class="material-icons close" @click="deleteTask">
             close
-          </div>
+          </button>
 
           <div class="card-head">
             <div class="btn-group">
@@ -147,15 +142,21 @@ export default {
 
   methods: {
     getPosts() {
-         axios.get(baseURL).then((result) => {
+      axios.get(baseURL).then((result) => {
         console.warn(result);
         this.posts = result.data;
       });
     },
+    // Delete Post
+    async deleteTask() {
+      await axios.delete(`http://localhost:3000/posts/${post.id}`).then((response) => {
+        console.log(response);
+      });
+    },
   },
-  mounted(){
-    this.getPosts()
-  }
+  mounted() {
+    this.getPosts();
+  },
 };
 </script>
 
