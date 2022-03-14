@@ -148,15 +148,14 @@ export default {
       });
     },
     // Delete Post
-    async deleteTask() {
-      alert("safd");
-      await axios
-        .delete(`http://localhost:3000/posts/t7vRshM
-`)
-        .then((response) => {
-          console.log(response);
-        });
-    },
+    async deleteTask(id){
+      if(confirm("Are you sure you want to delete")){
+        const res = await fetch(`http://localhost:3000/posts/${id}`,{
+          method: 'DELETE'
+        })
+        res.status == 200 ? (this.posts = this.posts.filter((post) => post.id !== id)) :alert("Error deleting task")
+      }
+    }
   },
   mounted() {
     this.getPosts();
