@@ -149,9 +149,13 @@ export default {
     },
     // Delete Post
     async deleteTask() {
-      await axios.delete(`http://localhost:3000/posts/${post.id}`).then((response) => {
-        console.log(response);
-      });
+      alert("safd");
+      await axios
+        .delete(`http://localhost:3000/posts/t7vRshM
+`)
+        .then((response) => {
+          console.log(response);
+        });
     },
   },
   mounted() {
