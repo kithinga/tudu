@@ -80,7 +80,6 @@
     <div class="row no-gutters justify-content-center">
       <div class="col-lg-2" v-for="post of posts" :key="post.id">
         <div class="tsk01 shadow-sm">
-
           <!-- Close task func -->
           <div
             class="material-icons close"
@@ -139,48 +138,25 @@ export default {
   components: {
     Navigator,
   },
+
   data() {
     return {
       posts: [],
-      taskName: "",
-      taskDetails: "",
-      taskDate: "",
     };
   },
 
-
   methods: {
-   getPosts() {
-     this.axios.get(baseURL).then((result)=>{
-       console.warn(result)
-       this.posts = result.data
-     })
-   },
-    //Adding task
-    async addTask() {
-      const res = await axios.post(baseURL, {
-        name: this.taskName,
-        details: this.taskDetails,
-        date: this.taskDate,
+    getPosts() {
+         axios.get(baseURL).then((result) => {
+        console.warn(result);
+        this.posts = result.data;
       });
-      this.posts = [...this.posts, res.data];
-      this.taskName = "";
-      this.taskDetails = details;
-      this.taskDate = date;
     },
-    //  Delete tasks
-    deleteTask(id){
-      this.axios.delete(`http://localhost:3000/posts/${id}`).then((res) =>{
-        console.log(res)
-        // this.posts = res.data;
-      })
-    }
   },
-
   mounted(){
     this.getPosts()
   }
 };
 </script>
 
-a
+
