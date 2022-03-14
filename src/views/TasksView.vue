@@ -80,6 +80,17 @@
     <div class="row no-gutters justify-content-center">
       <div class="col-lg-2" v-for="post of posts" :key="post.id">
         <div class="tsk01 shadow-sm">
+
+          <!-- Close task func -->
+          <div
+            class="material-icons close"
+            @click="deleteTask"
+            data-bs-toggle="tooltip"
+            title="Close"
+          >
+            close
+          </div>
+
           <div class="card-head">
             <div class="btn-group">
               <button
@@ -103,14 +114,6 @@
                   title="Edit"
                 >
                   edit
-                </div>
-                <div
-                  class="material-icons close"
-                  @click="deleteTask"
-                  data-bs-toggle="tooltip"
-                  title="Close"
-                >
-                  close
                 </div>
               </div>
             </div>
@@ -144,20 +147,16 @@ export default {
       taskDate: "",
     };
   },
-    async created() {
-    try {
-      const res = await axios.get(baseURL);
-      this.posts = res.data;
-    } catch (e) {
-      console.log(e);
-    }
-  },
 
 
   methods: {
-    
+   getPosts() {
+     this.axios.get(baseURL).then((result)=>{
+       console.warn(result)
+       this.posts = result.data
+     })
+   },
     //Adding task
-
     async addTask() {
       const res = await axios.post(baseURL, {
         name: this.taskName,
@@ -169,18 +168,19 @@ export default {
       this.taskDetails = details;
       this.taskDate = date;
     },
-
     //  Delete tasks
-       async deleteTask(id) {
-         const res = axios.delete(baseURL+id)
-             .then(res=> {
-                 console.log(res);
-                 alert(response);
-             });
+    deleteTask(id){
+      this.axios.delete(`http://localhost:3000/posts/${id}`).then((res) =>{
+        console.log(res)
+        // this.posts = res.data;
+      })
     }
   },
-  
+
+  mounted(){
+    this.getPosts()
+  }
 };
 </script>
 
-
+a
