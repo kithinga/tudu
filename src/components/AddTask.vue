@@ -63,12 +63,22 @@ import { addDoc } from "firebase/firestore";
 
 export default {
   name: "AddTask",
+  
   data() {
     return {
-      name: null,
+      posts: [],
+      taskName: null,
       dueDate: null,
       taskDetails: null,
     };
+
   },
+  methods: {
+    async addTask(){
+      console.log("creating a task");
+      const addedDoc = await addDoc(colref, this.$data);
+      console.log(addedDoc);
+    }
+  }
 };
 </script>

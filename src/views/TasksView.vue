@@ -28,7 +28,8 @@
 
   <div class="container-fluid">
     <div class="row no-gutters justify-content-center">
-      <div class="col-lg-2" v-for="post of posts" :key="post.id">
+      <div class="col-lg-2" >
+        <!-- v-for="post of posts" :key="post.id" -->
         <div class="tsk01 shadow-sm">
           <div class="card-head">
             <div class="btn-group">
@@ -83,31 +84,13 @@
 import Navigator from "@/components/Navigator.vue";
 import AddTask from "@/components/AddTask.vue";
 import EditTask from "@/components/EditTask.vue";
-import axios from "axios";
+// import axios from "axios";
 const baseURL = "http://localhost:3000/posts";
 export default {
   components: {
     Navigator,
     AddTask,
     EditTask,
-  },
-
-  data() {
-    return {
-      posts: [],
-    };
-  },
-
-  methods: {
-    getPosts() {
-      axios.get(baseURL).then((result) => {
-        console.warn(result);
-        this.posts = result.data;
-      });
-    },
-  },
-  mounted() {
-    this.getPosts();
   },
 };
 </script>
