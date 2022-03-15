@@ -17,7 +17,7 @@
               </h6>
             </div>
             <div class="modal-body">
-              <form class="task-form" autocomplete="off">
+              <form class="task-form" action="#" autocomplete="off">
                 <label for="name">Task title</label><br />
                 <input
                   type="text"
@@ -59,7 +59,6 @@
 
 <script>
 import colref from "../firebase";
-src/firebase.js
 import { addDoc } from "firebase/firestore";
 
 export default {

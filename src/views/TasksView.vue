@@ -73,7 +73,6 @@ export default {
   components: {
     Navigator,
     AddTask,
-    EditTask,
   },
 };
 </script>
