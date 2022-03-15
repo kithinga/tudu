@@ -17,23 +17,10 @@
 
 <script>
 import Navigator from "@/components/Navigator.vue";
-import axios from "axios";
+
 export default {
   components: {
     Navigator,
-  },
-  data() {
-    return {
-      pending: [],
-    };
-  },
-  async created() {
-    try {
-      const resp = await axios.get(`http://localhost:3000/pending`);
-      this.pending = resp.data;
-    } catch (e) {
-      console.error(e);
-    }
   },
 };
 </script>

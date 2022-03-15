@@ -17,24 +17,11 @@
 
 <script>
 import Navigator from "@/components/Navigator.vue";
-import axios from "axios";
 export default {
   components: {
     Navigator,
   },
-  data() {
-    return {
-      futures: [],
-    };
-  },
-  async created() {
-    try {
-      const resp = await axios.get(`http://localhost:3000/futures`);
-      this.futures = resp.data;
-    } catch (e) {
-      console.error(e);
-    }
-  },
+  
 };
 </script>
 

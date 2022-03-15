@@ -24,12 +24,10 @@
 
   <!-- Modal for adding here -->
   <AddTask />
-  <EditTask />
 
   <div class="container-fluid">
     <div class="row no-gutters justify-content-center">
-      <div class="col-lg-2" >
-        <!-- v-for="post of posts" :key="post.id" -->
+      <!-- <div class="col-lg-2" v-for="task of tasks" :key="task.id">
         <div class="tsk01 shadow-sm">
           <div class="card-head">
             <div class="btn-group">
@@ -49,32 +47,18 @@
                   done
                 </div>
 
-                   <button
-            type="button"
-            class="btn-addtask shadow-sm"
-            data-bs-toggle="modal"
-            data-bs-target="#exampleModal"
-          >
-            <span class="material-icons">add</span>
-          </button>
-                <div
-                  class="material-icons close"
-                  data-bs-toggle="modal fade"
-                  
-                >
-                  close
-                </div>
+                <div class="material-icons close">close</div>
               </div>
             </div>
           </div>
-          <h4>{{ post.id }}</h4>
-          <h6>{{ post.name }}</h6>
-          <p>{{ post.details }}</p>
-          <p>{{ post.date }}</p>
+          <h4>{{ task.id }}</h4>
+          <h6>{{ task.name }}</h6>
+          <p>{{ task.details }}</p>
+          <p>{{ task.date }}</p>
           <br />
           <div class="card-foot"></div>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>
@@ -83,7 +67,6 @@
 // @ serves as src alias
 import Navigator from "@/components/Navigator.vue";
 import AddTask from "@/components/AddTask.vue";
-import EditTask from "@/components/EditTask.vue";
 // import axios from "axios";
 const baseURL = "http://localhost:3000/posts";
 export default {

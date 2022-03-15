@@ -43,10 +43,10 @@
                   placeholder="Due-Date"
                   required
                 />
-
                 <button type="submit" class="submit shadow-sm" @click="addTask">
                   Addtask
                 </button>
+                
               </form>
             </div>
             <div class="modal-footer"></div>
@@ -58,15 +58,16 @@
 </template>
 
 <script>
-import colref from "..firebase";
+import colref from "../firebase";
+src/firebase.js
 import { addDoc } from "firebase/firestore";
 
 export default {
   name: "AddTask",
-  
+
   data() {
     return {
-      posts: [],
+      tasks: [],
       taskName: null,
       dueDate: null,
       taskDetails: null,
