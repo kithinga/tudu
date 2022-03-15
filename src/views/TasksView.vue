@@ -21,19 +21,15 @@
       </div>
     </div>
   </div>
-  
-   <!-- Modal for adding here -->
-   <AddTask />
+
+  <!-- Modal for adding here -->
+  <AddTask />
+  <EditTask />
 
   <div class="container-fluid">
     <div class="row no-gutters justify-content-center">
       <div class="col-lg-2" v-for="post of posts" :key="post.id">
         <div class="tsk01 shadow-sm">
-          <!-- Close task func -->
-          <div class="material-icons close" @click="deleteTask(post.id)">
-            close
-          </div>
-
           <div class="card-head">
             <div class="btn-group">
               <button
@@ -51,12 +47,21 @@
                 >
                   done
                 </div>
+
+                   <button
+            type="button"
+            class="btn-addtask shadow-sm"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            <span class="material-icons">add</span>
+          </button>
                 <div
-                  class="material-icons edit"
-                  data-bs-toggle="tooltip"
-                  title="Edit"
+                  class="material-icons close"
+                  data-bs-toggle="modal fade"
+                  
                 >
-                  edit
+                  close
                 </div>
               </div>
             </div>
@@ -77,12 +82,14 @@
 // @ serves as src alias
 import Navigator from "@/components/Navigator.vue";
 import AddTask from "@/components/AddTask.vue";
+import EditTask from "@/components/EditTask.vue";
 import axios from "axios";
 const baseURL = "http://localhost:3000/posts";
 export default {
   components: {
     Navigator,
     AddTask,
+    EditTask,
   },
 
   data() {
@@ -97,15 +104,6 @@ export default {
         console.warn(result);
         this.posts = result.data;
       });
-    },
-    // Delete Post
-    deleteProduct(id) {
-      this.axios
-        .delete(`http://localhost:3000/posts/${id}`)
-        .then((response) => {
-          let i = this.products.map((data) => data.id).indexOf(id);
-          this.products.splice(i, 1);
-        });
     },
   },
   mounted() {

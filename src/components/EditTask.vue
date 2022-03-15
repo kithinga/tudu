@@ -3,7 +3,7 @@
     <div class="row no-gutters">
       <!-- Modal just laying around -->
       <div
-        class="modal fade"
+        class="modal  fade"
         id="exampleModal"
         tabindex="-1"
         aria-labelledby="exampleModalLabel"
@@ -13,7 +13,7 @@
           <div class="modal-content">
             <div class="modal-header">
               <h6 class="modal-title" id="exampleModalLabel">
-                <span class="material-icons syi">task</span>Tasks Add tasks
+                <span class="material-icons syi">task</span>Edit  tasks
               </h6>
             </div>
             <div class="modal-body">
@@ -44,7 +44,7 @@
                   required
                 />
 
-                <button type="submit" class="submit shadow-sm" @click="addTask">
+                <button type="submit" class="submit shadow-sm" @click="EditTask">
                   Addtask
                 </button>
               </form>
@@ -58,17 +58,7 @@
 </template>
 
 <script>
-import colref from "..firebase";
-import { addDoc } from "firebase/firestore";
-
 export default {
-  name: "AddTask",
-  data() {
-    return {
-      name: null,
-      dueDate: null,
-      taskDetails: null,
-    };
-  },
-};
+    name: 'EditTask',
+}
 </script>

@@ -1,14 +1,15 @@
 {
   "posts": [
     {
-      "name": "",
-      "details": {},
+      
+      "name": "sad",
+      "details": "sad",
       "date": "2022-03-14",
       "id": "dBNHU_A"
     },
     {
-      "name": "sad",
-      "details": "sad",
+      "name": "sadxc",
+      "details": "sadcx",
       "date": "2022-03-14",
       "id": "IKkdyjq"
     }
