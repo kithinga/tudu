@@ -42,7 +42,6 @@
             <label for="name">Task title</label><br />
             <input
               type="text"
-              name="name"
               id="name"
               v-model="taskName"
               placeholder="Task title"
@@ -52,7 +51,6 @@
             <input
               type="text"
               id="details"
-              name="details"
               v-model="taskDetails"
               placeholder="Details"
               required
@@ -60,8 +58,6 @@
             <label for="date">Date</label><br />
             <input
               type="date"
-              id="date"
-              name="date"
               v-model="taskDate"
               placeholder="Due-Date"
               required
@@ -81,9 +77,9 @@
       <div class="col-lg-2" v-for="post of posts" :key="post.id">
         <div class="tsk01 shadow-sm">
           <!-- Close task func -->
-          <button class="material-icons close" @click="deleteTask">
+          <div class="material-icons close" @click="deleteTask(post.id)">
             close
-          </button>
+          </div>
 
           <div class="card-head">
             <div class="btn-group">
@@ -148,14 +144,14 @@ export default {
       });
     },
     // Delete Post
-    async deleteTask(id){
-      if(confirm("Are you sure you want to delete")){
-        const res = await fetch(`http://localhost:3000/posts/${id}`,{
-          method: 'DELETE'
-        })
-        res.status == 200 ? (this.posts = this.posts.filter((post) => post.id !== id)) :alert("Error deleting task")
-      }
-    }
+    deleteProduct(id) {
+      this.axios
+        .delete(`http://localhost:3000/posts/${id}`)
+        .then((response) => {
+          let i = this.products.map((data) => data.id).indexOf(id);
+          this.products.splice(i, 1);
+        });
+    },
   },
   mounted() {
     this.getPosts();
