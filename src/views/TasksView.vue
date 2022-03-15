@@ -21,56 +21,9 @@
       </div>
     </div>
   </div>
-
-  <!-- Modal just laying around -->
-  <div
-    class="modal fade"
-    id="exampleModal"
-    tabindex="-1"
-    aria-labelledby="exampleModalLabel"
-    aria-hidden="true"
-  >
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h6 class="modal-title" id="exampleModalLabel">
-            <span class="material-icons syi">task</span>Tasks Add tasks
-          </h6>
-        </div>
-        <div class="modal-body">
-          <form class="task-form" autocomplete="off">
-            <label for="name">Task title</label><br />
-            <input
-              type="text"
-              id="name"
-              v-model="taskName"
-              placeholder="Task title"
-              required
-            /><br />
-            <label for="details">Details</label><br />
-            <input
-              type="text"
-              id="details"
-              v-model="taskDetails"
-              placeholder="Details"
-              required
-            />
-            <label for="date">Date</label><br />
-            <input
-              type="date"
-              v-model="taskDate"
-              placeholder="Due-Date"
-              required
-            />
-            <button type="submit" class="submit shadow-sm" @click="addTask">
-              Addtask
-            </button>
-          </form>
-        </div>
-        <div class="modal-footer"></div>
-      </div>
-    </div>
-  </div>
+  
+   <!-- Modal for adding here -->
+   <AddTask />
 
   <div class="container-fluid">
     <div class="row no-gutters justify-content-center">
@@ -123,11 +76,13 @@
 <script>
 // @ serves as src alias
 import Navigator from "@/components/Navigator.vue";
+import AddTask from "@/components/AddTask.vue";
 import axios from "axios";
 const baseURL = "http://localhost:3000/posts";
 export default {
   components: {
     Navigator,
+    AddTask,
   },
 
   data() {
