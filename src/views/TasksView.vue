@@ -33,7 +33,7 @@
           <h6>{{ task.name }}</h6>
           <p>{{ task.details }}</p>
           <br>
-          <text class="date-d"> <span class="alarm">Due -</span>{{ task.date }}</text>
+          <text class="date-d   "> <span class="alarm">Due -</span>{{ task.date }}</text>
           <div class="card-foot"></div>
         </div>
       </div>
