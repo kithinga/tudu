@@ -17,12 +17,13 @@
               </h6>
             </div>
             <div class="modal-body">
-              <form class="task-form" action="#" autocomplete="off">
+              <form class="task-form" 
+               autocomplete="off" @submit.prevent="addTask">
                 <label for="name">Task title</label><br />
                 <input
                   type="text"
                   id="name"
-                  v-model="taskName"
+                  v-model="name"
                   placeholder="Task title"
                   required
                 /><br />
@@ -31,7 +32,7 @@
                 <input
                   type="text"
                   id="details"
-                  v-model="taskDetails"
+                  v-model="details"
                   placeholder="Details"
                   required
                 />
@@ -39,11 +40,11 @@
                 <label for="date">Date</label><br />
                 <input
                   type="date"
-                  v-model="dueDate"
+                  v-model="date"
                   placeholder="Due-Date"
                   required
                 />
-                <button type="submit" class="submit shadow-sm" @click="addTask">
+                <button type="submit" class="submit shadow-sm" >
                   Addtask
                 </button>
                 
@@ -67,9 +68,9 @@ export default {
   data() {
     return {
       tasks: [],
-      taskName: null,
-      dueDate: null,
-      taskDetails: null,
+      name: null,
+      date: null,
+      details: null,
     };
 
   },

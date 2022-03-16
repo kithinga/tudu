@@ -27,38 +27,15 @@
 
   <div class="container-fluid">
     <div class="row no-gutters justify-content-center">
-      <!-- <div class="col-lg-2" v-for="task of tasks" :key="task.id">
+      <div class="col-lg-2" v-for="task of tasks" :key="task.id">
         <div class="tsk01 shadow-sm">
-          <div class="card-head">
-            <div class="btn-group">
-              <button
-                class="btn"
-                id="dropdownMenuClickableInside"
-                data-bs-toggle="dropdown"
-              >
-                <div class="material-icons ver">more_vert</div>
-              </button>
-              <div class="dropdown-menu shadow-sm">
-                <div
-                  class="material-icons done"
-                  data-bs-toggle="tooltip"
-                  title="done"
-                >
-                  done
-                </div>
-
-                <div class="material-icons close">close</div>
-              </div>
-            </div>
-          </div>
           <h4>{{ task.id }}</h4>
           <h6>{{ task.name }}</h6>
           <p>{{ task.details }}</p>
           <p>{{ task.date }}</p>
-          <br />
           <div class="card-foot"></div>
         </div>
-      </div> -->
+      </div>
     </div>
   </div>
 </template>
@@ -67,12 +44,32 @@
 // @ serves as src alias
 import Navigator from "@/components/Navigator.vue";
 import AddTask from "@/components/AddTask.vue";
+import colref from "../firebase";
+import { getDocs } from "firebase/firestore";
 // import axios from "axios";
-const baseURL = "http://localhost:3000/posts";
 export default {
   components: {
     Navigator,
     AddTask,
+  },
+  data() {
+    return {
+      tasks: [],
+    };
+  },
+  methods: {
+    // Fetching Data from database
+    async fetchTasks() {
+      let tasksSnapShot = await getDocs(colref);
+      let tasks = [];
+      tasksSnapShot.forEach((task) => {
+        tasks.push(task.data());
+      });
+      this.tasks = tasks;
+    },
+  },
+  created() {
+    this.fetchTasks();
   },
 };
 </script>
