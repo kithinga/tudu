@@ -47,6 +47,7 @@
                 >
                   done
                 </div>
+                <div class="material-icons edit">edit</div>
                 <div class="material-icons close">close</div>
               </div>
             </div>

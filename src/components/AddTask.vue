@@ -29,7 +29,7 @@
                 /><br />
 
                 <label for="details">Details</label><br />
-                <input
+                <textarea
                   type="text"
                   id="details"
                   v-model="details"
@@ -44,7 +44,7 @@
                   placeholder="Due-Date"
                   required
                 />
-                <button type="submit" class="submit shadow-sm" >
+                <button type="submit" class="submit shadow-sm" @click="addTask" >
                   Addtask
                 </button>
                 
@@ -80,6 +80,6 @@ export default {
       const addedDoc = await addDoc(colref, this.$data);
       console.log(addedDoc);
     }
-  }
+  },
 };
 </script>
