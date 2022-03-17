@@ -28,7 +28,29 @@
   <div class="container-fluid">
     <div class="row no-gutters justify-content-center">
       <div class="col-lg-2" v-for="task of tasks" :key="task.id">
+         <!-- Drop down for editing -->
         <div class="tsk01 shadow-sm">
+           <div class="card-head">
+            <div class="btn-group">
+              <button
+                class="btn"
+                id="dropdownMenuClickableInside"
+                data-bs-toggle="dropdown"
+              >
+                <div class="material-icons ver">more_vert</div>
+              </button>
+              <div class="dropdown-menu shadow-sm">
+                <div
+                  class="material-icons done"
+                  data-bs-toggle="tooltip"
+                  title="done"
+                >
+                  done
+                </div>
+                <div class="material-icons close">close</div>
+              </div>
+            </div>
+          </div>
           <h4>{{ task.id }}</h4>
           <h6>{{ task.name }}</h6>
           <p>{{ task.details }}</p>

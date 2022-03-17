@@ -38,7 +38,7 @@
     min-height:4rem;
     border: solid 1px rgb(234, 240, 240);    
     border-radius:0.4rem;
-    padding: 1rem;
+    /* padding: 1rem; */
     font-size:12px;
     margin-top: 0.5rem;
     text-align:left; 
