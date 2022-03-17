@@ -18,7 +18,7 @@
             </div>
             <div class="modal-body">
               <form class="task-form" 
-               autocomplete="off" @submit.prevent="addTask">
+               autocomplete="off">
                 <label for="name">Task title</label><br />
                 <input
                   type="text"
@@ -29,7 +29,7 @@
                 /><br />
 
                 <label for="details">Details</label><br />
-                <textarea
+                <input
                   type="text"
                   id="details"
                   v-model="details"
@@ -44,7 +44,7 @@
                   placeholder="Due-Date"
                   required
                 />
-                <button type="submit" class="submit shadow-sm" @click="addTask" >
+                <button type="submit" class="submit shadow-sm" >
                   Addtask
                 </button>
                 
@@ -80,6 +80,6 @@ export default {
       const addedDoc = await addDoc(colref, this.$data);
       console.log(addedDoc);
     }
-  },
+  }
 };
 </script>

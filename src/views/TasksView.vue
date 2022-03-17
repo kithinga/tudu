@@ -24,13 +24,15 @@
 
   <!-- Modal for adding here -->
   <AddTask />
+  <!-- Modal to edit -->
+  <EditTask />
 
   <div class="container-fluid">
     <div class="row no-gutters justify-content-center">
       <div class="col-lg-2" v-for="task of tasks" :key="task.id">
-         <!-- Drop down for editing -->
+        <!-- Drop down for editing -->
         <div class="tsk01 shadow-sm">
-           <div class="card-head">
+          <div class="card-head">
             <div class="btn-group">
               <button
                 class="btn"
@@ -48,6 +50,14 @@
                   done
                 </div>
                 <div class="material-icons edit">edit</div>
+                <button
+                  type="button"
+                  class="btn-addtask shadow-sm"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal01"
+                >
+                  <span class="material-icons">edit</span>
+                </button>
                 <div class="material-icons close">close</div>
               </div>
             </div>
@@ -55,8 +65,10 @@
           <h4>{{ task.id }}</h4>
           <h6>{{ task.name }}</h6>
           <p>{{ task.details }}</p>
-          <br>
-          <text class="date-d   "> <span class="alarm">Due -</span>{{ task.date }}</text>
+          <br />
+          <text class="date-d">
+            <span class="alarm">Due -</span>{{ task.date }}</text
+          >
           <div class="card-foot"></div>
         </div>
       </div>
@@ -68,6 +80,7 @@
 // @ serves as src alias
 import Navigator from "@/components/Navigator.vue";
 import AddTask from "@/components/AddTask.vue";
+import EditTask from "@/components/EditTask.vue";
 import colref from "../firebase";
 import { getDocs } from "firebase/firestore";
 // import axios from "axios";
@@ -75,6 +88,7 @@ export default {
   components: {
     Navigator,
     AddTask,
+    EditTask,
   },
   data() {
     return {
