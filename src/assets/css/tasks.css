@@ -26,6 +26,11 @@
     width:3.5rem;
     text-align: center;
 }
+.btn-edittask{
+    text-align: center;
+    margin-left:0.5rem;
+    margin-right:0.4rem;
+}
 
 .tihead{
     color: rgb(129, 118, 209);

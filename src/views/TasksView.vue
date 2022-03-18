@@ -45,20 +45,20 @@
                 <div
                   class="material-icons done"
                   data-bs-toggle="tooltip"
-                  title="done"
+                  title="Done"
                 >
                   done
                 </div>
-                <div class="material-icons edit">edit</div>
-                <button
+                <span
                   type="button"
-                  class="btn-addtask shadow-sm"
+                  class="btn-edittask  material-icons "
                   data-bs-toggle="modal"
+                  title="Edit"
                   data-bs-target="#exampleModal01"
                 >
-                  <span class="material-icons">edit</span>
-                </button>
-                <div class="material-icons close">close</div>
+                 edit
+                </span>
+                <div class="material-icons close" title="Close" @click="deletetask">close</div>
               </div>
             </div>
           </div>
@@ -105,9 +105,18 @@ export default {
       });
       this.tasks = tasks;
     },
+    // delete task
+    async deleteTask(){
+        swal({
+  title: "Good job!",
+  text: "You clicked the button!",
+  icon: "success",
+});
+    }
   },
   created() {
     this.fetchTasks();
+
   },
 };
 </script>
