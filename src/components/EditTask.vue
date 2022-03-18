@@ -61,10 +61,47 @@
 </template>
 
 <script>
+import {colref} from "../firebase"
+import { getDoc } from "firebase/firestore";
 export default {
   name: "EditTask",
+
+
+
+  data(){
+    return{
+      selectedTask:{},
+      taskId:null,
+    }
+  },
+  methods:{
+         getTask(){
+
+         }
+  }
 };
+
 </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <style scoped>
@@ -74,6 +111,11 @@ export default {
   font-size: 16.5px;
   border-bottom: 2px solid rgb(250, 250, 250);
 
+}
+
+.modal-body{
+  padding-top:0;
+  margin-top:0;
 }
 
 .syi {
@@ -186,16 +228,16 @@ button {
 }
 
 .close {
-  color: rgb(197, 101, 64);
+  color: rgb(226, 152, 103);
   font-weight: 500;
 }
 .edit {
-  color: rgb(76, 122, 173);
+  color: rgb(38, 121, 146);
 }
 .ver {
   color: rgb(146, 138, 156);
 }
 .done {
-  color: rgb(94, 64, 128);
+  color: rgb(162, 125, 204);
 }
 </style>

@@ -113,7 +113,7 @@
 }
 .modal-body{
     background-color:rgb(254, 254, 255);    
-    min-height: 30vh;
+    min-height: 27vh;
     /* background-color:rgb(grey) */
    padding-right:2.5rem;    
    padding-left: 2.5rem;
@@ -218,16 +218,16 @@ padding:1rem;
   
 }
 
-.close{
-    color: rgb(197, 101, 64);
+.close{ 
+    color: rgb(231, 154, 90);
     font-weight:500;
 }
 .edit{
-    color:rgb(76, 122, 173);
+    color:rgb(32, 143, 163);
 }
 .ver{
     color: rgb(146, 138, 156);
 }
 .done{
-    color: rgb(94, 64, 128);
+    color: rgb(126, 95, 161);
 }

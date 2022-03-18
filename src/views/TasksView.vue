@@ -52,7 +52,7 @@
                 </div>
                 <span
                   type="button"
-                  class="btn-edittask material-icons"
+                  class="btn-edittask edit material-icons"
                   data-bs-toggle="modal"
                   title="Edit"
                   data-bs-target="#exampleModal01"
