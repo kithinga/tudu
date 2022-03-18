@@ -69,7 +69,7 @@
               </div>
             </div>
           </div>
-          <h4>{{ task.id }}</h4>
+          <!-- <h4>{{ task.id }}</h4> -->
           <h6>{{ task.name }}</h6>
           <p>{{ task.details }}</p>
           <br />

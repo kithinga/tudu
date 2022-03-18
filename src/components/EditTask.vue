@@ -18,7 +18,8 @@
             </div>
             <div class="modal-body">
               <form class="task-form" autocomplete="off">
-                <label for="name">Task title</label><br />
+                <br>
+                <!-- <label for="name">Task title</label><br /> -->
                 <input
                   type="text"
                   id="name"
@@ -27,7 +28,8 @@
                   required
                 /><br />
 
-                <label for="details">Details</label><br />
+                <!-- <label for="details">Details</label><br /> -->
+              
                 <input
                   type="text"
                   id="details"
@@ -35,16 +37,19 @@
                   placeholder="Details"
                   required
                 />
-
-                <label for="date">Date</label><br />
+             
+                <!-- <label for="date">Date</label><br /> -->
+             
                 <input
                   type="date"
                   v-model="dueDate"
                   placeholder="Due-Date"
                   required
+                  class="date"
                 />
-                <button type="submit" class="submit shadow-sm" @click="editTask">
-                  Edittask
+               
+                <button type="submit" class="submit" @click="editTask">
+                <span class="material-icons">update</span> Update
                 </button>
               </form>
             </div>
@@ -66,16 +71,23 @@ export default {
 <style scoped>
      .task-form{
     text-align:left;
+     border: 1px solid rgb(233, 233, 240);
+  padding:1.5rem;
+  border-radius: 4px;
 }
 
-
+.date{
+  /* color: red; */
+  font-size:12px;
+}
 .task-form input{
     border: none;
-    height:2.8rem;
+    min-height:3rem;
     width:100%;
-    /* border-radius:4px; */
+    border-radius:2px;
     padding-left: 1.7rem;
-    border-bottom: solid 2px rgb(217, 215, 224);
+    font-size: 17px;
+    /* border: solid 0.8px rgb(240, 239, 245); */
 }
 
 .task-form textarea{
@@ -115,11 +127,11 @@ textarea:focus{
 }
 .submit{
     font-size:13px;
-    color: rgb(253, 253, 253);
-    border: solid 1px rgb(255, 255, 255);
-    background-color:rgb(109, 107, 221);
+    color: rgb(113, 97, 187);
+    border: solid 1.3px rgb(198, 198, 247);
+    background-color:rgb(255, 255, 255);
     margin-top:2rem;
-    border-radius:20px;
+    border-radius:1.3rem;
     width:7rem;
     font-weight: 500;
     height:2.8rem;
@@ -172,4 +184,7 @@ padding:1rem;
 .done{
     color: rgb(94, 64, 128);
 }
+
+
+
 </style>
