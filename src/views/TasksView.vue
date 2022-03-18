@@ -1,6 +1,6 @@
 <template>
   <Navigator />
-
+ 
   <div class="container-fluid">
     <div class="row no-gutters checker">
       <div class="col-lg-6">
@@ -46,19 +46,26 @@
                   class="material-icons done"
                   data-bs-toggle="tooltip"
                   title="Done"
+                  @click="doneTask"
                 >
                   done
                 </div>
                 <span
                   type="button"
-                  class="btn-edittask  material-icons "
+                  class="btn-edittask material-icons"
                   data-bs-toggle="modal"
                   title="Edit"
                   data-bs-target="#exampleModal01"
                 >
-                 edit
+                  edit
                 </span>
-                <div class="material-icons close" title="Close" @click="deletetask">close</div>
+                <div
+                  class="material-icons close"
+                  title="Close"
+                  @click="deleteTask"
+                >
+                  close
+                </div>
               </div>
             </div>
           </div>
@@ -83,6 +90,7 @@ import AddTask from "@/components/AddTask.vue";
 import EditTask from "@/components/EditTask.vue";
 import colref from "../firebase";
 import { getDocs } from "firebase/firestore";
+import { doc, deleteDoc } from "firebase/firestore";
 // import axios from "axios";
 export default {
   components: {
@@ -101,22 +109,26 @@ export default {
       let tasksSnapShot = await getDocs(colref);
       let tasks = [];
       tasksSnapShot.forEach((task) => {
-        tasks.push(task.data());
+        let taskData = task.data();
+        taskData.id = task.id;
+        tasks.push(taskData);
+       
       });
+      console.log(tasks)
       this.tasks = tasks;
     },
     // delete task
-    async deleteTask(){
-        swal({
-  title: "Good job!",
-  text: "You clicked the button!",
-  icon: "success",
-});
-    }
+    async deleteTask() {
+      
+      swal("Task deleted success  . .. ");
+    },
+    // Mark task done
+    async doneTask() {
+      swal("Congrats..! task is completed");
+    },
   },
   created() {
     this.fetchTasks();
-
   },
 };
 </script>

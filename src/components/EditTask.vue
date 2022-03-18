@@ -64,5 +64,112 @@ export default {
 
 
 <style scoped>
-     
+     .task-form{
+    text-align:left;
+}
+
+
+.task-form input{
+    border: none;
+    height:2.8rem;
+    width:100%;
+    /* border-radius:4px; */
+    padding-left: 1.7rem;
+    border-bottom: solid 2px rgb(217, 215, 224);
+}
+
+.task-form textarea{
+    min-height:4.4rem;
+    height:auto;
+    width:100%;
+    border-radius:4px;
+    padding-left: 1.7rem;
+    border: solid 1px rgb(217, 215, 224);
+    padding-top: 1rem;
+}
+input:focus{
+
+    outline: none;
+    border: solid 2px rgb(197, 183, 235);
+  }
+textarea:focus{
+
+    outline: none;
+    border: solid 2px rgb(190, 178, 221);
+  }
+
+
+#date,#name,#details{
+    font-weight:400;
+    font-size:11px;
+    color: rgb(91, 78, 204);
+}
+
+
+.task-form label{
+    text-align:left;
+    font-size:13px;
+    font-weight:500;
+    color: rgb(109, 114, 177);
+    margin-top:1.3rem;
+}
+.submit{
+    font-size:13px;
+    color: rgb(253, 253, 253);
+    border: solid 1px rgb(255, 255, 255);
+    background-color:rgb(109, 107, 221);
+    margin-top:2rem;
+    border-radius:20px;
+    width:7rem;
+    font-weight: 500;
+    height:2.8rem;
+}
+.btn-group{
+    /* background-color:rgb(109, 109, 179); */
+    padding:0;
+    margin: 0;
+    border-radius: 4px;
+    border-bottom-left-radius:0.7rem;
+   /* border: solid 1px rgb(243, 241, 253); */
+}
+
+button{
+    outline: none;
+}
+
+.card-head{
+    color: rgb(197, 190, 190);
+    border-radius:20px;
+    text-align:right;
+    /* background-color:rgb(250, 249, 253); */
+}
+
+.dropdown-menu{
+/* background-color:red;     */
+background-color: rgb(253, 253, 255);
+border          : solid 1px rgb(233, 232, 236);    
+padding:1rem;
+}
+.done,.edit,.close{
+  margin:0.55rem;
+  cursor: pointer;
+}
+.done:hover,.edit:hover,.close:hover{
+  transform:scale(1.4);
+  
+}
+
+.close{
+    color: rgb(197, 101, 64);
+    font-weight:500;
+}
+.edit{
+    color:rgb(76, 122, 173);
+}
+.ver{
+    color: rgb(146, 138, 156);
+}
+.done{
+    color: rgb(94, 64, 128);
+}
 </style>
