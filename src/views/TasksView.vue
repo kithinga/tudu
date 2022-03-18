@@ -55,6 +55,7 @@
                   class="btn-edittask edit material-icons"
                   data-bs-toggle="modal"
                   title="Edit"
+                  @click="editTask"
                   data-bs-target="#exampleModal01"
                 >
                   edit

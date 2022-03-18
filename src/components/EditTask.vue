@@ -22,17 +22,17 @@
                 <input
                   type="text"
                   id="name"
-                  v-model="taskName"
+                  v-model="name"
                   placeholder="Task title"
                   required
                 /><br />
 
                 <!-- <label for="details">Details</label> -->
 
-                <input
+                <textarea
                   type="text"
                   id="details"
-                  v-model="taskDetails"
+                  v-model="details"
                   placeholder="Details"
                   required
                 />
@@ -41,7 +41,7 @@
 
                 <input
                   type="date"
-                  v-model="dueDate"
+                  v-model="date"
                   placeholder="Due-Date"
                   required
                   class="date"
@@ -61,41 +61,40 @@
 </template>
 
 <script>
-import {colref} from "../firebase"
-import { getDoc } from "firebase/firestore";
+import { colref } from "../firebase";
+import { getDoc, doc } from "firebase/firestore";
 export default {
   name: "EditTask",
 
-
-
-  data(){
-    return{
-      selectedTask:{},
-      taskId:null,
+  data() {
+    return {
+      selectedTask: {},
+      taskId: null,
+      docRef: null,
+      name: null,
+      details: null,
+      date: null,
+    };
+  },
+  methods: {
+    async editTask() {
+      let taskRef = doc(colref, this.taskId);
+      this.docRef = taskRef;
+      let task = await getDoc(this.docRef);
+      let taskData = task.data();
+      this.name = taskData.name;
+      this.details = taskData.details;
+      this.date = taskData.date;
     }
   },
-  methods:{
-         getTask(){
-
-         }
-  }
+  created() {
+    // Pass cityid to acces points
+    let taskId = this.$route.params.taskId;
+    this.taskId = taskId;  
+    this.getTask();
+  },
 };
-
 </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -110,12 +109,11 @@ export default {
   font-weight: 700;
   font-size: 16.5px;
   border-bottom: 2px solid rgb(250, 250, 250);
-
 }
 
-.modal-body{
-  padding-top:0;
-  margin-top:0;
+.modal-body {
+  padding-top: 0;
+  margin-top: 0;
 }
 
 .syi {
@@ -149,10 +147,11 @@ export default {
   min-height: 4.4rem;
   height: auto;
   width: 100%;
-  border-radius: 4px;
+  /* border-radius: 4px; */
   padding-left: 1.7rem;
-  border: solid 1px rgb(217, 215, 224);
-  padding-top: 1rem;
+  border: none;
+   border-bottom: solid 2px rgb(240, 239, 245);
+  padding-top: 2rem;
 }
 input:focus {
   outline: none;
@@ -160,7 +159,7 @@ input:focus {
 }
 textarea:focus {
   outline: none;
-  border: solid 2px rgb(190, 178, 221);
+  border-bottom: solid 2px rgb(178, 182, 236);
 }
 
 #date,
