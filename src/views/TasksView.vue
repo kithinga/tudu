@@ -1,105 +1,104 @@
 <template>
   <Navigator />
-   
-   <div class="container-fluid">
-     <div class="row no-gutters">
-<!-- Decoy div not needed anyway -->
-       <div class="col-md-2"></div>
-
-       <div class="col-md-8">
-<div class="container-fluid">
-    <div class="row no-gutters checker">
-      <div class="col-lg-6">
-        <div class="tid-task"><h4 class="tihead">Tasks</h4></div>
-      </div>
-      <div class="col-lg-6">
-        <div class="tid-btn">
-          <!-- Button to trigger modal -->
-          <button
-            type="button"
-            class="btn-addtask"
-            data-bs-toggle="modal"
-            data-bs-target="#exampleModal"
-          >
-            <p class="addsi"><span class="material-icons">add</span>
-            Add-task</p>
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal for adding here -->
-  <AddTask />
-  <!-- Modal to edit -->
-  <!-- <EditTask /> -->
 
   <div class="container-fluid">
-    <div class="row no-gutters justify-content-center">
-      <div class="col-lg-3" v-for="task of tasks" :key="task.id">
-        <!-- Drop down for editing -->
-        <div class="tsk01 shadow-sm">
-          <div class="card-head">
-            <div class="btn-group">
-              <button
-                class="btn"
-                id="dropdownMenuClickableInside"
-                data-bs-toggle="dropdown"
-              >
-                <div class="material-icons ver">more_vert</div>
-              </button>
-              <div class="dropdown-menu shadow-sm">
-                <div
-                  class="material-icons done"
-                  data-bs-toggle="tooltip"
-                  title="Done"
-                  @click="doneTask"
-                >
-                  done
-                </div>
+    <div class="row no-gutters">
+      <!-- Decoy div not needed anyway -->
+      <div class="col-md-2"></div>
 
-                <router-link to="/edittask">
-                  <span
+      <div class="col-md-8">
+        <div class="container-fluid">
+          <div class="row no-gutters checker">
+            <div class="col-lg-6">
+              <div class="tid-task"><h4 class="tihead">Tasks</h4></div>
+            </div>
+            <div class="col-lg-6">
+              <div class="tid-btn">
+                <!-- Button to trigger modal -->
+                <button
                   type="button"
-                  class="btn-edittask edit material-icons"
+                  class="btn-addtask"
                   data-bs-toggle="modal"
-                  title="Edit"
-                  @click="editTask"
-                  data-bs-target="#exampleModal01"
+                  data-bs-target="#exampleModal"
                 >
-                  edit
-                </span>
-                </router-link>
-
-                <div
-                  class="material-icons close"
-                  title="Close"
-                  @click="deleteTask"
-                >
-                  close
-                </div>
+                  <p class="addsi">
+                    <span class="material-icons">add</span> Add-task
+                  </p>
+                </button>
               </div>
             </div>
           </div>
-          <!-- <h4>{{ task.id }}</h4> -->
-          <h6>{{ task.name }}</h6>
-          <p>{{ task.details }}</p>
-          <br />
-          <text class="date-d">
-            <span class="alarm">Due -</span>{{ task.date }}</text
-          >
-          <div class="card-foot"></div>
+        </div>
+
+        <!-- Modal for adding here -->
+        <AddTask />
+        <!-- Modal to edit -->
+        <!-- <EditTask /> -->
+
+        <div class="container-fluid">
+          <div class="row no-gutters justify-content-center">
+            <div class="col-lg-3" v-for="task of tasks" :key="task.id">
+              <!-- Drop down for editing -->
+              <div class="tsk01 shadow-sm">
+                <div class="card-head">
+                  <div class="btn-group">
+                    <button
+                      class="btn"
+                      id="dropdownMenuClickableInside"
+                      data-bs-toggle="dropdown"
+                    >
+                      <div class="material-icons ver">more_vert</div>
+                    </button>
+                    <div class="dropdown-menu shadow-sm">
+                      <div
+                        class="material-icons done"
+                        data-bs-toggle="tooltip"
+                        title="Done"
+                        @click="doneTask"
+                      >
+                        done
+                      </div>
+
+                      <router-link :to="{path: `/edittask/${task.id}`}">
+                        <span
+                          type="button"
+                          class="btn-edittask edit material-icons"
+                          data-bs-toggle="modal"
+                          title="Edit"
+                          @click="editTask"
+                          data-bs-target="#exampleModal01"
+                        >
+                          edit
+                        </span>
+                      </router-link>
+
+                      <div
+                        class="material-icons close"
+                        title="Close"
+                        @click="deleteTask"
+                      >
+                        close
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- <h4>{{ task.id }}</h4> -->
+                <h6>{{ task.name }}</h6>
+                <p>{{ task.details }}</p>
+                <br />
+                <text class="date-d">
+                  <span class="alarm">Due -</span>{{ task.date }}</text
+                >
+                <div class="card-foot"></div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+      <!-- decoy div, aslo not needed -->
+      <div class="col-md-2"></div>
     </div>
   </div>
-       </div>
-<!-- decoy div, aslo not needed -->
-       <div class="col-md-2"></div>
-
-     </div>
-   </div>
-  
 </template>
 
 <script>
@@ -138,13 +137,12 @@ export default {
         let taskData = task.data();
         taskData.id = task.id;
         tasks.push(taskData);
-       
       });
-      console.log(tasks)
+      console.log(tasks);
       this.tasks = tasks;
     },
-    // Update task 
-     async editTask() {
+    // Update task
+    async editTask() {
       let taskRef = doc(colref, this.taskId);
       this.docRef = taskRef;
       let task = await getDoc(this.docRef);
@@ -153,13 +151,10 @@ export default {
       this.name = taskData.name;
       this.details = taskData.details;
       this.date = taskData.date;
+    },
 
-    },
-    
     // delete task
-    async deleteTask() {
-     
-    },
+    async deleteTask() {},
     // Mark task done
     async doneTask() {
       swal("Congrats..! task is completed");

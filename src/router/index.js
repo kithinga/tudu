@@ -38,7 +38,7 @@ const routes = [
 
   // Edit task route 
   {
-    path: '/edittask',
+    path: '/edittask/:taskId',
     name: 'edittask',
     component: EditTaskView
   },

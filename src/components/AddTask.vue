@@ -17,14 +17,17 @@
               </h6>
             </div>
             <div class="modal-body">
-              <form class="task-form" 
-               autocomplete="off">
+              <form
+                class="task-form"
+                @submit.prevent="addTask"
+                autocomplete="off"
+              >
                 <label for="name">Task title</label><br />
                 <input
                   type="text"
                   id="name"
-                  v-model="name"
                   placeholder="Task title"
+                  v-model="name"
                   required
                 /><br />
 
@@ -32,22 +35,19 @@
                 <input
                   type="text"
                   id="details"
-                  v-model="details"
                   placeholder="Details"
+                  v-model="details"
                   required
                 />
 
                 <label for="date">Date</label><br />
                 <input
                   type="date"
-                  v-model="date"
                   placeholder="Due-Date"
+                  v-model="date"
                   required
                 />
-                <button type="submit" class="submit shadow-sm" >
-                  Addtask
-                </button>
-                
+                <button type="submit" class="submit shadow-sm">Addtask</button>
               </form>
             </div>
             <div class="modal-footer"></div>
@@ -69,17 +69,29 @@ export default {
     return {
       tasks: [],
       name: null,
-      date: null,
       details: null,
+      date: null,
     };
-
   },
   methods: {
-    async addTask(){
+    async addTask() {
       console.log("creating a task");
       const addedDoc = await addDoc(colref, this.$data);
-      // console.log(addedDoc);
-    }
-  }
+      swal("Task created successfully");
+      swal(
+        {
+          title: "Success!",
+          text: "Redirecting in 2 seconds.",
+          type: "success",
+          timer: 2000,
+          showConfirmButton: false,
+        },
+        function () {
+          window.location.href = "tasks";
+        }
+      );
+      console.log(addedDoc);
+    },
+  },
 };
 </script>

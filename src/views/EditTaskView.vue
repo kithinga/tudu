@@ -6,8 +6,8 @@
        <div class="col-md-4">
            <div class="edit-form ">
            
-            <form class="task-form" autocomplete="off">
-                 <h4>Editing tasks</h4>
+            <form class="task-form" autocomplete="off" >
+                 <h4><span class="material-icons">edit </span> Edit task</h4>
                 <!-- <label for="name">Task title</label> -->
                 <input
                   type="text"
