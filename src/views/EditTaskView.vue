@@ -50,9 +50,39 @@
 
 <script>
 import { colref } from "../firebase";
-import { doc, getDoc } from "firebase/firestore";
+import { doc, getDoc} from "firebase/firestore";
 export default {
   name: "EditTask",
+
+  data(){
+    return {
+      selectedTask:{},
+      cityId: null,
+      docRef: null,
+      name: null,
+      details: null,
+      date: null,
+    }
+  },
+
+methods: {
+   async editTask() {
+      let taskRef = doc(colref, this.taskId);
+      this.docRef = taskRef;
+      let task = await getDoc(this.docRef);
+      console.log(task.data());
+      let taskData = task.data();
+      this.name = taskData.name;
+      this.details = taskData.details;
+      this.date = taskData.date;
+    },
+
+},
+created(){
+  let taskId = this.$route.params.taskId;
+  this.taskId = taskId;
+  this.editTask();
+}
 
 };
 </script>

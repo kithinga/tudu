@@ -120,12 +120,12 @@ export default {
   data() {
     return {
       tasks: [],
-      selectedTask: {},
+      // selectedTask: {},
       taskId: null,
-      docRef: null,
-      name: null,
-      details: null,
-      date: null,
+      // docRef: null,
+      // name: null,
+      // details: null,
+      // date: null,
     };
   },
   methods: {
@@ -142,16 +142,16 @@ export default {
       this.tasks = tasks;
     },
     // Update task
-    async editTask() {
-      let taskRef = doc(colref, this.taskId);
-      this.docRef = taskRef;
-      let task = await getDoc(this.docRef);
-      console.log(task.data());
-      let taskData = task.data();
-      this.name = taskData.name;
-      this.details = taskData.details;
-      this.date = taskData.date;
-    },
+    // async editTask() {
+    //   let taskRef = doc(colref, this.taskId);
+    //   this.docRef = taskRef;
+    //   let task = await getDoc(this.docRef);
+    //   console.log(task.data());
+    //   let taskData = task.data();
+    //   this.name = taskData.name;
+    //   this.details = taskData.details;
+    //   this.date = taskData.date;
+    // },
 
     // delete task
     async deleteTask() {},
@@ -160,11 +160,11 @@ export default {
       swal("Congrats..! task is completed");
     },
   },
-  created() {
-    this.fetchTasks();
-    let taskId = this.$route.params.taskId;
-    this.taskId = taskId;
-  },
+  // created() {
+  //   this.fetchTasks();
+  //   let taskId = this.$route.params.taskId;
+  //   this.taskId = taskId;
+  // },
 };
 </script>
 
