@@ -19,11 +19,13 @@
 }
 
 .btn-addtask{
-    border: solid 1px rgb(213, 213, 241);
+    border:none;
+    border-bottom: solid 2px rgb(173, 173, 211);
     background-color:rgb(255, 255, 255);
-    border-radius:1.3rem;
-    padding: 0.3rem;
-    width:3.5rem;
+    /* border-radius:1.3rem; */
+    padding-left: 0.5rem;
+    padding-right: 0.6rem;
+    min-width:6rem;
     text-align: center;
 }
 .btn-edittask{
@@ -125,6 +127,11 @@
 
 .task-form{
     text-align:left;
+}
+.addsi{
+    color: rgb(119, 106, 165);
+    font-size:12px;
+    font-weight:500;
 }
 
 

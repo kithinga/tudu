@@ -1,25 +1,13 @@
 <template>
   <div class="container-fluid">
-    <div class="row no-gutters">
-        fdgfdgdfg
+    <div class="row no-gutters ">
       <!-- Modal just laying around -->
-      <div
-      fdggd
-        class="modal fade"
-        id="exampleModal01"
-        tabindex="-1"
-        aria-labelledby="exampleModalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h6 class="modal-title" id="exampleModalLabel">
-                <span class="material-icons syi">edit</span>Edit tasks
-              </h6>
-            </div>
-            <div class="modal-body">
-              <form class="task-form" autocomplete="off">
+      <div class="col-md-4"></div>
+       <div class="col-md-4">
+           <div class="edit-form ">
+           
+            <form class="task-form" autocomplete="off">
+                 <h4>Editing tasks</h4>
                 <!-- <label for="name">Task title</label> -->
                 <input
                   type="text"
@@ -53,11 +41,9 @@
                   </button>
            
               </form>
-            </div>
-            <div class="modal-footer"></div>
-          </div>
-        </div>
-      </div>
+      </div>    
+       </div>
+       <div class="col-md-4"></div>
     </div>
   </div>
 </template>
@@ -80,6 +66,7 @@ export default {
   border-bottom: 2px solid rgb(250, 250, 250);
 }
 
+
 .modal-body {
   padding-top: 0;
   margin-top: 0;
@@ -94,8 +81,24 @@ export default {
   border-radius: 4px;
   border: 1px solid rgb(208, 206, 216);
 }
+.edit-form{
+    padding:2.4rem;
+    margin-top:2rem;
+    padding-top:2.4rem;
+    border: solid 1px rgb(229, 227, 243);
+    border-radius: 5px;
+    /* background-color: rgb(253, 253, 255); */
+    box-shadow:0px 4px 5px rgb(241, 240, 240);
+    
+}
 .task-form {
   text-align: left;
+}
+.task-form h4{
+    margin-bottom:1.3rem;
+    font-size:14px;
+    color:rgb(109, 111, 207);
+    font-weight:600;
 }
 
 .date {

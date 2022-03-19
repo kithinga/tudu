@@ -1,7 +1,13 @@
 <template>
   <Navigator />
- 
-  <div class="container-fluid">
+   
+   <div class="container-fluid">
+     <div class="row no-gutters">
+<!-- Decoy div not needed anyway -->
+       <div class="col-md-2"></div>
+
+       <div class="col-md-8">
+<div class="container-fluid">
     <div class="row no-gutters checker">
       <div class="col-lg-6">
         <div class="tid-task"><h4 class="tihead">Tasks</h4></div>
@@ -11,11 +17,12 @@
           <!-- Button to trigger modal -->
           <button
             type="button"
-            class="btn-addtask shadow-sm"
+            class="btn-addtask"
             data-bs-toggle="modal"
             data-bs-target="#exampleModal"
           >
-            <span class="material-icons">add</span>
+            <p class="addsi"><span class="material-icons">add</span>
+            Add-task</p>
           </button>
         </div>
       </div>
@@ -29,7 +36,7 @@
 
   <div class="container-fluid">
     <div class="row no-gutters justify-content-center">
-      <div class="col-lg-2" v-for="task of tasks" :key="task.id">
+      <div class="col-lg-3" v-for="task of tasks" :key="task.id">
         <!-- Drop down for editing -->
         <div class="tsk01 shadow-sm">
           <div class="card-head">
@@ -86,6 +93,13 @@
       </div>
     </div>
   </div>
+       </div>
+<!-- decoy div, aslo not needed -->
+       <div class="col-md-2"></div>
+
+     </div>
+   </div>
+  
 </template>
 
 <script>
