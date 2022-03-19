@@ -4,6 +4,7 @@ import TasksView from '../views/TasksView.vue'
 import FutureView from '../views/FutureView.vue'
 import PendingView from '../views/PendingView.vue'
 import PerfomanceView from '../views/PerfomanceView.vue'
+import EditTaskView from '../views/EditTaskView.vue'
 // import Navigator from '../components/Navigator.vue'
 
 // component view from views
@@ -33,6 +34,13 @@ const routes = [
     path: '/perfomance',
     name: 'perfomance',
     component: PerfomanceView
+  },
+
+  // Edit task route 
+  {
+    path: '/edittask',
+    name: 'edittask',
+    component: EditTaskView
   },
 
   // {

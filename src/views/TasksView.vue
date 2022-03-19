@@ -25,7 +25,7 @@
   <!-- Modal for adding here -->
   <AddTask />
   <!-- Modal to edit -->
-  <EditTask />
+  <!-- <EditTask /> -->
 
   <div class="container-fluid">
     <div class="row no-gutters justify-content-center">
@@ -51,7 +51,8 @@
                   done
                 </div>
 
-                <span
+                <router-link to="/edittask">
+                  <span
                   type="button"
                   class="btn-edittask edit material-icons"
                   data-bs-toggle="modal"
@@ -61,6 +62,7 @@
                 >
                   edit
                 </span>
+                </router-link>
 
                 <div
                   class="material-icons close"
@@ -132,16 +134,17 @@ export default {
       let taskRef = doc(colref, this.taskId);
       this.docRef = taskRef;
       let task = await getDoc(this.docRef);
+      console.log(task.data());
       let taskData = task.data();
       this.name = taskData.name;
       this.details = taskData.details;
       this.date = taskData.date;
+
     },
     
     // delete task
     async deleteTask() {
-      
-      swal("Task deleted success  . .. ");
+     
     },
     // Mark task done
     async doneTask() {
