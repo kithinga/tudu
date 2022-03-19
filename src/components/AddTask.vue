@@ -78,7 +78,7 @@ export default {
     async addTask(){
       console.log("creating a task");
       const addedDoc = await addDoc(colref, this.$data);
-      console.log(addedDoc);
+      // console.log(addedDoc);
     }
   }
 };

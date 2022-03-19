@@ -46,10 +46,10 @@
                   required
                   class="date"
                 />
-
-                <button type="submit" class="submit" @click="editTask">
-                  <span class="material-icons">update</span> Update
-                </button>
+                  <button type="submit" class="submit">
+                    <span class="material-icons">update</span> Update
+                  </button>
+           
               </form>
             </div>
             <div class="modal-footer"></div>
@@ -62,45 +62,12 @@
 
 <script>
 import { colref } from "../firebase";
-import { getDoc, doc } from "firebase/firestore";
+import { doc, getDoc } from "firebase/firestore";
 export default {
   name: "EditTask",
 
-  data() {
-    return {
-      selectedTask: {},
-      taskId: null,
-      docRef: null,
-      name: null,
-      details: null,
-      date: null,
-    };
-  },
-  methods: {
-    async editTask() {
-      let taskRef = doc(colref, this.taskId);
-      this.docRef = taskRef;
-      let task = await getDoc(this.docRef);
-      let taskData = task.data();
-      this.name = taskData.name;
-      this.details = taskData.details;
-      this.date = taskData.date;
-    }
-  },
-  created() {
-    // Pass cityid to acces points
-    let taskId = this.$route.params.taskId;
-    this.taskId = taskId;  
-    this.getTask();
-  },
 };
 </script>
-
-
-
-
-
-
 
 
 <style scoped>
@@ -150,7 +117,7 @@ export default {
   /* border-radius: 4px; */
   padding-left: 1.7rem;
   border: none;
-   border-bottom: solid 2px rgb(240, 239, 245);
+  border-bottom: solid 2px rgb(240, 239, 245);
   padding-top: 2rem;
 }
 input:focus {

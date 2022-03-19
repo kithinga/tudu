@@ -50,6 +50,7 @@
                 >
                   done
                 </div>
+
                 <span
                   type="button"
                   class="btn-edittask edit material-icons"
@@ -60,6 +61,7 @@
                 >
                   edit
                 </span>
+
                 <div
                   class="material-icons close"
                   title="Close"
@@ -91,6 +93,7 @@ import AddTask from "@/components/AddTask.vue";
 import EditTask from "@/components/EditTask.vue";
 import colref from "../firebase";
 import { getDocs } from "firebase/firestore";
+import { getDoc } from "firebase/firestore";
 import { doc, deleteDoc } from "firebase/firestore";
 // import axios from "axios";
 export default {
@@ -102,6 +105,12 @@ export default {
   data() {
     return {
       tasks: [],
+      selectedTask: {},
+      taskId: null,
+      docRef: null,
+      name: null,
+      details: null,
+      date: null,
     };
   },
   methods: {
@@ -118,6 +127,17 @@ export default {
       console.log(tasks)
       this.tasks = tasks;
     },
+    // Update task 
+     async editTask() {
+      let taskRef = doc(colref, this.taskId);
+      this.docRef = taskRef;
+      let task = await getDoc(this.docRef);
+      let taskData = task.data();
+      this.name = taskData.name;
+      this.details = taskData.details;
+      this.date = taskData.date;
+    },
+    
     // delete task
     async deleteTask() {
       
@@ -130,6 +150,8 @@ export default {
   },
   created() {
     this.fetchTasks();
+    let taskId = this.$route.params.taskId;
+    this.taskId = taskId;
   },
 };
 </script>
