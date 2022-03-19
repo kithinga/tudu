@@ -77,20 +77,10 @@ export default {
     async addTask() {
       console.log("creating a task");
       const addedDoc = await addDoc(colref, this.$data);
-      swal("Task created successfully");
-      swal(
-        {
-          title: "Success!",
-          text: "Redirecting in 2 seconds.",
-          type: "success",
-          timer: 2000,
-          showConfirmButton: false,
-        },
-        function () {
-          window.location.href = "tasks";
-        }
-      );
       console.log(addedDoc);
+      swal('Added successfully')
+    
+      
     },
   },
 };
