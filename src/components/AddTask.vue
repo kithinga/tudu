@@ -78,7 +78,8 @@ export default {
       console.log("creating a task");
       const addedDoc = await addDoc(colref, this.$data);
       console.log(addedDoc);
-      swal('Added successfully')
+      swal('Added successfully');
+      window.location.href = "/tasks"
     
       
     },

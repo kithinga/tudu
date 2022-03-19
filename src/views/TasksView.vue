@@ -160,11 +160,11 @@ export default {
       swal("Congrats..! task is completed");
     },
   },
-  // created() {
-  //   this.fetchTasks();
-  //   let taskId = this.$route.params.taskId;
-  //   this.taskId = taskId;
-  // },
+  created() {
+  this.fetchTasks();
+    let taskId = this.$route.params.taskId;
+  this.taskId = taskId;
+  },
 };
 </script>
 

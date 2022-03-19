@@ -1,72 +1,76 @@
 <template>
   <div class="container-fluid">
-    <div class="row no-gutters ">
+    <div class="row no-gutters">
       <!-- Modal just laying around -->
       <div class="col-md-4"></div>
-       <div class="col-md-4">
-           <div class="edit-form ">
-           
-            <form class="task-form" autocomplete="off" >
-                 <h4><span class="material-icons">edit </span> Edit task</h4>
-                <!-- <label for="name">Task title</label> -->
-                <input
-                  type="text"
-                  id="name"
-                  v-model="name"
-                  placeholder="Task title"
-                  required
-                /><br />
+      <div class="col-md-4">
+        <div class="edit-form">
+          <form
+            class="task-form"
+            autocomplete="off"
+            @submit.prevent="updateTask"
+          >
+            <h4><span class="material-icons">edit </span> Edit task</h4>
+            <!-- <label for="name">Task title</label> -->
+            <input
+              type="text"
+              id="name"
+              v-model="name"
+              placeholder="Task title"
+              required
+            /><br />
 
-                <!-- <label for="details">Details</label> -->
+            <!-- <label for="details">Details</label> -->
 
-                <textarea
-                  type="text"
-                  id="details"
-                  v-model="details"
-                  placeholder="Details"
-                  required
-                />
+            <textarea
+              type="text"
+              id="details"
+              v-model="details"
+              placeholder="Details"
+              required
+            />
 
-                <!-- <label for="date">Date</label> -->
+            <!-- <label for="date">Date</label> -->
 
-                <input
-                  type="date"
-                  v-model="date"
-                  placeholder="Due-Date"
-                  required
-                  class="date"
-                />
-                  <button type="submit" class="submit">
-                    <span class="material-icons">update</span> Update
-                  </button>
-           
-              </form>
-      </div>    
-       </div>
-       <div class="col-md-4"></div>
+            <input
+              type="date"
+              v-model="date"
+              placeholder="Due-Date"
+              required
+              class="date"
+            />
+            <button type="submit" class="submit">
+              <span class="material-icons">update</span> Update
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="col-md-4"></div>
     </div>
   </div>
 </template>
 
 <script>
 import { colref } from "../firebase";
-import { doc, getDoc} from "firebase/firestore";
+import { doc, getDoc, setDoc } from "firebase/firestore";
 export default {
   name: "EditTask",
 
-  data(){
+  data() {
     return {
-      selectedTask:{},
-      cityId: null,
+      selectedTask: {},
+      taskId: null,
       docRef: null,
-      name: null,
-      details: null,
-      date: null,
-    }
+      taskInfo: {
+        name: null,
+        details: null,
+        date: null,
+      },
+    };
   },
 
-methods: {
-   async editTask() {
+  methods: {
+    async editTask() {
       let taskRef = doc(colref, this.taskId);
       this.docRef = taskRef;
       let task = await getDoc(this.docRef);
@@ -76,14 +80,15 @@ methods: {
       this.details = taskData.details;
       this.date = taskData.date;
     },
-
-},
-created(){
-  let taskId = this.$route.params.taskId;
-  this.taskId = taskId;
-  this.editTask();
-}
-
+    async updateTask() {
+      await setDoc(this.docRef);
+    },
+  },
+  created() {
+    let taskId = this.$route.params.taskId;
+    this.taskId = taskId;
+    // this.editTask();
+  },
 };
 </script>
 
@@ -95,7 +100,6 @@ created(){
   font-size: 16.5px;
   border-bottom: 2px solid rgb(250, 250, 250);
 }
-
 
 .modal-body {
   padding-top: 0;
@@ -111,24 +115,23 @@ created(){
   border-radius: 4px;
   border: 1px solid rgb(208, 206, 216);
 }
-.edit-form{
-    padding:2.4rem;
-    margin-top:2rem;
-    padding-top:2.4rem;
-    border: solid 1px rgb(229, 227, 243);
-    border-radius: 5px;
-    /* background-color: rgb(253, 253, 255); */
-    box-shadow:0px 4px 5px rgb(241, 240, 240);
-    
+.edit-form {
+  padding: 2.4rem;
+  margin-top: 2rem;
+  padding-top: 2.4rem;
+  border: solid 1px rgb(229, 227, 243);
+  border-radius: 5px;
+  /* background-color: rgb(253, 253, 255); */
+  box-shadow: 0px 4px 5px rgb(241, 240, 240);
 }
 .task-form {
   text-align: left;
 }
-.task-form h4{
-    margin-bottom:1.3rem;
-    font-size:14px;
-    color:rgb(109, 111, 207);
-    font-weight:600;
+.task-form h4 {
+  margin-bottom: 1.3rem;
+  font-size: 14px;
+  color: rgb(109, 111, 207);
+  font-weight: 600;
 }
 
 .date {
