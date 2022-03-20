@@ -78,10 +78,13 @@ export default {
       console.log("creating a task");
       const addedDoc = await addDoc(colref, this.$data);
       console.log(addedDoc);
-      swal('Added successfully');
-      window.location.href = "/tasks"
+      //  swal delays
+      swal({
+        text: "Adding task. . .",
+        icon: "https://mir-s3-cdn-cf.behance.net/project_modules/disp/16e83113765711.56277d220a938.gif",
+        timer: 4000,
+      });
     
-      
     },
   },
 };

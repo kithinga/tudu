@@ -1,5 +1,5 @@
 import '@babel/polyfill'
-import 'mutationobserver-shim'
+// import 'mutationobserver-shim'
 import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'

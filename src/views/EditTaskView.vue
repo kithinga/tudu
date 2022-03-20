@@ -95,6 +95,21 @@ export default {
 </script>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <style scoped>
 .modal-title {
   color: rgb(119, 115, 175);

@@ -59,7 +59,7 @@
                         done
                       </div>
 
-                      <router-link :to="{path: `/edittask/${task.id}`}">
+                      <router-link :to="{ path: `/edittask/${task.id}` }">
                         <span
                           type="button"
                           class="btn-edittask edit material-icons"
@@ -75,7 +75,7 @@
                       <div
                         class="material-icons close"
                         title="Close"
-                        @click="deleteTask"
+                        @click="deleteTask(task.id)"
                       >
                         close
                       </div>
@@ -107,9 +107,7 @@ import Navigator from "@/components/Navigator.vue";
 import AddTask from "@/components/AddTask.vue";
 import EditTask from "@/components/EditTask.vue";
 import colref from "../firebase";
-import { getDocs } from "firebase/firestore";
-import { getDoc } from "firebase/firestore";
-import { doc, deleteDoc } from "firebase/firestore";
+import { getDocs, doc, deleteDoc } from "firebase/firestore";
 // import axios from "axios";
 export default {
   components: {
@@ -117,17 +115,14 @@ export default {
     AddTask,
     EditTask,
   },
+
   data() {
     return {
       tasks: [],
-      // selectedTask: {},
-      taskId: null,
-      // docRef: null,
-      // name: null,
-      // details: null,
-      // date: null,
+      selectedTask: null,
     };
   },
+
   methods: {
     // Fetching Data from database
     async fetchTasks() {
@@ -141,41 +136,58 @@ export default {
       console.log(tasks);
       this.tasks = tasks;
     },
-    // Update task
-    // async editTask() {
-    //   let taskRef = doc(colref, this.taskId);
-    //   this.docRef = taskRef;
-    //   let task = await getDoc(this.docRef);
-    //   console.log(task.data());
-    //   let taskData = task.data();
-    //   this.name = taskData.name;
-    //   this.details = taskData.details;
-    //   this.date = taskData.date;
-    // },
 
     // delete task
-    async deleteTask() {},
+    async deleteTask(taskId) {
+      let taskRef = doc(colref, taskId);
+      await deleteDoc(taskRef);
+      swal({
+        title: "Are you sure.. delete?",
+        text: "This action is irreversible!",
+        icon: "warning",
+        buttons: true,
+        dangerMode: true,
+      }).then((willDelete) => {
+        if (willDelete) {
+          swal("Hey Festus, Your has been deleted!", {
+            icon: "success",
+            timer:3000
+          });
+          window.location.href = "/tasks";
+        } else {
+          swal({
+            text: "Reverting..",
+            icon: "https://mir-s3-cdn-cf.behance.net/project_modules/disp/16e83113765711.56277d220a938.gif",
+            buttons: false,
+            closeOnClickOutside: false,
+            timer: 5000,
+            //icon: "success"
+          });
+        }
+      });
+    },
+
     // Mark task done
     async doneTask() {
       swal("Congrats..! task is completed");
     },
   },
   created() {
-  this.fetchTasks();
+    this.fetchTasks();
     let taskId = this.$route.params.taskId;
-  this.taskId = taskId;
+    this.taskId = taskId;
   },
 };
 </script>
 
 
 <style scoped>
-   .tacent{
-     background-color:rgb(249, 248, 252);
-     /* background-color:rgb(44, 36, 83); */
-     border-radius: 2px;
-     border: solid 1px rgb(242, 242, 250);
-   }
+.tacent {
+  background-color: rgb(249, 248, 252);
+  /* background-color:rgb(44, 36, 83); */
+  border-radius: 2px;
+  border: solid 1px rgb(242, 242, 250);
+}
 </style>
 
 
