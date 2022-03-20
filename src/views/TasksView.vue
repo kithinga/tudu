@@ -180,7 +180,6 @@ export default {
 };
 </script>
 
-
 <style scoped>
 .tacent {
   /* background-color: rgb(249, 248, 252);6 */
