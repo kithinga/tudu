@@ -62,11 +62,12 @@
 
 .tsk01 h6{
    font-weight:600;
-   color: rgb(128, 107, 209);
-   font-size:13.5px;
+   color: rgb(117, 98, 192);
+   font-size:14px;
    margin-top:0.5rem;
-
-   /* margin-bottom:1rem; */
+} 
+.tsk01 h6::first-letter{
+  text-transform: capitalize;
 } 
 
 .tsk01 p{
