@@ -10,7 +10,7 @@
             autocomplete="off"
             @submit.prevent="updateTask"
           >
-            <h4><span class="material-icons">edit </span> Edit task</h4>
+            <h4><span class="material-icons">edit</span>Edit task</h4>
             <!-- <label for="name">Task title</label> -->
             <input
               type="text"
@@ -52,7 +52,7 @@
 
 <script>
 import { colref } from "../firebase";
-import { doc, getDoc, setDoc } from "firebase/firestore";
+import { doc, getDocs, setDoc } from "firebase/firestore";
 export default {
   name: "EditTask",
 
@@ -73,7 +73,7 @@ export default {
     async editTask() {
       let taskRef = doc(colref, this.taskId);
       this.docRef = taskRef;
-      let task = await getDoc(this.docRef);
+      let task = await getDocs(this.docRef);
       console.log(task.data());
       let taskData = task.data();
       this.taskInfo.name = taskData.name;
@@ -83,7 +83,7 @@ export default {
 
     async updateTask() {
       await setDoc(this.docRef);
-      alert(this.cityId)
+      alert('qweqqwe')
     },
   },
   created() {

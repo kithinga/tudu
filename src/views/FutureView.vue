@@ -3,9 +3,8 @@
   <div><h4 class="tihead">Futures</h4></div>
   <div class="container-fluid">
     <div class="row no-gutters justify-content-center">
-      <div class="col-lg-2" v-for="fute in futures" :key="fute.id">
-        <div class="fu-card shadow-sm">
-          <h5>{{ fute.id }}</h5>
+      <div class="col-lg-2" v-for="fute of futuress" :key="fute.id">
+        <div class="fu-card ">
           <p>{{ fute.name }}</p>
           <p>{{ fute.details }}</p>
         </div>
@@ -17,14 +16,27 @@
 
 <script>
 import Navigator from "@/components/Navigator.vue";
+import axios from "axios";
 export default {
   components: {
     Navigator,
+    data() {
+      return {
+        futuress: [],
+      };
+    },
+    async created() {
+      try {
+        const res = await axios.get(`http://localhost:3000/futuress`);
+        this.futuress = res.data;
+      } catch (error) {
+        console.log(error);
+      }
+      console.log(futuress);
+    },
   },
-  
 };
 </script>
-
 
 <style scoped>
 .fu-card {
@@ -42,7 +54,7 @@ h5 {
 }
 p {
   font-size: 13px;
-  color:rgb(97, 89, 133);
+  color: rgb(97, 89, 133);
   font-weight: 400;
 }
 .tihead {

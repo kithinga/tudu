@@ -4,7 +4,7 @@
   <div class="container-fluid">
     <div class="row no-gutters justify-content-center">
       <div class="col-lg-2" v-for="pend in pending" :key="pend.id">
-        <div class="pnd-card ">
+        <div class="pnd-card">
           <h5>{{ pend.id }}</h5>
           <p>{{ pend.name }}</p>
           <p>{{ pend.details }}</p>
@@ -17,10 +17,23 @@
 
 <script>
 import Navigator from "@/components/Navigator.vue";
-
+import axios from "axios";
 export default {
   components: {
     Navigator,
+    data() {
+      return {
+        pending: [],
+      };
+    },
+    async created() {
+      try {
+        const res = await axios.get(`http://localhost:3000/pending`)
+        this.pending = res.data;
+      } catch (error) {
+        console.log(error);
+      }
+    },
   },
 };
 </script>
@@ -42,7 +55,7 @@ h5 {
 }
 p {
   font-size: 13px;
-  color:rgb(83, 99, 119);
+  color: rgb(83, 99, 119);
   font-weight: 400;
 }
 .tihead {
