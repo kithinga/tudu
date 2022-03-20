@@ -6,7 +6,7 @@
       <!-- Decoy div not needed anyway -->
       <div class="col-md-2"></div>
 
-      <div class="col-md-8">
+      <div class="col-md-8 tacent">
         <div class="container-fluid">
           <div class="row no-gutters checker">
             <div class="col-lg-6">
@@ -39,7 +39,7 @@
           <div class="row no-gutters justify-content-center">
             <div class="col-lg-3" v-for="task of tasks" :key="task.id">
               <!-- Drop down for editing -->
-              <div class="tsk01 shadow-sm">
+              <div class="tsk01">
                 <div class="card-head">
                   <div class="btn-group">
                     <button
@@ -167,5 +167,15 @@ export default {
   },
 };
 </script>
+
+
+<style scoped>
+   .tacent{
+     background-color:rgb(249, 248, 252);
+     /* background-color:rgb(44, 36, 83); */
+     border-radius: 2px;
+     border: solid 1px rgb(242, 242, 250);
+   }
+</style>
 
 

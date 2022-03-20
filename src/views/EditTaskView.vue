@@ -15,7 +15,7 @@
             <input
               type="text"
               id="name"
-              v-model="name"
+              v-model="taskInfo.name"
               placeholder="Task title"
               required
             /><br />
@@ -25,7 +25,7 @@
             <textarea
               type="text"
               id="details"
-              v-model="details"
+              v-model="taskInfo.details"
               placeholder="Details"
               required
             />
@@ -34,7 +34,7 @@
 
             <input
               type="date"
-              v-model="date"
+              v-model="taskInfo.date"
               placeholder="Due-Date"
               required
               class="date"
@@ -76,18 +76,20 @@ export default {
       let task = await getDoc(this.docRef);
       console.log(task.data());
       let taskData = task.data();
-      this.name = taskData.name;
-      this.details = taskData.details;
-      this.date = taskData.date;
+      this.taskInfo.name = taskData.name;
+      this.taskInfo.details = taskData.details;
+      this.taskInfo.date = taskData.date;
     },
+
     async updateTask() {
       await setDoc(this.docRef);
+      alert(this.cityId)
     },
   },
   created() {
     let taskId = this.$route.params.taskId;
     this.taskId = taskId;
-    // this.editTask();
+    this.editTask();
   },
 };
 </script>
