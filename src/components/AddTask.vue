@@ -47,7 +47,7 @@
                   v-model="date"
                   required
                 />
-                <button type="submit" class="submit shadow-sm">Addtask</button>
+                <button type="submit" class="submit shadow-sm" data-dismiss="modal">Addtask</button>
               </form>
             </div>
             <div class="modal-footer"></div>
@@ -77,14 +77,19 @@ export default {
     async addTask() {
       const addedDoc = await addDoc(colref, this.$data);
       console.log(addedDoc);
-      //  swal delays
       swal({
-        text: "Adding task. . .",
-        icon: "https://mir-s3-cdn-cf.behance.net/project_modules/disp/16e83113765711.56277d220a938.gif",
-        timer: 4000,
-      });
-    
+        text: "uploading tasks ....",
+        // icon: "https://i.gifer.com/IuGJ.gif",
+        icon: "https://gifimage.net/wp-content/uploads/2017/08/spinner-gif-7.gif",
+        buttons: false,
+        timer:3000
+        
+      })
+      // setTimeout(2000)
+      // window.location.href = "/tasks"
+      //  alert(addedDoc);
     },
   },
 };
 </script>
+
