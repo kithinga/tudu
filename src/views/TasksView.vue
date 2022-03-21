@@ -32,9 +32,7 @@
 
         <!-- Modal for adding here -->
         <AddTask />
-        <!-- Modal to edit -->
-        <!-- <EditTask /> -->
-
+  
         <div class="container-fluid">
           <div class="row no-gutters justify-content-center">
             <div class="col-lg-3" v-for="task of tasks" :key="task.id">
@@ -49,24 +47,14 @@
                     >
                       <div class="material-icons ver">more_vert</div>
                     </button>
-                    <div class="dropdown-menu shadow-sm">
-                      <div
-                        class="material-icons done"
-                        data-bs-toggle="tooltip"
-                        title="Done"
-                        @click="doneTask"
-                      >
-                        done
-                      </div>
 
+                    <div class="dropdown-menu shadow-sm">
                       <router-link :to="{ path: `/edittask/${task.id}` }">
                         <span
                           type="button"
                           class="btn-edittask edit material-icons"
-                          data-bs-toggle="modal"
                           title="Edit"
                           @click="editTask"
-                          data-bs-target="#exampleModal01"
                         >
                           edit
                         </span>
@@ -105,7 +93,6 @@
 // @ serves as src alias
 import Navigator from "@/components/Navigator.vue";
 import AddTask from "@/components/AddTask.vue";
-import EditTask from "@/components/EditTask.vue";
 import colref from "../firebase";
 import { getDocs, doc, deleteDoc } from "firebase/firestore";
 // import axios from "axios";
@@ -113,7 +100,6 @@ export default {
   components: {
     Navigator,
     AddTask,
-    EditTask,
   },
 
   data() {
@@ -151,7 +137,7 @@ export default {
         if (willDelete) {
           swal("Hey Festus, Your has been deleted!", {
             icon: "success",
-            timer:3000
+            timer: 3000,
           });
           window.location.href = "/tasks";
         } else {

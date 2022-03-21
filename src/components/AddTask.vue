@@ -13,7 +13,7 @@
           <div class="modal-content">
             <div class="modal-header">
               <h6 class="modal-title" id="exampleModalLabel">
-                <span class="material-icons syi">task</span>Tasks Add tasks
+                <span class="material-icons syi">task </span>Add-Task
               </h6>
             </div>
             <div class="modal-body">
@@ -75,7 +75,6 @@ export default {
   },
   methods: {
     async addTask() {
-      console.log("creating a task");
       const addedDoc = await addDoc(colref, this.$data);
       console.log(addedDoc);
       //  swal delays

@@ -212,10 +212,10 @@ button{
 .dropdown-menu{
 /* background-color:red;     */
 background-color: rgb(253, 253, 255);
-border          : solid 1px rgb(233, 232, 236);    
-padding:1rem;
+border: solid 1px rgb(233, 232, 236);    
+padding:0.6rem;
 }
-.done,.edit,.close{
+.edit,.close{
   margin:0.55rem;
   cursor: pointer;
 }
@@ -233,7 +233,4 @@ padding:1rem;
 }
 .ver{
     color: rgb(146, 138, 156);
-}
-.done{
-    color: rgb(126, 95, 161);
 }
