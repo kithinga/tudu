@@ -6,7 +6,7 @@
       <!-- Decoy div not needed anyway -->
       <div class="col-md-2"></div>
 
-      <div class="col-md-8 tacent" data-aos="zoom-in-right">
+      <div class="col-md-8 tacent">
         <div class="container-fluid">
           <div class="row no-gutters checker">
             <div class="col-lg-6">
