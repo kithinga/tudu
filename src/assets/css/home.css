@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   font-family: Poppins;
+    /* overflow-y: hidden;  */
 }
 
 P {
@@ -55,38 +56,38 @@ P {
   text-align: center;
 }
 .time{
-  font-weight:900;
-  font-size:2.4rem;
-  color:rgb(108, 98, 141);
-  text-shadow: 2px 2px 2px rgb(174, 174, 197);
+  font-weight:300;
+  font-size:2.5rem;
+  color:rgb(131, 94, 255);
+  /* text-shadow: 2px 2px 2px rgb(174, 174, 197); */
   word-spacing:0.4rem;
   letter-spacing:2px;
 }
 .day{
-  color:rgb(99, 86, 160);
+  color:rgb(206, 195, 255);
   margin-left: 5px;
-  letter-spacing:8px;
+  font-size: 1.5rem;
+  font-weight:100;
+  letter-spacing:4px;
 }
 .date{
-  color: rgb(14, 124, 197);
+  color: rgb(77, 184, 255);
   word-spacing: 0.8rem;
-
-
 }
 
 
 .ru{
   font-weight: 500;
-  color: rgb(89, 87, 110);
+  color: rgb(190, 186, 228);
   font-size: 13px;
 }
 .sel{
-  color: rgb(18, 143, 201);
+  color: rgb(73, 169, 248);
   font-weight: 00;
   font-size:2rem;
 }
 .selm{
-  color: rgb(25, 155, 206);
+  color: rgb(23, 189, 255);
   font-weight: 700;
 
  
@@ -96,7 +97,7 @@ P {
   font-weight:900;
   font-size: 2.5rem;
   letter-spacing: -0.5px;  
-  color: rgb(78, 78, 121);
+  color: rgb(212, 212, 231);
 }
 
 .card-row {
@@ -107,10 +108,10 @@ P {
 .card {
   padding-top: 1rem;
   min-height: 25vh;
-  border-radius: 8px;
+  border-radius:7px;
   border: none;
   margin-top:0.5rem;
-  border: solid 1px rgb(242, 241, 248);
+  border: solid 1px rgb(18, 13, 46);
 }
 
 .card:hover{
@@ -120,8 +121,10 @@ P {
 
 .home-page {
   background-color: rgb(246, 244, 250);
+   background-color: rgb(24, 16, 43); 
+  /* background-color: rgb(248, 248, 248);  */
   padding: 1rem;
-  min-height: 95vh;
+  min-height: 90vh;
 }
 
 /* removes the text decoration in router link */
@@ -160,7 +163,7 @@ a {
   color: rgb(11, 146, 199);
 }
 .pending{
-  color: rgb(192, 102, 70);
+  color: rgb(199, 101, 65);
 
 }
 .perfomance{
