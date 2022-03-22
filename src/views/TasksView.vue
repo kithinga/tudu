@@ -49,24 +49,26 @@
                     </button>
 
                     <div class="dropdown-menu shadow-sm">
-                      <router-link :to="{ path: `/edittask/${task.id}` }">
-                        <span
+                      <ul>
+                        <router-link :to="{ path: `/edittask/${task.id}` }">
+                        <li
                           type="button"
                           class="btn-edittask edit material-icons"
                           title="Edit"
                           @click="editTask"
                         >
                           edit
-                        </span>
+                        </li>
                       </router-link>
 
-                      <div
+                      <li
                         class="material-icons close"
                         title="Close"
                         @click="deleteTask(task.id)"
                       >
                         close
-                      </div>
+                      </li>
+                      </ul>
                     </div>
                   </div>
                 </div>
@@ -173,6 +175,7 @@ export default {
   border-radius: 2px;
   border: solid 1px rgb(243, 243, 250);
 }
+
 </style>
 
 

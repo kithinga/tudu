@@ -8,10 +8,12 @@
     padding: 3rem;
     padding-top: 4rem;
 }
+
 .tid-btn{
     text-align:center;
     padding: 3rem;
 }
+
 .tid-btn span{
     font-size:2rem;
     font-weight:500;
@@ -212,8 +214,9 @@ button{
 .dropdown-menu{
 /* background-color:red;     */
 background-color: rgb(253, 253, 255);
+background-color: rgb(227, 227, 233);
 border: solid 1px rgb(233, 232, 236);    
-padding:0.6rem;
+/* max-width: 3rem!important; */
 }
 .edit,.close{
   margin:0.55rem;
@@ -225,11 +228,11 @@ padding:0.6rem;
 }
 
 .close{ 
-    color: rgb(231, 154, 90);
+    color: rgb(165, 68, 65);
     font-weight:500;
 }
 .edit{
-    color:rgb(32, 143, 163);
+    color:rgb(103, 86, 151);
 }
 .ver{
     color: rgb(146, 138, 156);
