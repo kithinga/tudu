@@ -6,7 +6,7 @@
       <!-- Decoy div not needed anyway -->
       <div class="col-md-2"></div>
 
-      <div class="col-md-8 tacent">
+      <div class="col-md-8 tacent" data-aos="zoom-in-right">
         <div class="container-fluid">
           <div class="row no-gutters checker">
             <div class="col-lg-6">
@@ -17,12 +17,12 @@
                 <!-- Button to trigger modal -->
                 <button
                   type="button"
-                  class="btn-addtask"
+                  class="btn-addtask shadow-sm"
                   data-bs-toggle="modal"
                   data-bs-target="#exampleModal"
                 >
                   <p class="addsi">
-                    <span class="material-icons">add</span> Add-task
+                    <span class="material-icons ">add</span> Add-task
                   </p>
                 </button>
               </div>
