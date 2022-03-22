@@ -121,11 +121,17 @@ ul li:hover{
 
 .tsk01 h6{
    font-weight:600;
+<<<<<<< HEAD
+   color: rgb(117, 98, 192);
+   font-size:14px;
+=======
    color: rgb(106, 93, 180);
    font-size:13.5px;
+>>>>>>> 2112f8dfd829f71123f58d9a83ec40926b2f25ed
    margin-top:0.5rem;
-
-   /* margin-bottom:1rem; */
+} 
+.tsk01 h6::first-letter{
+  text-transform: capitalize;
 } 
 
 h6:first-letter {
