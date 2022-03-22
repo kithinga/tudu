@@ -36,50 +36,21 @@
         <div class="container-fluid">
           <div class="row no-gutters justify-content-center">
             <div class="col-lg-3" v-for="task of tasks" :key="task.id">
-              <!-- Drop down for editing -->
+        
               <div class="tsk01">
-                <div class="card-head">
-                  <div class="btn-group">
-                    <button
-                      class="btn"
-                      id="dropdownMenuClickableInside"
-                      data-bs-toggle="dropdown"
-                    >
-                      <div class="material-icons ver">more_vert</div>
-                    </button>
-
-                    <div class="dropdown-menu shadow-sm">
-                      <ul>
-                        <router-link :to="{ path: `/edittask/${task.id}` }">
-                        <li
-                          type="button"
-                          class="btn-edittask edit material-icons"
-                          title="Edit"
-                          @click="editTask"
-                        >
-                          edit
-                        </li>
-                      </router-link>
-
-                      <li
-                        class="material-icons close"
-                        title="Close"
-                        @click="deleteTask(task.id)"
-                      >
-                        close
-                      </li>
-                      </ul>
-                    </div>
-                  </div>
+                <div class="tsk-head">
+                  
                 </div>
-                <!-- <h4>{{ task.id }}</h4> -->
+                  <div class="tsk-body">
+                     <!-- <h4>{{ task.id }}</h4> -->
                 <h6>{{ task.name }}</h6>
                 <p>{{ task.details }}</p>
                 <br />
                 <text class="date-d">
                   <span class="alarm">Due -</span>{{ task.date }}</text
                 >
-                <div class="card-foot"></div>
+                  </div>
+                <div class="tsk-foot"></div>
               </div>
             </div>
           </div>
@@ -178,4 +149,41 @@ export default {
 
 </style>
 
+
+
+
+
+
+<div class="btn-group">
+                    <button
+                      class="btn"
+                      id="dropdownMenuClickableInside"
+                      data-bs-toggle="dropdown"
+                    >
+                      <div class="material-icons ver">more_vert</div>
+                    </button>
+
+                    <div class="dropdown-menu shadow-sm">
+                      <ul>
+                        <router-link :to="{ path: `/edittask/${task.id}` }">
+                        <li
+                          type="button"
+                          class="btn-edittask edit material-icons"
+                          title="Edit"
+                          @click="editTask"
+                        >
+                          edit
+                        </li>
+                      </router-link>
+
+                      <li
+                        class="material-icons close"
+                        title="Close"
+                        @click="deleteTask(task.id)"
+                      >
+                        close
+                      </li>
+                      </ul>
+                    </div>
+                  </div>
 

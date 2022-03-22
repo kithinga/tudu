@@ -204,20 +204,17 @@ button{
 }
 
 
-.card-head{
+.tsk-head{
     color: rgb(197, 190, 190);
     border-radius:20px;
     text-align:right;
     /* background-color:rgb(250, 249, 253); */
 }
 
-.dropdown-menu{
-/* background-color:red;     */
-background-color: rgb(253, 253, 255);
-background-color: rgb(227, 227, 233);
-border: solid 1px rgb(233, 232, 236);    
-/* max-width: 3rem!important; */
-}
+
+
+
+
 .edit,.close{
   margin:0.55rem;
   cursor: pointer;
