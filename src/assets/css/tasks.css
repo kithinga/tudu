@@ -37,16 +37,17 @@
 }
 
 .tihead{
-    color: rgb(129, 118, 209);
-    font-size:1.36rem;
-    letter-spacing: -0.5px;
+    color: rgb(122, 107, 231);
+    font-size:1.5rem;
+    /* letter-spacing: 9px; */
     font-weight:700;    
 }
 
 .tsk01{
     min-height:4rem;
-    border: solid 1px rgb(234, 240, 240);    
+    border: solid 1px rgb(239, 241, 250);  
     border-radius:5px;
+    margin-bottom: 0.5rem;
     font-size:12px;
     margin-top: 0.5rem;
     text-align:left; 
@@ -55,11 +56,14 @@
     background-color:rgb(255, 255, 255);
     /* box-shadow: 0px 2px 4px rgb(238, 245, 245); */
 }
+
+
 .tsk-head{
     color: rgb(182, 187, 190);
     text-align:right;
     /* background-color:rgb(250, 249, 253); */
 }
+
 .dropdown-menu{
     text-decoration: none;
     background-color:rgb(253, 254, 255);
@@ -67,11 +71,11 @@
     padding-bottom: 1.5rem;
     padding-left: 2rem;
     border: solid 1px rgb(241, 237, 243);
-    outline: none;
-    border: none;
+    box-shadow: 0px 2px 7px rgb(216, 218, 240)
 }
+
 .btn{
-    background-color:rgb(179, 35, 35);
+    /* background-color:rgb(179, 35, 35); */
     outline: none;
     border: none;
 }
@@ -82,26 +86,27 @@ ul li{
     font-weight:500;
     cursor:pointer;
 }
+
 ul li:hover{
     transform:scale(1.03);
-    color:rgb(118, 107, 156);
+    color:rgb(212, 90, 73);
   }
 
-
 .edit,.dele{
-  margin-left: 0.5rem;
+  margin-left: 1rem;
   cursor: pointer;
 
 }
 
-
 .dele{ 
-    color: rgb(202, 71, 66);
+    color: rgb(209, 131, 107);
     font-weight:600;
-    font-size:19px
+    font-size:19px;
+    margin-top:4px;
 }
+
 .edit{
-    color:rgb(103, 86, 151);
+    color:rgb(50, 143, 206);
     font-size: 17px;
 }
 
@@ -109,24 +114,27 @@ ul li:hover{
     color: rgb(146, 138, 156);
 }
 
-
 .tsk01 h4{
     font-size:13px;
-    color: rgb(108, 101, 173);
+    color: rgb(173, 150, 101);
     font-weight:600;
 }
 
 .tsk01 h6{
    font-weight:600;
-   color: rgb(128, 107, 209);
+   color: rgb(106, 93, 180);
    font-size:13.5px;
    margin-top:0.5rem;
 
    /* margin-bottom:1rem; */
 } 
 
+h6:first-letter {
+    text-transform: uppercase;
+}
+
 .tsk01 p{
-    color: rgb(86, 80, 100);
+    color: rgb(73, 67, 87);
     font-size:11px;
     margin-right: 15px;
 }
@@ -139,7 +147,6 @@ ul li:hover{
     padding-left:9px;
     padding-right:9px;
     border-radius:4px;
-    /* border: solid 0.5px rgb(252, 249, 249); */
 }
 
 .alarm{
@@ -175,6 +182,7 @@ ul li:hover{
    padding-right:2.5rem;    
    padding-left: 2.5rem;
 }
+
 .modal-footer{
     min-height:2rem;
     border-top:none;
@@ -183,12 +191,12 @@ ul li:hover{
 .task-form{
     text-align:left;
 }
+
 .addsi{
     color: rgb(119, 106, 165);
     font-size:12px;
     font-weight:500;
 }
-
 
 .task-form input{
     height:2.8rem;
@@ -207,24 +215,24 @@ ul li:hover{
     border: solid 1px rgb(217, 215, 224);
     padding-top: 1rem;
 }
+
 input:focus{
 
     outline: none;
     border: solid 2px rgb(197, 183, 235);
   }
+
 textarea:focus{
 
     outline: none;
     border: solid 2px rgb(190, 178, 221);
   }
 
-
 #date,#name,#details{
     font-weight:400;
     font-size:11px;
     color: rgb(91, 78, 204);
 }
-
 
 .task-form label{
     text-align:left;
@@ -233,6 +241,7 @@ textarea:focus{
     color: rgb(109, 114, 177);
     margin-top:1.3rem;
 }
+
 .submit{
     font-size:13px;
     color: rgb(253, 253, 253);
@@ -244,6 +253,7 @@ textarea:focus{
     font-weight: 500;
     height:2.8rem;
 }
+
 .btn-group{
     /* background-color:rgb(109, 109, 179); */
     padding:0;

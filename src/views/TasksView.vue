@@ -42,17 +42,17 @@
                   <div class="btn-group dropstart">
                     <button
                       type="button"
-                      class="btn dropdown-toggle"
+                      class="btn "
                       data-bs-toggle="dropdown"
                     >
                       <span class="material-icons ver">more_vert</span>
                     </button>
 
                 
-                    <ul class="dropdown-menu shadow-sm">
+                    <ul class="dropdown-menu ">
                       <li
                         type="button"
-                        title="Edit"
+                        title="Edit-task"
                         @click="editTask"
                       >
                         <router-link :to="{ path: `/edittask/${task.id}` }">
@@ -60,13 +60,12 @@
                            <span class="material-icons edit">edit</span>
                         </router-link>
                       </li>
-                      <li title="Close" @click="deleteTask(task.id)">
-                        DeleteTask
+                      <li title="Delete-task" @click="deleteTask(task.id)">
+                        Del.Task
                          <span class="material-icons dele">close</span>
                       </li>
                     </ul>
                   </div>
-
                   <!-- Split dropstart button -->
                 </div>
 
@@ -170,16 +169,15 @@ export default {
 </script>
 
 <style scoped>
+
 .tacent {
-  /* background-color: rgb(63, 60, 71); */
+  background-color: rgb(246, 246, 248);
   /* background-color:rgb(44, 36, 83); */
   border-radius: 2px;
-  border: solid 1px rgb(243, 243, 250);
+  border: solid 1px rgb(250, 243, 243);
+  padding-bottom: 1.6rem;
 }
-router-link{
-  margin: 0;
-  padding:0;
-}
+
 </style>
 
 
