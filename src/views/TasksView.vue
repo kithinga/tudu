@@ -32,24 +32,54 @@
 
         <!-- Modal for adding here -->
         <AddTask />
-  
+
         <div class="container-fluid">
           <div class="row no-gutters justify-content-center">
             <div class="col-lg-3" v-for="task of tasks" :key="task.id">
-        
               <div class="tsk01">
                 <div class="tsk-head">
-                  
-                </div>
-                  <div class="tsk-body">
-                     <!-- <h4>{{ task.id }}</h4> -->
-                <h6>{{ task.name }}</h6>
-                <p>{{ task.details }}</p>
-                <br />
-                <text class="date-d">
-                  <span class="alarm">Due -</span>{{ task.date }}</text
-                >
+                  <!-- Drop-down menu starts here -->
+                  <div class="btn-group dropstart">
+                    <button
+                      type="button"
+                      class="btn dropdown-toggle"
+                      data-bs-toggle="dropdown"
+                    >
+                      <span class="material-icons ver">more_vert</span>
+                    </button>
+
+                
+                    <ul class="dropdown-menu shadow-sm">
+                      <li
+                        type="button"
+                        title="Edit"
+                        @click="editTask"
+                      >
+                        <router-link :to="{ path: `/edittask/${task.id}` }">
+                          EditTask
+                           <span class="material-icons edit">edit</span>
+                        </router-link>
+                      </li>
+                      <li title="Close" @click="deleteTask(task.id)">
+                        DeleteTask
+                         <span class="material-icons dele">close</span>
+                      </li>
+                    </ul>
                   </div>
+
+                  <!-- Split dropstart button -->
+                </div>
+
+                <!-- Task body -->
+                <div class="tsk-body">
+                  <!-- <h4>{{ task.id }}</h4> -->
+                  <h6>{{ task.name }}</h6>
+                  <p>{{ task.details }}</p>
+                  <br />
+                  <text class="date-d">
+                    <span class="alarm">Due -</span>{{ task.date }}</text
+                  >
+                </div>
                 <div class="tsk-foot"></div>
               </div>
             </div>
@@ -146,7 +176,10 @@ export default {
   border-radius: 2px;
   border: solid 1px rgb(243, 243, 250);
 }
-
+router-link{
+  margin: 0;
+  padding:0;
+}
 </style>
 
 
@@ -154,36 +187,5 @@ export default {
 
 
 
-<div class="btn-group">
-                    <button
-                      class="btn"
-                      id="dropdownMenuClickableInside"
-                      data-bs-toggle="dropdown"
-                    >
-                      <div class="material-icons ver">more_vert</div>
-                    </button>
 
-                    <div class="dropdown-menu shadow-sm">
-                      <ul>
-                        <router-link :to="{ path: `/edittask/${task.id}` }">
-                        <li
-                          type="button"
-                          class="btn-edittask edit material-icons"
-                          title="Edit"
-                          @click="editTask"
-                        >
-                          edit
-                        </li>
-                      </router-link>
-
-                      <li
-                        class="material-icons close"
-                        title="Close"
-                        @click="deleteTask(task.id)"
-                      >
-                        close
-                      </li>
-                      </ul>
-                    </div>
-                  </div>
 

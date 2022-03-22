@@ -55,6 +55,60 @@
     background-color:rgb(255, 255, 255);
     /* box-shadow: 0px 2px 4px rgb(238, 245, 245); */
 }
+.tsk-head{
+    color: rgb(182, 187, 190);
+    text-align:right;
+    /* background-color:rgb(250, 249, 253); */
+}
+.dropdown-menu{
+    text-decoration: none;
+    background-color:rgb(253, 254, 255);
+    padding-top:1.5rem;
+    padding-bottom: 1.5rem;
+    padding-left: 2rem;
+    border: solid 1px rgb(241, 237, 243);
+    outline: none;
+    border: none;
+}
+.btn{
+    background-color:rgb(179, 35, 35);
+    outline: none;
+    border: none;
+}
+
+ul li{
+    color: rgb(113, 86, 155);
+    font-size:13px;
+    font-weight:500;
+    cursor:pointer;
+}
+ul li:hover{
+    transform:scale(1.03);
+    color:rgb(118, 107, 156);
+  }
+
+
+.edit,.dele{
+  margin-left: 0.5rem;
+  cursor: pointer;
+
+}
+
+
+.dele{ 
+    color: rgb(202, 71, 66);
+    font-weight:600;
+    font-size:19px
+}
+.edit{
+    color:rgb(103, 86, 151);
+    font-size: 17px;
+}
+
+.ver{
+    color: rgb(146, 138, 156);
+}
+
 
 .tsk01 h4{
     font-size:13px;
@@ -204,33 +258,3 @@ button{
 }
 
 
-.tsk-head{
-    color: rgb(197, 190, 190);
-    border-radius:20px;
-    text-align:right;
-    /* background-color:rgb(250, 249, 253); */
-}
-
-
-
-
-
-.edit,.close{
-  margin:0.55rem;
-  cursor: pointer;
-}
-.done:hover,.edit:hover,.close:hover{
-  transform:scale(1.4);
-  
-}
-
-.close{ 
-    color: rgb(165, 68, 65);
-    font-weight:500;
-}
-.edit{
-    color:rgb(103, 86, 151);
-}
-.ver{
-    color: rgb(146, 138, 156);
-}
