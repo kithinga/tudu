@@ -19,15 +19,24 @@
     font-weight:500;
     color:rgb(124, 126, 255);
 }
+.icona{
+    font-size:12px;
+    line-height:50px;
+    vertical-align:middle;
+}
+
+
 
 .btn-addtask{
     border:none;
     background-color:rgb(255, 255, 255);
-    border-radius:5rem;
-    padding-left: 0.5rem;
-    padding-right: 0.6rem;
-    padding:1rem;
+    border-radius:19px;
+    padding-left: 1rem;
+    padding-right: 0.5rem;
     text-align: center;
+}
+.btn-addtask:hover{
+   box-shadow: 0px 6px 3px rgb(158, 0, 0);
 }
 .btn-edittask{
     text-align: center;
@@ -44,8 +53,8 @@
 
 .tsk01{
     min-height:4rem;
-    border: solid 1px rgb(239, 241, 250);  
-    border-radius:5px;
+    /* border: solid 1px rgb(239, 241, 250);   */
+    border-radius:9px;
     margin-bottom: 0.5rem;
     font-size:12px;
     margin-top: 0.5rem;
@@ -72,6 +81,12 @@
     border: solid 1px rgb(241, 237, 243);
     box-shadow: 0px 2px 7px rgb(216, 218, 240)
 }
+
+/* .dropdown-menu span{
+        font-size:18px;
+        line-height:10px;
+        vertical-align:middle;
+} */
 
 .btn{
     /* background-color:rgb(179, 35, 35); */
@@ -121,15 +136,13 @@ ul li:hover{
 
 .tsk01 h6{
    font-weight:600;
-<<<<<<< HEAD
    color: rgb(117, 98, 192);
    font-size:14px;
-=======
    color: rgb(106, 93, 180);
    font-size:13.5px;
->>>>>>> 2112f8dfd829f71123f58d9a83ec40926b2f25ed
    margin-top:0.5rem;
 } 
+
 .tsk01 h6::first-letter{
   text-transform: capitalize;
 } 
@@ -199,8 +212,13 @@ h6:first-letter {
 
 .addsi{
     color: rgb(121, 99, 218);
-    font-size:12px;
-    font-weight:500;
+    font-size:13px;
+    font-weight:600;
+}
+.addsi span{
+    color: rgb(79, 162, 211);
+    font-size:18px;
+    font-weight:600;
 }
 
 .task-form input{

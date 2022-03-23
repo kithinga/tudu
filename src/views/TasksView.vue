@@ -22,7 +22,8 @@
                   data-bs-target="#exampleModal"
                 >
                   <p class="addsi">
-                    <span class="material-icons ">add</span> Add-task
+                    Add-task
+                    <span class="material-icons icona">add</span> 
                   </p>
                 </button>
               </div>
@@ -171,9 +172,10 @@ export default {
 <style scoped>
 
 .tacent {
-  background-color: rgb(246, 246, 248);
-  background-color:rgb(44, 36, 83);
-  border-radius: 2px;
+  background-color: rgb(236, 236, 238);
+  /* background-color:rgb(44, 36, 83); */
+  /* opacity: 0.9; */
+  border-radius: 5px;
   border: solid 1px rgb(250, 243, 243);
   padding-bottom: 1.6rem;
 }
