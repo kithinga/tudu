@@ -11,12 +11,12 @@
 }
 .tihead{
     margin-bottom:none;
-    color: rgb(116, 100, 236);
+    color: rgb(101, 115, 247);
     font-size:1.3rem;   
     font-weight:900;    
 }
 .tic{
-    color:rgb(160, 153, 218);
+    color:rgb(141, 134, 202);
     font-size:13px;
     padding:1px;
     border: solid 1px rgb(186, 181, 218);
@@ -49,7 +49,7 @@
 .tid-btn span{
     font-size:2rem;
     font-weight:500;
-    color:rgb(124, 126, 255);
+    color:rgb(110, 112, 240);
 }
 .icona{
     font-size:12px;
