@@ -58,6 +58,7 @@ li{
 
 
 
+
 .tid-task{
     text-align:left;
     padding-top:2rem;
@@ -326,7 +327,7 @@ h6:first-letter {
 }
 
 .addsi{
-    color: rgb(121, 99, 218);
+    color: rgb(71, 83, 150);
     font-size:13px;
     font-weight:600;
 }

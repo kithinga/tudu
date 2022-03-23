@@ -191,7 +191,7 @@ export default {
 
 <style scoped>
 .tacent {
-  background-color: rgb(235, 235, 235);
+  background-color: rgb(237, 237, 238);
   /* background-color:rgb(44, 36, 83); */
   /* opacity: 0.9; */
   border-radius: 5px;
