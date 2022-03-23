@@ -172,7 +172,7 @@ export default {
 
 .tacent {
   background-color: rgb(246, 246, 248);
-  /* background-color:rgb(44, 36, 83); */
+  background-color:rgb(44, 36, 83);
   border-radius: 2px;
   border: solid 1px rgb(250, 243, 243);
   padding-bottom: 1.6rem;
