@@ -3,6 +3,7 @@
 
   <div class="container-fluid">
     <div class="row no-gutters">
+      
       <!-- Decoy div not needed anyway -->
       <div class="col-lg-2">
         <div class="row no-gutters">
