@@ -4,13 +4,18 @@
   <div class="container-fluid">
     <div class="row no-gutters">
       <!-- Decoy div not needed anyway -->
-      <div class="col-md-2"></div>
+      <div class="col-lg-2"></div>
 
       <div class="col-md-8 tacent">
         <div class="container-fluid">
           <div class="row no-gutters checker">
             <div class="col-lg-6">
-              <div class="tid-task"><h4 class="tihead">Tasks</h4></div>
+              <div class="tid-task">
+                <div class="avar ">
+                  <h4 class="tihead">Tasks <span class="material-icons tic">task</span></h4>
+                  <h5 class="tod">todo</h5>
+                </div>
+              </div>
             </div>
             <div class="col-lg-6">
               <div class="tid-btn">
@@ -76,9 +81,10 @@
                   <h6>{{ task.name }}</h6>
                   <p>{{ task.details }}</p>
                   <br />
-                  <text class="date-d">
-                    <span class="alarm">Due -</span>{{ task.date }}</text
-                  >
+                    <text class="date-d">
+                    <span class="alarm">Due -</span>{{ task.date }}</text>
+                  <text class="st-text">status   <span class="status">-</span></text>
+                  
                 </div>
                 <div class="tsk-foot"></div>
               </div>
@@ -172,7 +178,7 @@ export default {
 <style scoped>
 
 .tacent {
-  background-color: rgb(236, 236, 238);
+  background-color: rgb(235, 235, 235);
   /* background-color:rgb(44, 36, 83); */
   /* opacity: 0.9; */
   border-radius: 5px;

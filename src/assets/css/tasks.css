@@ -4,9 +4,41 @@
     font-family: Poppins;
 } 
 .tid-task{
-    text-align:center;
-    padding: 3rem;
-    padding-top: 4rem;
+    text-align:left;
+    padding-top:2rem;
+    /* padding: 2rem;    */
+    /* padding-top:4.2rem; */
+}
+.tihead{
+    margin-bottom:none;
+    color: rgb(116, 100, 236);
+    font-size:1.3rem;   
+    font-weight:900;    
+}
+.tic{
+    color:rgb(160, 153, 218);
+    font-size:13px;
+    padding:1px;
+    border: solid 1px rgb(186, 181, 218);
+    border-radius:3px;
+    margin-left: 0.4rem;
+}
+.tod{
+    color: rgb(14, 151, 206);
+    font-size:10px;
+    margin-top:none;
+}
+.avar{
+    padding-top:1.3rem;
+    width:10rem;
+    height:5rem;
+    text-align:center;  
+    background-color:rgb(255, 255, 255);
+    border-radius:5px;
+     /* border-bottom-left-radius: 0.6rem; */
+    /* border-bottom-right-radius: 1rem; */
+    /* border-top-left-radius: 0.6rem;  */
+
 }
 
 .tid-btn{
@@ -44,16 +76,10 @@
     margin-right:0.4rem;
 }
 
-.tihead{
-    color: rgb(122, 107, 231);
-    font-size:1.5rem;
-    /* letter-spacing: 9px; */
-    font-weight:700;    
-}
+
 
 .tsk01{
     min-height:4rem;
-    /* border: solid 1px rgb(239, 241, 250);   */
     border-radius:9px;
     margin-bottom: 0.5rem;
     font-size:12px;
@@ -62,7 +88,6 @@
     padding-left:1.7rem;
     padding-bottom:1rem;
     background-color:rgb(255, 255, 255);
-    /* box-shadow: 0px 2px 4px rgb(238, 245, 245); */
 }
 
 
@@ -70,6 +95,11 @@
     color: rgb(182, 187, 190);
     text-align:right;
     /* background-color:rgb(250, 249, 253); */
+}
+.tsk-body{
+    padding-top:1px;
+    margin-top:1px;
+    /* background-color:rgb(15, 75, 116); */
 }
 
 .dropdown-menu{
@@ -95,7 +125,7 @@
 }
 
 ul li{
-    color: rgb(113, 86, 155);
+    color: rgb(93, 83, 184);
     font-size:13px;
     font-weight:500;
     cursor:pointer;
@@ -103,7 +133,7 @@ ul li{
 
 ul li:hover{
     transform:scale(1.03);
-    color:rgb(212, 90, 73);
+    color:rgb(175, 109, 100);
   }
 
 .edit,.dele{
@@ -113,14 +143,14 @@ ul li:hover{
 }
 
 .dele{ 
-    color: rgb(209, 131, 107);
+    color: rgb(148, 127, 121);
     font-weight:600;
     font-size:19px;
     margin-top:4px;
 }
 
 .edit{
-    color:rgb(50, 143, 206);
+    color:rgb(36, 138, 206);
     font-size: 17px;
 }
 
@@ -136,10 +166,8 @@ ul li:hover{
 
 .tsk01 h6{
    font-weight:600;
-   color: rgb(117, 98, 192);
-   font-size:14px;
-   color: rgb(106, 93, 180);
-   font-size:13.5px;
+   font-size:13px;
+   color: rgb(96, 84, 158);
    margin-top:0.5rem;
 } 
 
@@ -152,31 +180,63 @@ h6:first-letter {
 }
 
 .tsk01 p{
-    color: rgb(73, 67, 87);
-    font-size:11px;
+    color: rgb(58, 52, 71);
+    font-size:11.3px;
     margin-right: 15px;
 }
 
 .date-d{
-    color: rgb(140, 124, 167);
+    color: rgb(93, 86, 160);
     font-weight: 500;
     background-color: rgb(250, 248, 252);
     padding:5px;
     padding-left:9px;
     padding-right:9px;
     border-radius:4px;
+    font-size:8px;
 }
 
 .alarm{
-    color: rgb(125, 89, 184);
+    color: rgb(10, 122, 173);
     margin-right:0.7rem;
     background-color:white;
     border-radius:1rem;
+    font-size:8px;
 }
+
+.st-text{
+    color: rgb(75, 63, 182);
+    font-weight: 500;
+    background-color: rgb(250, 248, 252);
+    padding:5px;
+    padding-left:9px;
+    padding-right:9px;
+    border-radius:4px;
+    font-size:8px;
+    text-align:right;
+    margin-left:1rem;
+}
+
+.status{
+    color: rgb(20, 177, 224);
+    background-color:rgb(232, 246, 250);
+    border-radius:5px;
+    padding-left:5px;
+    padding-right:5px;
+    border: solid 1px rgb(189, 232, 235);
+    margin-left:0.25rem;
+}
+
+
+
+
+
+
 /* Modal css area */    
 .modal-header {
-    padding:2rem;
+    padding:32px 1px 1px 32px;
     border-bottom:none;
+
 }
 .modal-title{
     color:rgb(96, 92, 160);
@@ -189,16 +249,16 @@ h6:first-letter {
 }
 .modal-content{
     /* border:none; */
-   border-radius:4px;
-   border:1px solid rgb(208, 206, 216);
+   border-radius:5px;
+   border:1px solid rgb(255, 255, 255);
  
 }
 .modal-body{
-    background-color:rgb(254, 254, 255);    
-    min-height: 27vh;
-    /* background-color:rgb(grey) */
+   min-height: 26vh;
+   padding-top:10px;
    padding-right:2.5rem;    
    padding-left: 2.5rem;
+   /* background-color:rgb(235, 233, 243); */
 }
 
 .modal-footer{
@@ -222,18 +282,19 @@ h6:first-letter {
 }
 
 .task-form input{
-    height:2.8rem;
+    height:2.9rem;
     width:100%;
-    border-radius:4px;
+    border-radius:7px;
     padding-left: 1.7rem;
-    border: solid 1px rgb(217, 215, 224);
+    border: solid 1px rgb(230, 229, 236);
+  
 }
 
 .task-form textarea{
-    min-height:4.4rem;
-    height:auto;
+    height:5rem;  
+
     width:100%;
-    border-radius:4px;
+    border-radius:9;
     padding-left: 1.7rem;
     border: solid 1px rgb(217, 215, 224);
     padding-top: 1rem;
@@ -242,38 +303,38 @@ h6:first-letter {
 input:focus{
 
     outline: none;
-    border: solid 2px rgb(197, 183, 235);
+    border: solid 2px rgb(215, 206, 240);
   }
 
 textarea:focus{
-
     outline: none;
     border: solid 2px rgb(190, 178, 221);
   }
 
-#date,#name,#details{
+.date,.name,.details{
     font-weight:400;
     font-size:11px;
-    color: rgb(91, 78, 204);
+    color: rgb(94, 92, 102);
+   
 }
 
 .task-form label{
     text-align:left;
     font-size:13px;
-    font-weight:500;
-    color: rgb(109, 114, 177);
+    font-weight:600;
+    color: rgb(104, 104, 158);
     margin-top:1.3rem;
 }
 
 .submit{
     font-size:13px;
-    color: rgb(253, 253, 253);
-    border: solid 1px rgb(255, 255, 255);
-    background-color:rgb(109, 107, 221);
+    color: rgb(255, 255, 255);
+    border:none;
+    background-color:rgb(102, 99, 163);
     margin-top:2rem;
-    border-radius:20px;
+    border-radius:19px;
     width:7rem;
-    font-weight: 500;
+    font-weight: 600;
     height:2.8rem;
 }
 

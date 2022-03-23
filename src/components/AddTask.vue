@@ -26,6 +26,7 @@
                 <input
                   type="text"
                   id="name"
+                  class="name"
                   placeholder="Task title"
                   v-model="name"
                   required
@@ -35,6 +36,7 @@
                 <input
                   type="text"
                   id="details"
+                  class="details"
                   placeholder="Details"
                   v-model="details"
                   required
@@ -42,6 +44,8 @@
 
                 <label for="date">Date</label><br />
                 <input
+                  id="date"
+                  class="date "
                   type="date"
                   placeholder="Due-Date"
                   v-model="date"
