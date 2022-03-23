@@ -3,6 +3,61 @@
     margin: 0;
     font-family: Poppins;
 } 
+.status-check{
+    border: solid 1px rgb(245, 245, 245);
+    border-radius:0.6rem;
+    text-align: left;
+    padding-top:1.7rem;
+}
+
+.status-check h5{
+    font-weight:700;
+    font-size:16px;
+    margin-bottom:0.9rem;
+    color: rgb(96, 98, 128);
+}
+
+li{
+    list-style:none;
+    width:6.5rem;
+    display: inline;
+    margin-right: 1rem;
+}
+
+.check-text{
+    color: rgb(123, 112, 206);
+    font-weight: 500;
+    background-color: rgb(250, 248, 252);
+    padding:3px;
+    padding-left:9px;
+    padding-right:9px;
+    border-radius:4px;
+    font-size:10px;
+    margin-bottom:0.5rem;
+    margin-top:0.5rem;
+   
+}
+
+.check-span{
+    border-radius:9px;
+    padding-left:10px;
+    padding-right:10px;
+    margin-left:1.2rem;
+}
+
+.ong{
+  background-color:rgb(228, 228, 240);
+}
+.ovd{
+  background-color:rgb(224, 108, 88);
+}
+.com{
+    background-color:rgb(36, 184, 230);
+}
+
+
+
+
 .tid-task{
     text-align:left;
     padding-top:2rem;
@@ -11,7 +66,7 @@
 }
 .tihead{
     margin-bottom:none;
-    color: rgb(101, 115, 247);
+    color: rgb(109, 116, 184);
     font-size:1.3rem;   
     font-weight:900;    
 }

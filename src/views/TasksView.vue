@@ -4,15 +4,36 @@
   <div class="container-fluid">
     <div class="row no-gutters">
       <!-- Decoy div not needed anyway -->
-      <div class="col-lg-2"></div>
+      <div class="col-lg-2">
+        <div class="row no-gutters">
+          <div class="col">
+            <div class="status-check shadow-sm">
+              <ul>
+                <h5>Task status</h5>
+                <li class="check-text shadow-sm">
+                  Ongoing <span class="ong check-span"></span>
+                </li>
+                <li class="check-text shadow-sm">
+                  Complete <span class="ovd check-span"></span>
+                </li>
+                <li class="check-text shadow-sm">
+                  Overdue <span class="com check-span"></span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <div class="col-md-8 tacent">
         <div class="container-fluid">
           <div class="row no-gutters checker">
             <div class="col-lg-6">
               <div class="tid-task">
-                <div class="avar ">
-                  <h4 class="tihead">Tasks <span class="material-icons tic">task</span></h4>
+                <div class="avar">
+                  <h4 class="tihead">
+                    Tasks <span class="material-icons tic">task</span>
+                  </h4>
                   <h5 class="tod">todo</h5>
                 </div>
               </div>
@@ -28,7 +49,7 @@
                 >
                   <p class="addsi">
                     Add-task
-                    <span class="material-icons icona">add</span> 
+                    <span class="material-icons icona">add</span>
                   </p>
                 </button>
               </div>
@@ -46,29 +67,20 @@
                 <div class="tsk-head">
                   <!-- Drop-down menu starts here -->
                   <div class="btn-group dropstart">
-                    <button
-                      type="button"
-                      class="btn "
-                      data-bs-toggle="dropdown"
-                    >
+                    <button type="button" class="btn" data-bs-toggle="dropdown">
                       <span class="material-icons ver">more_vert</span>
                     </button>
 
-                
-                    <ul class="dropdown-menu ">
-                      <li
-                        type="button"
-                        title="Edit-task"
-                        @click="editTask"
-                      >
+                    <ul class="dropdown-menu">
+                      <li type="button" title="Edit-task" @click="editTask">
                         <router-link :to="{ path: `/edittask/${task.id}` }">
                           EditTask
-                           <span class="material-icons edit">edit</span>
+                          <span class="material-icons edit">edit</span>
                         </router-link>
                       </li>
                       <li title="Delete-task" @click="deleteTask(task.id)">
                         Del.Task
-                         <span class="material-icons dele">close</span>
+                        <span class="material-icons dele">close</span>
                       </li>
                     </ul>
                   </div>
@@ -81,10 +93,12 @@
                   <h6>{{ task.name }}</h6>
                   <p>{{ task.details }}</p>
                   <br />
-                    <text class="date-d">
-                    <span class="alarm">Due -</span>{{ task.date }}</text>
-                  <text class="st-text">status   <span class="status">-</span></text>
-                  
+                  <text class="date-d">
+                    <span class="alarm">Due -</span>{{ task.date }}</text
+                  >
+                  <text class="st-text"
+                    >status <span class="status">-</span></text
+                  >
                 </div>
                 <div class="tsk-foot"></div>
               </div>
@@ -176,7 +190,6 @@ export default {
 </script>
 
 <style scoped>
-
 .tacent {
   background-color: rgb(235, 235, 235);
   /* background-color:rgb(44, 36, 83); */
@@ -185,7 +198,6 @@ export default {
   border: solid 1px rgb(250, 243, 243);
   padding-bottom: 1.6rem;
 }
-
 </style>
 
 
