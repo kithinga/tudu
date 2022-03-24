@@ -349,6 +349,12 @@ h6:first-letter {
   /* border: solid 1px rgb(230, 229, 236); */
   background-color:rgb(239, 239, 245);
 }
+input:focus{
+  background-color:white;
+  outline: none;
+  border: solid 2px rgb(233, 231, 255);
+}
+
 
 .task-form textarea {
   height: 5rem;
@@ -360,10 +366,6 @@ h6:first-letter {
   padding-top: 1rem;
 }
 
-input:focus {
-  outline: none;
-  border: solid 2px rgb(233, 231, 236);
-}
 
 textarea:focus {
   outline: none;
