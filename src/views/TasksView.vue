@@ -79,7 +79,7 @@
                           <span class="material-icons edit">edit</span>
                         </router-link>
                       </li>
-                      <li title="Delete-task" @click="doneTask()">
+                      <li title="Mark-done" @click="doneTask()">
                         Mark-done
                         <span class="material-icons done">done</span>
                       </li>
