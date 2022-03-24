@@ -75,20 +75,23 @@ export default {
       name: null,
       details: null,
       date: null,
+    
     };
   },
   methods: {
     async addTask() {
       const addedDoc = await addDoc(colref, this.$data);
       console.log(addedDoc);
+    
       swal({
         text: "uploading tasks ....",
         // icon: "https://i.gifer.com/IuGJ.gif",
         icon: "https://gifimage.net/wp-content/uploads/2017/08/spinner-gif-7.gif",
         buttons: false,
-        timer:3000
+        timer:3000,
         
       })
+
       // setTimeout(2000)
       // window.location.href = "/tasks"
       //  alert(addedDoc);

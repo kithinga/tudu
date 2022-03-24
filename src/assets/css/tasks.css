@@ -1,172 +1,166 @@
-*{
-    padding:0;
-    margin: 0;
-    font-family: Poppins;
-} 
-
-.status-check{
-    border: solid 1px rgb(245, 245, 245);
-    border-radius:0.6rem;
-    text-align: left;
-    padding-top:1.7rem;
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Poppins;
 }
 
-.status-check h5{
-    font-weight:700;
-    font-size:16px;
-    margin-bottom:0.9rem;
-    color: rgb(96, 98, 128);
+.status-check {
+  border: solid 1px rgb(245, 245, 245);
+  border-radius: 0.6rem;
+  text-align: left;
+  padding-top: 1.7rem;
 }
 
-li{
-    list-style:none;
-    width:6.5rem;
-    display: inline;
-    margin-right: 1rem;
+.status-check h5 {
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 0.9rem;
+  color: rgb(96, 98, 128);
 }
 
-.check-text{
-    color: rgb(123, 112, 206);
-    font-weight: 500;
-    background-color: rgb(250, 248, 252);
-    padding:3px;
-    padding-left:9px;
-    padding-right:9px;
-    border-radius:4px;
-    font-size:10px;
-    margin-bottom:0.5rem;
-    margin-top:0.5rem;
-   
+li {
+  list-style: none;
+  width: 6.5rem;
+  display: inline;
+  margin-right: 1rem;
+}
+li:hover {
+  color: rgb(9, 131, 202);
 }
 
-.check-span{
-    border-radius:9px;
-    padding-left:10px;
-    padding-right:10px;
-    margin-left:1.2rem;
+.check-text {
+  color: rgb(45, 85, 112);
+  font-weight: 500;
+  background-color: rgb(250, 248, 252);
+  padding: 3px;
+  padding-left: 9px;
+  padding-right: 9px;
+  border-radius: 4px;
+  font-size: 11px;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
 }
 
-.ong{
-  background-color:rgb(228, 228, 240);
-}
-.ovd{
-  background-color:rgb(224, 108, 88);
-}
-.com{
-    background-color:rgb(36, 184, 230);
+.check-span {
+  border-radius: 9px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 1.2rem;
 }
 
-
-
-
-
-.tid-task{
-    text-align:left;
-    padding-top:2rem;
-    /* padding: 2rem;    */
-    /* padding-top:4.2rem; */
-}
-.tihead{
-    margin-bottom:none;
-    color: rgb(109, 116, 184);
-    font-size:1.3rem;   
-    font-weight:900;    
-}
-.tic{
-    color:rgb(141, 134, 202);
-    font-size:13px;
-    padding:1px;
-    border: solid 1px rgb(186, 181, 218);
-    border-radius:3px;
-    margin-left: 0.4rem;
-}
-.tod{
-    color: rgb(14, 151, 206);
-    font-size:10px;
-    margin-top:none;
-}
-.avar{
-    padding-top:1.3rem;
-    width:10rem;
-    height:5rem;
-    text-align:center;  
-    background-color:rgb(255, 255, 255);
-    border-radius:5px;
-     /* border-bottom-left-radius: 0.6rem; */
-    /* border-bottom-right-radius: 1rem; */
-    /* border-top-left-radius: 0.6rem;  */
-
+.ong {
+  background-color: rgb(228, 228, 240);
 }
 
-.tid-btn{
-    text-align:center;
-    padding: 3rem;
+.ovd {
+  background-color: rgb(224, 108, 88);
 }
 
-.tid-btn span{
-    font-size:2rem;
-    font-weight:500;
-    color:rgb(110, 112, 240);
-}
-.icona{
-    font-size:12px;
-    line-height:50px;
-    vertical-align:middle;
+.com {
+  background-color: rgb(36, 184, 230);
 }
 
-
-
-.btn-addtask{
-    border:none;
-    background-color:rgb(255, 255, 255);
-    border-radius:19px;
-    padding-left: 1rem;
-    padding-right: 0.5rem;
-    text-align: center;
+.tid-task {
+  text-align: left;
+  padding-top: 2rem;
+  /* padding: 2rem;    */
+  /* padding-top:4.2rem; */
 }
-.btn-addtask:hover{
-   box-shadow: 0px 6px 3px rgb(158, 0, 0);
+.tihead {
+  margin-bottom: none;
+  color: rgb(109, 116, 184);
+  font-size: 1.3rem;
+  font-weight: 900;
 }
-.btn-edittask{
-    text-align: center;
-    margin-left:0.5rem;
-    margin-right:0.4rem;
+.tic {
+  color: rgb(141, 134, 202);
+  font-size: 13px;
+  padding: 1px;
+  border: solid 1px rgb(186, 181, 218);
+  border-radius: 3px;
+  margin-left: 0.4rem;
 }
-
-
-
-.tsk01{
-    min-height:4rem;
-    border-radius:9px;
-    margin-bottom: 0.5rem;
-    font-size:12px;
-    margin-top: 0.5rem;
-    text-align:left; 
-    padding-left:1.7rem;
-    padding-bottom:1rem;
-    background-color:rgb(255, 255, 255);
+.tod {
+  color: rgb(14, 151, 206);
+  font-size: 10px;
+  margin-top: none;
 }
-
-
-.tsk-head{
-    color: rgb(182, 187, 190);
-    text-align:right;
-    /* background-color:rgb(250, 249, 253); */
-}
-.tsk-body{
-    padding-top:1px;
-    margin-top:1px;
-    /* background-color:rgb(15, 75, 116); */
+.avar {
+  padding-top: 1.3rem;
+  width: 10rem;
+  height: 5rem;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  /* border-bottom-left-radius: 0.6rem; */
+  /* border-bottom-right-radius: 1rem; */
+  /* border-top-left-radius: 0.6rem;  */
 }
 
-.dropdown-menu{
-    text-decoration: none;
-    background-color:rgb(253, 254, 255);
-    padding-top:1.5rem;
-    padding-bottom: 1.5rem;
-    padding-left:1.6rem;
-    border: solid 1px rgb(241, 237, 243);
-    box-shadow: 0px 2px 7px rgb(216, 218, 240)
+.tid-btn {
+  text-align: center;
+  padding: 3rem;
+}
+
+.tid-btn span {
+  font-size: 2rem;
+  font-weight: 500;
+  color: rgb(110, 112, 240);
+}
+.icona {
+  font-size: 12px;
+  line-height: 50px;
+  vertical-align: middle;
+}
+
+.btn-addtask {
+  border: none;
+  background-color: rgb(255, 255, 255);
+  border-radius: 19px;
+  padding-left: 1rem;
+  padding-right: 0.5rem;
+  text-align: center;
+}
+.btn-addtask:hover {
+  box-shadow: 0px 6px 3px rgb(158, 0, 0);
+}
+.btn-edittask {
+  text-align: center;
+  margin-left: 0.5rem;
+  margin-right: 0.4rem;
+}
+
+.tsk01 {
+  min-height: 4rem;
+  border-radius: 9px;
+  margin-bottom: 0.5rem;
+  font-size: 12px;
+  margin-top: 0.5rem;
+  text-align: left;
+  padding-left: 1.7rem;
+  padding-bottom: 1rem;
+  background-color: rgb(255, 255, 255);
+}
+
+.tsk-head {
+  color: rgb(182, 187, 190);
+  text-align: right;
+  /* background-color:rgb(250, 249, 253); */
+}
+.tsk-body {
+  padding-top: 1px;
+  margin-top: 1px;
+  /* background-color:rgb(15, 75, 116); */
+}
+
+.dropdown-menu {
+  text-decoration: none;
+  background-color: rgb(253, 254, 255);
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 1.6rem;
+  border: solid 1px rgb(241, 237, 243);
+  box-shadow: 0px 2px 7px rgb(216, 218, 240);
 }
 
 /* .dropdown-menu span{
@@ -175,253 +169,252 @@ li{
         vertical-align:middle;
 } */
 
-.btn{
-    /* background-color:rgb(179, 35, 35); */
-    outline: none;
-    border: none;
+.btn {
+  /* background-color:rgb(179, 35, 35); */
+  outline: none;
+  border: none;
 }
 
-ul li{
-    color: rgb(71, 76, 94);
-    font-size:13px;
-    font-weight:500;
-    cursor:pointer;
-    border-bottom: 2px solid rgb(250, 250, 250);
+ul li {
+  color: rgb(71, 76, 94);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  border-bottom: 2px solid rgb(250, 250, 250);
 }
 
-ul li:hover{
-    transform:scale(1.01);
-    color:rgb(122, 87, 83);
-    border-bottom: 2px solid rgb(227, 242, 252);
-  }
-  
+ul li:hover {
+  transform: scale(1.01);
+  border-bottom: 2px solid rgb(238, 248, 255);
+}
 
-
-.edit,.dele{
+.edit,
+.dele {
   margin-left: 1rem;
   cursor: pointer;
-
 }
 
-.dele{ 
-    color: rgb(148, 127, 121);
-    font-weight:600;
-    font-size:14px;
-    margin-top:4px;
-    vertical-align:middle;
+.dele {
+  color: rgb(156, 93, 75);
+  font-weight: 600;
+  font-size: 14px;
+  margin-top: 4px;
+  vertical-align: middle;
+}
+.dele:hover {
+  color: rgb(190, 63, 41);
 }
 
-.done{
-    color:rgb(60, 146, 93);
-    font-size: 14px;    
-    margin-left: 0.4rem;
-    font-weight: 600;
-    /* line-height:40px; */
-    vertical-align:middle;
+.done {
+  color: rgb(62, 163, 101);
+  font-size: 14px;
+  margin-left: 0.4rem;
+  font-weight: 600;
+  /* line-height:40px; */
+  vertical-align: middle;
 }
 
-.edit{
-    color:rgb(59, 119, 160);
-    font-size: 14px;
-    vertical-align:middle;
-
+.edit {
+  color: rgb(62, 136, 185);
+  font-size: 14px;
+  vertical-align: middle;
 }
 
-.ver{
-    color: rgb(146, 138, 156);
+.ver {
+  color: rgb(146, 138, 156);
 }
 
-.tsk01 h4{
-    font-size:13px;
-    color: rgb(173, 150, 101);
-    font-weight:600;
+.tsk01 h4 {
+  font-size: 13px;
+  color: rgb(173, 150, 101);
+  font-weight: 600;
 }
 
-.tsk01 h6{
-   font-weight:600;
-   font-size:13px;
-   color: rgb(96, 84, 158);
-   margin-top:0.5rem;
-} 
+.tsk01 h6 {
+  font-weight: 600;
+  font-size: 13px;
+  color: rgb(96, 84, 158);
+  margin-top: 0.5rem;
+}
 
-.tsk01 h6::first-letter{
+.tsk01 h6::first-letter {
   text-transform: capitalize;
-} 
+}
 
 h6:first-letter {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
-.tsk01 p{
-    color: rgb(58, 52, 71);
-    font-size:11.3px;
-    margin-right: 15px;
+.tsk01 p {
+  color: rgb(58, 52, 71);
+  font-size: 11.3px;
+  margin-right: 15px;
 }
 
-.date-d{
-    color: rgb(93, 86, 160);
-    font-weight: 500;
-    background-color: rgb(250, 248, 252);
-    padding:5px;
-    padding-left:9px;
-    padding-right:9px;
-    border-radius:4px;
-    font-size:8px;
+.date-d {
+  color: rgb(93, 86, 160);
+  font-weight: 500;
+  background-color: rgb(250, 248, 252);
+  padding: 5px;
+  padding-left: 9px;
+  padding-right: 9px;
+  border-radius: 4px;
+  font-size: 8px;
 }
 
-.alarm{
-    color: rgb(10, 122, 173);
-    margin-right:0.7rem;
-    background-color:white;
-    border-radius:1rem;
-    font-size:8px;
+.alarm {
+  color: rgb(10, 122, 173);
+  margin-right: 0.7rem;
+  background-color: white;
+  border-radius: 1rem;
+  font-size: 8px;
 }
 
-.st-text{
-    color: rgb(75, 63, 182);
-    font-weight: 500;
-    background-color: rgb(250, 248, 252);
-    padding:5px;
-    padding-left:9px;
-    padding-right:9px;
-    border-radius:4px;
-    font-size:8px;
-    text-align:right;
-    margin-left:1rem;
+.st-text {
+  color: rgb(75, 63, 182);
+  font-weight: 500;
+  background-color: rgb(250, 248, 252);
+  padding: 5px;
+  padding-left: 9px;
+  padding-right: 9px;
+  border-radius: 4px;
+  font-size: 8px;
+  text-align: right;
+  margin-left: 1rem;
 }
 
-.status{
-    color: rgb(20, 177, 224);
-    background-color:rgb(232, 246, 250);
-    border-radius:5px;
-    padding-left:5px;
-    padding-right:5px;
-    border: solid 1px rgb(189, 232, 235);
-    margin-left:0.25rem;
+.status {
+  color: rgb(20, 177, 224);
+  background-color: rgb(232, 246, 250);
+  border-radius: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border: solid 1px rgb(189, 232, 235);
+  margin-left: 0.25rem;
 }
 
-
-
-
-
-
-/* Modal css area */    
+/* Modal css area */
 .modal-header {
-    padding:32px 1px 1px 32px;
-    border-bottom:none;
-
+  padding: 32px 1px 1px 32px;
+  border-bottom: none;
 }
-.modal-title{
-    color:rgb(96, 92, 160);
-    font-weight: 700;
-    font-size:16px;
-    border-bottom:2px solid rgb(250, 250, 250);
+.modal-title {
+  color: rgb(96, 92, 160);
+  font-weight: 700;
+  font-size: 16px;
+  border-bottom: 2px solid rgb(250, 250, 250);
 }
-.syi{
-    margin-right:1.6rem;
+.syi {
+  margin-right: 1.6rem;
 }
-.modal-content{
-    /* border:none; */
-   border-radius:5px;
-   border:1px solid rgb(255, 255, 255);
- 
+.modal-content {
+  /* border:none; */
+  border-radius: 5px;
+  border: 1px solid rgb(255, 255, 255);
 }
-.modal-body{
-   min-height: 26vh;
-   padding-top:10px;
-   padding-right:2.5rem;    
-   padding-left: 2.5rem;
-   /* background-color:rgb(235, 233, 243); */
+.modal-body {
+  min-height: 26vh;
+  padding-top: 10px;
+  padding-right: 2.5rem;
+  padding-left: 2.5rem;
+  /* background-color:rgb(235, 233, 243); */
 }
 
-.modal-footer{
-    min-height:2rem;
-    border-top:none;
+.modal-footer {
+  min-height: 2rem;
+  border-top: none;
 }
 
-.task-form{
-    text-align:left;
+.task-form {
+  text-align: left;
 }
 
-.addsi{
-    color: rgb(71, 83, 150);
-    font-size:13px;
-    font-weight:600;
+.addsi {
+  color: rgb(71, 83, 150);
+  font-size: 13px;
+  font-weight: 600;
 }
-.addsi span{
-    color: rgb(79, 162, 211);
-    font-size:18px;
-    font-weight:600;
-}
-
-.task-form input{
-    height:2.9rem;
-    width:100%;
-    border-radius:7px;
-    padding-left: 1.7rem;
-    border: solid 1px rgb(230, 229, 236);
-  
+.addsi span {
+  color: rgb(79, 162, 211);
+  font-size: 18px;
+  font-weight: 600;
 }
 
-.task-form textarea{
-    height:5rem;  
-
-    width:100%;
-    border-radius:9;
-    padding-left: 1.7rem;
-    border: solid 1px rgb(217, 215, 224);
-    padding-top: 1rem;
+.task-form input {
+  height: 2.9rem;
+  width: 100%;
+  border-radius: 7px;
+  padding-left: 1.7rem;
+  border: none;
+  /* border: solid 1px rgb(230, 229, 236); */
+  background-color:rgb(239, 239, 245);
 }
 
-input:focus{
+.task-form textarea {
+  height: 5rem;
 
-    outline: none;
-    border: solid 2px rgb(215, 206, 240);
-  }
-
-textarea:focus{
-    outline: none;
-    border: solid 2px rgb(190, 178, 221);
-  }
-
-.date,.name,.details{
-    font-weight:400;
-    font-size:11px;
-    color: rgb(94, 92, 102);
-   
+  width: 100%;
+  border-radius: 9;
+  padding-left: 1.7rem;
+  border: solid 1px rgb(217, 215, 224);
+  padding-top: 1rem;
 }
 
-.task-form label{
-    text-align:left;
-    font-size:13px;
-    font-weight:600;
-    color: rgb(104, 104, 158);
-    margin-top:1.3rem;
+input:focus {
+  outline: none;
+  border: solid 2px rgb(233, 231, 236);
 }
 
-.submit{
-    font-size:13px;
-    color: rgb(255, 255, 255);
-    border:none;
-    background-color:rgb(102, 99, 163);
-    margin-top:2rem;
-    border-radius:19px;
-    width:7rem;
-    font-weight: 600;
-    height:2.8rem;
+textarea:focus {
+  outline: none;
+  border: solid 2px rgb(190, 178, 221);
 }
 
-.btn-group{
-    /* background-color:rgb(109, 109, 179); */
-    padding:0;
-    margin: 0;
-    border-radius:10px;
-    border-bottom-left-radius:0.7rem;
-   /* border: solid 1px rgb(243, 241, 253); */
+.date,
+.name,
+.details {
+  font-weight: 400;
+  font-size: 12px;
+  color: rgb(32, 28, 43);
 }
 
-button{
-    outline: none;
+.task-form label {
+  text-align: left;
+  font-size: 13px;
+  font-weight: 600;
+  color: rgb(104, 104, 158);
+  margin-top: 1.3rem;
 }
 
+.submit {
+  font-size: 13px;
+  color: rgb(255, 255, 255);
+  border: none;
+  background-color: rgb(102, 99, 163);
+  margin-top: 2rem;
+  border-radius: 19px;
+  width: 7rem;
+  font-weight: 600;
+  height: 2.8rem;
+}
+.btn-drop:focus {
+  outline: solid 1px white;
+  background-color: rgb(254, 255, 255);
+  border: 1px solid rgb(238, 233, 233);
+}
 
+.btn-group {
+  padding: 0;
+  margin: 0;
+  border-radius: 10px;
+  border-bottom-left-radius: 0.7rem;
+  /* border: solid 1px rgb(243, 241, 253); */
+}
+.btn-drop {
+  margin-top: 7px;
+  margin-right: 7px;
+  background-color: white;
+  border-radius: 3rem;
+  border: solid 1px white;
+  outline: solid 1px white;
+}

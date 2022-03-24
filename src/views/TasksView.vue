@@ -15,10 +15,10 @@
                   Ongoing <span class="ong check-span"></span>
                 </li>
                 <li class="check-text shadow-sm">
-                  Complete <span class="ovd check-span"></span>
+                  Overdue <span class="ovd check-span"></span>
                 </li>
                 <li class="check-text shadow-sm">
-                  Overdue <span class="com check-span"></span>
+                  Complete <span class="com check-span"></span>
                 </li>
               </ul>
             </div>
@@ -68,7 +68,7 @@
                 <div class="tsk-head">
                   <!-- Drop-down menu starts here -->
                   <div class="btn-group dropstart">
-                    <button type="button" class="btn" data-bs-toggle="dropdown">
+                    <button type="button" class="btn-drop" data-bs-toggle="dropdown">
                       <span class="material-icons ver">more_vert</span>
                     </button>
 
