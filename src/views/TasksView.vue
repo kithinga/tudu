@@ -3,7 +3,7 @@
 
   <div class="container-fluid">
     <div class="row no-gutters">
-      
+
       <!-- Decoy div not needed anyway -->
       <div class="col-lg-2">
         <div class="row no-gutters">
@@ -75,12 +75,16 @@
                     <ul class="dropdown-menu">
                       <li type="button" title="Edit-task" @click="editTask">
                         <router-link :to="{ path: `/edittask/${task.id}` }">
-                          EditTask
+                          Edit-Task
                           <span class="material-icons edit">edit</span>
                         </router-link>
                       </li>
+                      <li title="Delete-task" @click="doneTask()">
+                        Mark-done
+                        <span class="material-icons done">done</span>
+                      </li>
                       <li title="Delete-task" @click="deleteTask(task.id)">
-                        Del.Task
+                        Dele.Task
                         <span class="material-icons dele">close</span>
                       </li>
                     </ul>

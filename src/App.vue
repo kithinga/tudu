@@ -4,7 +4,7 @@
       <div class="row no-gutters cnav">
         <div class="col-sm-4">
           <div class="back">
-            <router-link class="tudu-logo" to="/">Tudu !</router-link>
+            <router-link class="tudu-logo" to="/">tudu !</router-link>
           </div>
         </div>
 

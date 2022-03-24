@@ -7,10 +7,11 @@
 .tudu-logo{
     font-size:1.6rem;
     font-weight:900;
-    /* border: 1px rgb(229, 235, 236) solid; */
-    /* background-color:rgb(238, 248, 248); */
+    text-shadow: 1px 1px 1px rgb(228, 222, 222);
+    /* text-shadow: 1px 1px 1px rgb(22, 22, 22); */
     border-radius:5px;
-    color: rgb(76, 87, 148);
+    color: rgb(68, 66, 73);
+    /* color: rgb(250, 255, 255); */
     padding:0.5rem;
     padding-left:1.5rem;
     padding-right:1.5rem;

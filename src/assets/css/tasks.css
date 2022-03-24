@@ -3,6 +3,7 @@
     margin: 0;
     font-family: Poppins;
 } 
+
 .status-check{
     border: solid 1px rgb(245, 245, 245);
     border-radius:0.6rem;
@@ -181,7 +182,7 @@ li{
 }
 
 ul li{
-    color: rgb(93, 83, 184);
+    color: rgb(96, 101, 158);
     font-size:13px;
     font-weight:500;
     cursor:pointer;
