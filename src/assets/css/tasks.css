@@ -397,6 +397,7 @@ textarea:focus {
   font-weight: 600;
   height: 2.8rem;
 }
+
 .btn-drop:focus {
   outline: solid 1px white;
   background-color: rgb(254, 255, 255);
@@ -410,6 +411,7 @@ textarea:focus {
   border-bottom-left-radius: 0.7rem;
   /* border: solid 1px rgb(243, 241, 253); */
 }
+
 .btn-drop {
   margin-top: 7px;
   margin-right: 7px;

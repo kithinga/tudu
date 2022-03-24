@@ -12,13 +12,19 @@
               <ul>
                 <h5>Task status</h5>
                 <li class="check-text shadow-sm">
-                  Ongoing <span class="ong check-span"></span>
+                    <router-link to="/tasks">
+                        Ongoing <span class="ong check-span"></span>
+                    </router-link>
                 </li>
                 <li class="check-text shadow-sm">
-                  Overdue <span class="ovd check-span"></span>
+                    <router-link to="/pending">
+                        Overdue <span class="ovd check-span"></span>
+                    </router-link>
                 </li>
                 <li class="check-text shadow-sm">
-                  Complete <span class="com check-span"></span>
+                    <router-link to="/future">
+                        Complete <span class="com check-span"></span>
+                    </router-link>
                 </li>
               </ul>
             </div>

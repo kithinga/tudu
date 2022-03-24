@@ -1,7 +1,7 @@
 
 <template>
   <Navigator />
-  <div class="conatiner-fluid">
+  <div class="container-fluid">
     <div class="row no-gutters">
       <div class="col-lg-2"></div>
       <div class="col-lg-8">

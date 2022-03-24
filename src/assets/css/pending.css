@@ -1,0 +1,69 @@
+.pends{
+    padding:3rem;
+    margin:1rem;
+    border-radius:0.5rem;
+    background-color:white;
+    font-size:13px;
+}
+
+.pend-stat{
+    color:rgb(240, 179, 10);
+    font-size:11px;
+}
+
+.tid-task{
+    text-align:left;
+    padding-top:2rem;
+    /* padding: 2rem;    */
+    /* padding-top:4.2rem; */
+}
+.pend-tihead{
+    margin-bottom:none;
+    color: rgb(226, 99, 14);
+    font-size:1.3rem;   
+    font-weight:900;    
+}
+.pend-tic{
+    color:rgb(206, 154, 12);
+    font-size:13px;
+    padding:1px;
+    border: solid 1px rgb(184, 218, 181);
+    border-radius:3px;
+    margin-left: 0.4rem;
+}
+.pend-tod{
+    color: rgb(209, 62, 25);
+    font-size:10px;
+    margin-top:none;
+}
+.pend-avar{
+    padding-top:1.3rem;
+    width:13rem;
+    height:5rem;
+    text-align:center;  
+    background-color:rgb(255, 255, 255);
+    border-radius:5px;
+}
+.pend-des{
+    padding:3rem;
+
+}
+
+.pend-des h5{
+    font-size:13px;
+    font-weight: 500;
+     color: rgb(219, 94, 11);
+     background-color:white;
+     padding:7px;
+     padding-left:11px;
+     padding-right:11px;
+     border-radius:4px;
+     width:16rem;
+     /* width:fit-content; */
+}
+.chart-con{
+    margin-top:3rem;
+}
+
+
+
