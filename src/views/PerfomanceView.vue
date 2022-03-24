@@ -36,7 +36,7 @@
                 <div class="row no-gutters justify-content-center">
                   <div class="col pers">
                     <!-- Chart goes here nigga -->
-                    <h6>Chart goes here ...</h6>
+                    <h6>Perfomance per task completion</h6>
                     <Perchart/>
                   </div>
                 </div>

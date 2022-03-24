@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="chart-box">
     <canvas id="planet-chart"></canvas>
   </div>
 </template>
@@ -19,6 +19,14 @@ export default {
     const ctx = document.getElementById('planet-chart');
     new Chart(ctx, this.planetChartData);
   }
-  
 }
 </script>
+
+
+<style scoped>
+     .chart-box{
+       border: 1px solid rgb(253, 250, 250);
+       padding:2rem;
+       border-radius:9px;
+     }
+</style>
