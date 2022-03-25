@@ -1,5 +1,6 @@
-export const lineChartData = {
-    type: "line",
+// bargraph
+export const pieChartData = {
+    type: "pie",
     data: {
       labels: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "sunday"],
       datasets: [
@@ -11,8 +12,9 @@ export const lineChartData = {
           borderRadius:7,
           borderWidth: 2
         },
+
         {
-          label: "Perfomance per task completion",
+          label: "Just a bar graph as we figure out",
           data: [0.166,2.081, 3.003, 0.323, 954.792, 285.886, 51.514],
           backgroundColor: "rgba(71, 183,132,.5)",
           borderColor: "#47b784",
@@ -35,7 +37,6 @@ export const lineChartData = {
       }
     }
   };
-
-  export default lineChartData;
-
   
+
+  export default pieChartData

@@ -2,8 +2,8 @@
   <Navigator />
   <div class="container-fluid">
     <div class="row no-gutters">
-      <div class="col-lg-2"></div>
-      <div class="col-lg-8">
+      <div class="col-lg-1"></div>
+      <div class="col-lg-10">
         <div class="container-fluid">
           <div class="row no-gutters">
             <div class="col-md-12 tacent">
@@ -53,10 +53,10 @@
                       </div>
 
                       <div class="col-lg-4">
-                        <div class="brchart">
+                        <div class="piechart">
                           <!-- Chart goes here nigga -->
                           <h6>Piechart some text here</h6>
-                          
+                          <Piechart />
                         </div>
                       </div>
                     </div>
@@ -67,7 +67,7 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-2"></div>
+      <div class="col-lg-1"></div>
     </div>
   </div>
 </template>
@@ -77,12 +77,14 @@
 import Linechart from "../components/Linechart.vue";
 import Navigator from "../components/Navigator.vue";
 import Barchart from "../components/Barchart.vue";
+import Piechart from "../components/Piechart.vue";
 
 export default {
   name: "perfomanceView.vue",
   components: {
     Linechart,
     Barchart,
+    Piechart,
     Navigator,
   },
 };
@@ -97,7 +99,7 @@ export default {
   border: solid 1px rgb(250, 243, 243);
   padding-bottom: 1.6rem;
 }
-.barchart{
+.piechart{
     /* background-color:rgb(223, 162, 162); */
 }
 </style>

@@ -82,7 +82,7 @@ export default {
     async addTask() {
       const addedDoc = await addDoc(colref, this.$data);
       console.log(addedDoc);
-    
+      // const togmodl = document.getElementById('tog-modl');
       swal({
         text: "uploading tasks ....",
         // icon: "https://i.gifer.com/IuGJ.gif",
