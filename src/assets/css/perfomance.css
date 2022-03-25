@@ -1,6 +1,6 @@
 .pers{
     padding:3rem;
-    margin:1rem;
+    margin:0.5rem;
     border-radius:0.5rem;
     background-color:white;
     font-size:13px;
@@ -12,6 +12,12 @@
 
     font-size:11px;
 }
+.pers h6{
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom:1rem;
+    color: rgb(68, 71, 60);
+  }
 
 .tid-task{
     text-align:left;

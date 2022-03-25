@@ -31,13 +31,35 @@
                 </div>
               </div>
 
-              <!-- Chart content goes here -->
+              <!-- Charts content goes here -->
               <div class="container-fluid chart-con">
                 <div class="row no-gutters justify-content-center">
                   <div class="col pers">
-                    <!-- Chart goes here nigga -->
-                    <h6>Perfomance per task completion</h6>
-                    <Perchart/>
+                    <div class="row no-gutters">
+                      <div class="col-lg-4">
+                        <div class="linechart">
+                          <!-- Chart goes here nigga -->
+                          <h6>Perfomance per task completion</h6>
+                          <Linechart />
+                        </div>
+                      </div>
+
+                      <div class="col-lg-4">
+                        <div class="barchart">
+                          <!-- Chart goes here nigga -->
+                          <h6>Bargraph some text here</h6>
+                          <Barchart />
+                        </div>
+                      </div>
+
+                      <div class="col-lg-4">
+                        <div class="brchart">
+                          <!-- Chart goes here nigga -->
+                          <h6>Piechart some text here</h6>
+                          
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -52,16 +74,18 @@
 
 
 <script>
-import Perchart from '../components/Perchart.vue'
-import Navigator from '../components/Navigator.vue'
+import Linechart from "../components/Linechart.vue";
+import Navigator from "../components/Navigator.vue";
+import Barchart from "../components/Barchart.vue";
 
 export default {
-  name: 'perfomanceView.vue',
+  name: "perfomanceView.vue",
   components: {
-    Perchart,
+    Linechart,
+    Barchart,
     Navigator,
-  }
-}
+  },
+};
 </script>
 
 <style scoped>
@@ -72,5 +96,8 @@ export default {
   border-radius: 5px;
   border: solid 1px rgb(250, 243, 243);
   padding-bottom: 1.6rem;
+}
+.barchart{
+    /* background-color:rgb(223, 162, 162); */
 }
 </style>
