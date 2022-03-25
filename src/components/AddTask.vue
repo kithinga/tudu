@@ -89,7 +89,7 @@ export default {
         icon: "https://gifimage.net/wp-content/uploads/2017/08/spinner-gif-7.gif",
         buttons: false,
         timer:3000,
-        
+        // const mod = document.getElementsByClassName('fade')
       })
 
       // setTimeout(2000)

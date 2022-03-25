@@ -1,5 +1,6 @@
 <template>
   <div class="pie-box">
+     <h6>Perfomance per task completion</h6>
     <canvas id="pie-chart"></canvas>
   </div>
 </template>
@@ -25,12 +26,11 @@ export default {
 
 <style scoped>
      .pie-box{
-       border: 1px solid rgb(230, 238, 236);
-       padding:2rem;
-       border-radius:9px;
+       /* border: 1px solid rgb(230, 238, 236); */
+       padding:1.7rem;
+       border-radius:10px;
+      
      }
-     .pers h6{
-       font-size: 13px;
-       font-weight: 600;
-     }
+
+  
 </style>

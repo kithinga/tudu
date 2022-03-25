@@ -13,6 +13,7 @@
             <h4><span class="material-icons">edit</span>Edit task</h4>
             <!-- <label for="name">Task title</label> -->
             <input
+               class=""
               type="text"
               id="name"
               v-model="taskInfo.name"
@@ -23,6 +24,7 @@
             <!-- <label for="details">Details</label> -->
 
             <textarea
+            class=""
               type="text"
               id="details"
               v-model="taskInfo.details"
@@ -34,11 +36,13 @@
 
             <input
               type="date"
+              class=" date"
               v-model="taskInfo.date"
               placeholder="Due-Date"
               required
-              class="date"
             />
+
+
             <button type="submit" class="submit">
               <span class="material-icons">update</span> Update
             </button>
@@ -97,19 +101,6 @@ export default {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 <style scoped>
 .modal-title {
   color: rgb(119, 115, 175);
@@ -137,8 +128,7 @@ export default {
   margin-top: 2rem;
   padding-top: 2.4rem;
   border: solid 1px rgb(229, 227, 243);
-  border-radius: 5px;
-  /* background-color: rgb(253, 253, 255); */
+  border-radius: 9px;
   box-shadow: 0px 4px 5px rgb(241, 240, 240);
 }
 .task-form {
@@ -147,7 +137,7 @@ export default {
 .task-form h4 {
   margin-bottom: 1.3rem;
   font-size: 14px;
-  color: rgb(109, 111, 207);
+  color: rgb(101, 102, 182);
   font-weight: 600;
 }
 
@@ -155,33 +145,48 @@ export default {
   /* color: red; */
   font-size: 12px;
 }
-.task-form input {
-  border: none;
-  min-height: 3rem;
-  width: 100%;
-  border-radius: 2px;
-  padding-left: 1.7rem;
 
-  border-bottom: solid 2px rgb(240, 239, 245);
+.task-form input {
+  height: 3.5rem;
+  width: 100%;
+  border-radius: 9px;
+  padding-left: 1.7rem;
+  border: none;
+  /* border: solid 1px rgb(241, 241, 241); */
+  
+  background-color:rgb(246, 246, 252);
 }
+input:focus{
+  background-color:rgb(255, 255, 255);
+  outline: none;
+ border  : solid 2px rgb(228, 243, 243);
+}
+.date{
+  color: rgb(78, 138, 153);
+}
+
+
 
 .task-form textarea {
-  min-height: 4.4rem;
+  min-height: 5rem;
   height: auto;
   width: 100%;
+
   /* border-radius: 4px; */
-  padding-left: 1.7rem;
   border: none;
-  border-bottom: solid 2px rgb(240, 239, 245);
+  padding-left: 1.7rem;
+  border-radius: 9px;
+   background-color:rgb(246, 246, 252);
+  margin-top: 1rem;
+  margin-bottom:0.6rem;
   padding-top: 2rem;
+   border: solid 1px rgb(241, 241, 241);
 }
-input:focus {
-  outline: none;
-  border-bottom: solid 2px rgb(178, 182, 236);
-}
+
 textarea:focus {
   outline: none;
-  border-bottom: solid 2px rgb(178, 182, 236);
+  background-color: white;
+  border  : solid 2px rgb(228, 243, 243);
 }
 
 #date,
@@ -189,7 +194,7 @@ textarea:focus {
 #details {
   font-weight: 400;
   font-size: 12px;
-  color: rgb(91, 78, 204);
+  color: rgb(165, 159, 219);
 }
 
 .task-form label {
@@ -219,9 +224,12 @@ textarea:focus {
   /* border: solid 1px rgb(243, 241, 253); */
 }
 
+
 button {
   outline: none;
 }
+
+
 
 .card-head {
   color: rgb(197, 190, 190);

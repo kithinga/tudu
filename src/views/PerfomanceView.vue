@@ -11,7 +11,7 @@
                 <div class="row no-gutters checker">
                   <div class="col-lg-6">
                     <div class="tid-task">
-                      <div class="per-avar">
+                      <div class="per-avar shadow-sm">
                         <h4 class="per-tihead">
                           Perfomance<span class="material-icons per-tic"
                             >timeline</span
@@ -23,7 +23,7 @@
                   </div>
                   <div class="col-lg-6">
                     <div class="per-des">
-                      <h5 class="shadow-sm">
+                      <h5 class="shadow-sm ti">
                         Task statistics to mark progress
                       </h5>
                     </div>
@@ -37,25 +37,25 @@
                   <div class="col pers">
                     <div class="row no-gutters">
                       <div class="col-lg-4">
-                        <div class="linechart">
+                        <div class="linechart chr">
                           <!-- Chart goes here nigga -->
-                          <h6>Perfomance per task completion</h6>
+                         
                           <Linechart />
                         </div>
                       </div>
 
                       <div class="col-lg-4">
-                        <div class="barchart">
+                        <div class="barchart chr">
                           <!-- Chart goes here nigga -->
-                          <h6>Bargraph some text here</h6>
+                      
                           <Barchart />
                         </div>
                       </div>
 
                       <div class="col-lg-4">
-                        <div class="piechart">
+                        <div class="piechart chr">
                           <!-- Chart goes here nigga -->
-                          <h6>Piechart some text here</h6>
+                          
                           <Piechart />
                         </div>
                       </div>
@@ -92,14 +92,13 @@ export default {
 
 <style scoped>
 .tacent {
-  background-color: rgb(237, 237, 238);
+  background-color: rgb(247, 247, 247);
   /* background-color:rgb(44, 36, 83); */
   /* opacity: 0.9; */
   border-radius: 5px;
   border: solid 1px rgb(250, 243, 243);
   padding-bottom: 1.6rem;
 }
-.piechart{
-    /* background-color:rgb(223, 162, 162); */
-}
+
+
 </style>
