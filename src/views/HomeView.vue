@@ -92,6 +92,22 @@
             </div>
           </router-link>
         </div>
+        <!-- Event calendar -->
+        <div class="col-lg-2">
+          <router-link to="/perfomance">
+            <div class="card event shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Event-Calendar</h5>
+                <p class="material-icons icn">event</p>
+                <img
+                  src="../assets/images/Perfomance01.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+            </div>
+          </router-link>
+        </div>
 
       </div>
     </div>

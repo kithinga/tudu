@@ -108,7 +108,7 @@ P {
 .card {
   padding-top: 1rem;
   min-height: 25vh;
-  border-radius:7px;
+  border-radius:9px;
   border: none;
   margin-top:0.5rem;
   border: solid 1px rgb(18, 13, 46);
@@ -169,4 +169,7 @@ a {
 .perfomance{
   /* color: rgb(167, 185, 0); */
   color: rgb(136, 161, 89);
+}
+.event{
+  color: rgb(6, 179, 156);
 }
