@@ -33,7 +33,7 @@
                 /><br />
 
                 <label for="details">Details</label><br />
-                <input
+                <textarea
                   type="text"
                   id="details"
                   class="details"

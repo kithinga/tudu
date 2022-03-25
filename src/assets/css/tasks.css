@@ -140,6 +140,7 @@ li:hover {
   padding-left: 1.7rem;
   padding-bottom: 1rem;
   background-color: rgb(255, 255, 255);
+  box-shadow: 0px 3px 7px rgb(231, 229, 229);
 }
 
 .tsk-head {
@@ -309,8 +310,9 @@ h6:first-letter {
 }
 .modal-content {
   /* border:none; */
-  border-radius: 5px;
+  border-radius:10px;
   border: 1px solid rgb(255, 255, 255);
+  box-shadow: 0px 4px 5px rgb(109, 105, 119);
 }
 .modal-body {
   min-height: 26vh;
@@ -358,18 +360,20 @@ input:focus{
 
 .task-form textarea {
   height: 5rem;
-
   width: 100%;
-  border-radius: 9;
+  border-radius:9px;
   padding-left: 1.7rem;
+  background-color:rgb(239, 239, 245);
   border: solid 1px rgb(217, 215, 224);
   padding-top: 1rem;
+  border: none;
 }
 
 
 textarea:focus {
   outline: none;
-  border: solid 2px rgb(190, 178, 221);
+  background-color: white;
+  border: solid 2px rgb(229, 227, 243);
 }
 
 .date,

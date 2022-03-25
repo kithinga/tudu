@@ -37,7 +37,7 @@
           <div class="row no-gutters checker">
             <div class="col-lg-6">
               <div class="tid-task">
-                <div class="avar">
+                <div class="avar shadow-sm">
                   <h4 class="tihead">
                     Tasks <span class="material-icons tic">task</span>
                   </h4>
@@ -70,7 +70,7 @@
         <div class="container-fluid">
           <div class="row no-gutters justify-content-center">
             <div class="col-lg-3" v-for="task of tasks" :key="task.id">
-              <div class="tsk01">
+              <div class="tsk01 shadow-sm">
                 <div class="tsk-head">
                   <!-- Drop-down menu starts here -->
                   <div class="btn-group dropstart">
@@ -202,7 +202,7 @@ export default {
 
 <style scoped>
 .tacent {
-  background-color: rgb(237, 237, 238);
+  background-color: rgb(241, 241, 248);
   /* background-color:rgb(44, 36, 83); */
   /* opacity: 0.9; */
   border-radius: 5px;
