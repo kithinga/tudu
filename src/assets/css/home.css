@@ -108,10 +108,10 @@ P {
 .card {
   padding-top: 1rem;
   min-height: 25vh;
-  border-radius:9px;
+  border-radius:10px;
   border: none;
   margin-top:0.5rem;
-  border: solid 1px rgb(18, 13, 46);
+  box-shadow: 0px 3px 6px rgb(3, 3, 3);
 }
 
 .card:hover{
