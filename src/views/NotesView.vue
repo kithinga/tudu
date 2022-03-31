@@ -1,7 +1,26 @@
 <template>
- <Navigator />
-  <div>
-    <p>Notes page here</p>
+  <Navigator />
+  <div class="div">
+    <button>create note</button>
+  </div>
+  <div class="container-fluid">
+    <div class="row noterow no-gutters justify-content-center">
+      <div class="col-lg-4">
+        <div class="notes">
+          <h4>Note Title</h4>
+          <h5>Note description</h5>
+          <p>note self here...</p>
+          <button>edit note</button>
+          <button>delete note</button>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="notes">fdg</div>
+      </div>
+      <div class="col-lg-4">
+        <div class="notes">fdg</div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -15,3 +34,11 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+* {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+</style>

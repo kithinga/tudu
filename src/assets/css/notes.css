@@ -1,0 +1,12 @@
+.notes{
+    background-color:rgb(241, 247, 246);
+    height:20rem;
+    border-radius:9px;
+    margin:0rem;
+    padding:2rem;
+}
+
+.noterow{
+    padding:3rem;
+    margin-top:4rem;
+}
