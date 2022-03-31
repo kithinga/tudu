@@ -1,7 +1,9 @@
 <template>
   <Navigator />
   <div class="div">
-    <button>create note</button>
+    <button class="crno-btn">
+     <p>Create note <span class="material-icons"> drive_file_rename_outline </span></p>
+    </button>
   </div>
   <div class="container-fluid">
     <div class="row noterow no-gutters justify-content-center">
