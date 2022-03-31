@@ -13,6 +13,11 @@
               <span class="material-icons">task</span>Tasks
             </button>
           </router-link>
+          <router-link to="/notes">
+            <button class="nvbt task-btn rounded">
+              <span class="material-icons">notes</span>Notes
+            </button>
+          </router-link>
           <router-link to="/future">
             <button class="nvbt future-btn">
               <span class="material-icons">next_plan</span>Future

@@ -5,6 +5,7 @@ import FutureView from '../views/FutureView.vue'
 import PendingView from '../views/PendingView.vue'
 import PerfomanceView from '../views/PerfomanceView.vue'
 import EditTaskView from '../views/EditTaskView.vue'
+import NotesView from '../views/NotesView.vue'
 // import Navigator from '../components/Navigator.vue'
 
 // component view from views
@@ -19,6 +20,11 @@ const routes = [
     path: '/tasks',
     name: 'tasks',
     component: TasksView
+  },
+  {
+    path: '/notes',
+    name: 'notes',
+    component: NotesView
   },
   {
     path: '/future',

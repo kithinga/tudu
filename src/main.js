@@ -15,6 +15,7 @@ import "./assets/css/tasks.css"
 import "./assets/css/pending.css"
 import "./assets/css/future.css"
 import "./assets/css/perfomance.css"
+import "./assets/css/notes.css"
 
 // Vue.use(BootstrapVue)
 

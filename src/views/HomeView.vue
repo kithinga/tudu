@@ -50,6 +50,22 @@
             </div>
 
             <div class="col-lg-2">
+              <router-link to="/notes">
+                <div class="card notes shadow-sm">
+                  <div class="card-body">
+                    <h5 class="card-title">Notes</h5>
+                    <p class="material-icons md-32 icn">notes</p>
+                    <img
+                      src="https://i0.wp.com/blog.lulu.com/wp-content/uploads/2020/02/021120_NoteTaking-Blog.png?fit=1200%2C675&ssl=1"
+                      class="img-fluid"
+                      alt="notes picture"
+                    />
+                  </div>
+                </div>
+              </router-link>
+            </div>
+
+            <div class="col-lg-2">
               <router-link to="/future">
                 <div class="card future shadow-sm">
                   <div class="card-body">
