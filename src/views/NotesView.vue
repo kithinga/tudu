@@ -34,6 +34,14 @@ export default {
   components: {
     Navigator,
   },
+
+  data(){
+    return{
+
+    }
+  }
+
+
 };
 </script>
 
