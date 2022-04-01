@@ -2,9 +2,9 @@
     background-color:rgb(247, 247, 252);
     height:20rem;
     border-radius:9px;
-    margin:0rem;
     padding:2rem;
     border: solid 1px rgb(234, 234, 241);
+    margin-top:1rem;
 }
 
 .noterow{
