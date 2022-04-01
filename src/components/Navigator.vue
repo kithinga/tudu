@@ -33,6 +33,11 @@
               <span class="material-icons">timeline</span>Perfomance
             </button>
           </router-link>
+          <router-link to="/perfomance">
+            <button class="nvbt perfomance-btn">
+              <span class="material-icons"></span>Websites
+            </button>
+          </router-link>
         </div>
       </div>
     </div>

@@ -16,6 +16,9 @@
           <h5 class="n-title">{{note.title}}</h5>
           <h6 class="n-des">{{note.description}}</h6>
           <p class="n-self">{{note.noteself}}</p>
+           <input v-model="noteTitle" type="text" /><br />
+           <input v-model="noteDes" type="text" /><br />
+            <button @click="addNote()">Add-note</button>
         </div>
       </div>
     </div>
@@ -48,11 +51,17 @@ export default {
       }
     },
 
-    methods: {
-        async addNote(){
-          const noteres = await axios.get(`http://localhost:3000/notes`)
-        }
-    }
+   methods: {
+    async addNote() {
+      const noteres = await axios.post(`http://localhost:3000/notes`, {
+        title: this.noteTitle,
+        description: this.noteDes,
+      });
+      this.notes = [...this.notes, noteres.data];
+      this.noteName = "";
+      this.noteDes = "";
+    },
+   }
 };
 
 
