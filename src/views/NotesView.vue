@@ -20,10 +20,12 @@
   <div class="container-fluid">
     <div class="row noterow no-gutters justify-content-center">
       <div class="col-lg-4" v-for="note of notes" :key="note.id">
-        <div class="notes">
+        <div class="notes shadow-sm">
           <p class="avat">{{ note.id }} This could be an avatar</p>
           <h5 class="n-title">{{ note.title }}</h5>
           <h6 class="n-des">{{ note.description }}</h6>
+          <br>
+          <button class="note-delete" @click="removeNote(note.id)">Delete-note</button>
         </div>
       </div>
     </div>
@@ -68,6 +70,17 @@ export default {
       this.noteName = "";
       this.noteDes = "";
     },
+
+    removeNote(id) {
+    axios.delete(`http://localhost:3000/notes/${id}`)
+    this.notes = this.notes.filter(note => note.id !== id)
+    swal(
+      {
+        text:'Note being deleted',
+        delay: 4000,
+      }
+    )
+}
   },
 };
 </script>
@@ -97,4 +110,17 @@ export default {
   margin-top: 0.5rem;
   font-weight: 400;
 }
+
+.note-delete{
+  padding: 0.5rem;
+  border-radius: 1rem;
+  color: white;
+  background-color:rgb(182, 87, 58);
+  border: none;
+  font-size:13px;
+  font-weight: 600;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 </style>
