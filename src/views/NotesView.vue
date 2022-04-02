@@ -13,9 +13,7 @@
     </button>
   </div>
 
-
   <AddNote />
-
 
   <div class="container-fluid">
     <div class="row noterow no-gutters justify-content-center">
@@ -24,8 +22,13 @@
           <p class="avat">{{ note.id }} This could be an avatar</p>
           <h5 class="n-title">{{ note.title }}</h5>
           <h6 class="n-des">{{ note.description }}</h6>
-          <br>
-          <button class="note-delete" @click="removeNote(note.id)">Delete-note</button>
+          <br />
+          <button class="note-delete" @click="removeNote(note.id)">
+            Delete-note
+          </button>
+         
+         <button class="update-note">to update page</button>
+
         </div>
       </div>
     </div>
@@ -64,7 +67,6 @@ export default {
       const noteres = await axios.post(`http://localhost:3000/notes`, {
         title: this.noteTitle,
         description: this.noteDes,
-    
       });
       this.notes = [...this.notes, noteres.data];
       this.noteName = "";
@@ -72,15 +74,29 @@ export default {
     },
 
     removeNote(id) {
-    axios.delete(`http://localhost:3000/notes/${id}`)
-    this.notes = this.notes.filter(note => note.id !== id)
-    swal(
-      {
-        text:'Note being deleted',
+      axios.delete(`http://localhost:3000/notes/${id}`);
+      this.notes = this.notes.filter((note) => note.id !== id);
+      swal({
+        text: "Note being deleted",
         delay: 4000,
+      });
+    },
+    // Patch/ update note
+    async updateNote(id) {
+      try {
+        await axios.patch(`${`http://localhost:3000/notes`}/${id}`, {
+          updateNote: true,
+        });
+        this.notes = this.notes.map((note) => {
+          if (note.id === id) {
+            note.updateNote = true;
+          }
+          return note;
+        });
+      } catch (error) {
+        console.error(error);
       }
-    )
-}
+    },
   },
 };
 </script>
@@ -111,16 +127,28 @@ export default {
   font-weight: 400;
 }
 
-.note-delete{
+.note-delete {
   padding: 0.5rem;
   border-radius: 1rem;
   color: white;
-  background-color:rgb(182, 87, 58);
+  background-color: rgb(182, 87, 58);
   border: none;
-  font-size:13px;
+  font-size: 13px;
   font-weight: 600;
   padding-left: 1rem;
   padding-right: 1rem;
 }
 
+.update-note{
+  padding: 0.5rem;
+  border-radius: 1rem;
+  color: white;
+  background-color: rgb(8, 118, 133);
+  border: none;
+  font-size: 13px;
+  font-weight: 600;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left:1rem;
+}
 </style>
