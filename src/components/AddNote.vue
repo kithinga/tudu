@@ -21,39 +21,40 @@
             </div>
             <div class="modal-body">
               <form
-                class="task-form"
+                class="note-form"
                 autocomplete="off"
               >
-                <label for="name">Note title</label><br />
+                <label for="title">Note title</label><br />
                 <input
                   type="text"
-                  id="name"
-                  class="name"
-                  placeholder="Task title"
+                  id="title"
+                  class="title"
+                  placeholder="Note title"
                   v-model="noteTitle"
                   required
                 /><br />
 
-                <label for="details">Details</label><br />
-                <textarea
+                <label for="descripti">Details-</label><br />
+                <input
                   type="text"
-                  id="details"
-                  class="details"
-                  placeholder="Details"
+                  id="description"
+                  class="description"
+                  placeholder="Description"
                   v-model="noteDes"
                   required
                 />
 
-                <label for="date">Date</label><br />
+                 <label for="noteself">Details-</label><br />
                 <input
-                  id="date"
-                  class="date "
-                  type="date"
-                  placeholder="Due-Date"
-                  v-model="notesel"
+                  type="text"
+                  id="noteself"
+                  class="noteself"
+                  placeholder="Note-self"
+                  v-model="noteSelf"
                   required
                 />
-                <button type="submit" class="submit shadow-sm" @click="addNote" data-dismiss="modal">Addnote</button>
+
+                <button type="submit" class="submit shadow-sm" @click="addNote" >Addnote</button>
               </form>
             </div>
             <div class="modal-footer"></div>
@@ -65,8 +66,41 @@
 </template>
 
 <script>
+import axios from "axios";
 export default {
   name: "AddNote",
+
+
+  data() {
+    return {
+      notes: [],
+    };
+  },
+
+  async created() {
+    try {
+      const noteres = await axios.get(`http://localhost:3000/notes`);
+      this.notes = noteres.data;
+      console.log(notes);
+    } catch (e) {
+      console.log(e);
+    }
+  },
+
+  methods: {
+    async addNote() {
+      const noteres = await axios.post(`http://localhost:3000/notes`, {
+        title: this.noteTitle,
+        description: this.noteDes,
+        description: this.noteSelf,
+    
+      });
+      this.notes = [...this.notes, noteres.data];
+      this.noteName = "";
+      this.noteDes = "";
+      this.noteSelf = "";
+    },
+  },
 };
 </script>
 
