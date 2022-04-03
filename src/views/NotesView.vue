@@ -19,7 +19,7 @@
     <div class="row noterow no-gutters justify-content-center">
       <div class="col-lg-4" v-for="note of notes" :key="note.id">
         <div class="notes shadow-sm">
-          <p class="avat">{{ note.id }} This could be an avatar</p>
+          <h5 class="n-self">{{ note.noteself}}</h5>
           <br />
           <p>
             <a
@@ -34,16 +34,16 @@
             </a>
           </p>
           <div class="collapse wrap" id="collapseExample">
-            <h5 class="n-title">{{ note.title }}</h5>
-            <h6 class="n-des">{{ note.description }}</h6>
-            <p class="n-des">{{ note.noteself }}</p>
-            <span class="note-bott">
-              <button class="note-delete" @click="removeNote(note.id)">
-                Delete-note
-              </button>
-
-              <button class="update-note">to update page</button>
-            </span>
+            <div class="note-body">
+              <h5 class="n-title">{{ note.title }}</h5>
+              <h6 class="n-des">{{ note.description }}</h6>
+              <div class="bott">
+                 <span class="note-delete" @click="removeNote(note.id)">
+                Delete
+              </span>
+              <span class="update-note">Update</span>
+              </div>
+            </div>
           </div>
           <br />
         </div>

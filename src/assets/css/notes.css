@@ -1,67 +1,86 @@
 .notes{
-    background-color:rgb(250, 250, 253);
+    background-color:rgb(255, 255, 255);
     /* height:20rem; */
     border-radius:7px;
-    padding:1rem;
+    padding:2rem;
     border: solid 1px rgb(234, 234, 241);
-    margin-top:1rem;
+    margin-top:1.5rem;
 }
 
 
 .n-title {
-    color: black;
-    font-size: 15px;
+    color: rgb(35, 122, 156);
+    font-size: 14px;
+    text-align: left;
     margin-top: 0.5rem;
     font-weight: 600;
   }
+
   .n-des {
-    color: black;
-    font-size: 13px;
-    margin-top: 0.5rem;
+    margin-top: 1rem;
+    color: rgb(88, 106, 112);
+    font-size: 12px;
+    text-align: left;
+    /* margin-left: 1rem; */
+    margin-bottom: 1rem;
     font-weight: 500;
   }
   .n-self {
-    color: black;
-    font-size: 13px;
+    color: rgb(49, 97, 119);
+    font-size: 14.5px;
     margin-top: 0.5rem;
-    font-weight: 400;
+    font-weight: 600;
+    letter-spacing:-0.5px;
+  }
+
+
+  .n-self::first-letter{
+      text-transform: uppercase;
+  }
+
+
+
+
+  .note-body{
+    padding-top:1.2rem;
+
   }
   
   .note-delete {
-    padding: 0.5rem;
-    border-radius: 1rem;
-    color: white;
-    background-color: rgb(185, 97, 70);
-    border: none;
-    font-size: 13px;
+    padding: 0.6rem;
+    color: rgb(184, 138, 119);
+    border-radius:13px;
+    /* background-color: rgb(185, 97, 70); */
+    border: solid 1px rgb(230, 219, 216);
+    font-size: 12px;
     font-weight: 600;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
   }
   
   .update-note {
-    padding: 0.5rem;
-    border-radius: 1rem;
-    color: white;
-    background-color: rgb(69, 127, 160);
-    border: none;
-    font-size: 13px;
+    padding: 0.6rem;
+    border-radius:13px;
+    color: rgb(95, 137, 153);
+    /* background-color: rgb(69, 127, 160); */
+    border: solid 1px rgb(207, 222, 231);
+    font-size: 11px;
     font-weight: 600;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
     margin-left: 1rem;
   }
   
   .colla-btn{
-    color: rgb(37, 141, 189);
+    color: rgb(24, 132, 182);
     /* background-color:rgb(243, 243, 243); */
     padding: 1rem;
-    padding-left: 4rem;
-    padding-right: 4rem;
-    border-radius:3px;
-    border-bottom: solid 2px rgb(228, 237, 243);
+    padding-left: 3rem;
+    padding-right: 3rem;
+    border-radius:5px;
+    border: solid 1px rgb(237, 243, 247);
     font-weight:600;
-    font-size: 13.3px;
+    font-size: 12px;
     width: 100%;
   }
 
@@ -135,16 +154,10 @@ span{
       font-size: 14px;
   }
 
+  .bott{
+    text-align: right;
+  }
+
 
  
-
-  .wrap {
-    border: 1px solid #aaa;
-    margin: 10px;
-    display: flex;
-  }
-  
-  .wrap span {
-    align-self: flex-end;
-  }
   
