@@ -30,19 +30,22 @@
               aria-expanded="false"
               aria-controls="collapseExample"
             >
-              view notes
+              View notes
             </a>
           </p>
-          <div class="collapse" id="collapseExample">
+          <div class="collapse wrap" id="collapseExample">
             <h5 class="n-title">{{ note.title }}</h5>
             <h6 class="n-des">{{ note.description }}</h6>
+            <p class="n-des">{{ note.noteself }}</p>
+            <span class="note-bott">
+              <button class="note-delete" @click="removeNote(note.id)">
+                Delete-note
+              </button>
+
+              <button class="update-note">to update page</button>
+            </span>
           </div>
           <br />
-          <button class="note-delete" @click="removeNote(note.id)">
-            Delete-note
-          </button>
-
-          <button class="update-note">to update page</button>
         </div>
       </div>
     </div>
@@ -120,61 +123,5 @@ export default {
   text-align: center;
   padding: 0;
   margin: 0;
-}
-
-.n-title {
-  color: black;
-  font-size: 15px;
-  margin-top: 0.5rem;
-  font-weight: 600;
-}
-.n-des {
-  color: black;
-  font-size: 13px;
-  margin-top: 0.5rem;
-  font-weight: 500;
-}
-.n-self {
-  color: black;
-  font-size: 13px;
-  margin-top: 0.5rem;
-  font-weight: 400;
-}
-
-.note-delete {
-  padding: 0.5rem;
-  border-radius: 1rem;
-  color: white;
-  background-color: rgb(182, 87, 58);
-  border: none;
-  font-size: 13px;
-  font-weight: 600;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-.update-note {
-  padding: 0.5rem;
-  border-radius: 1rem;
-  color: white;
-  background-color: rgb(8, 118, 133);
-  border: none;
-  font-size: 13px;
-  font-weight: 600;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  margin-left: 1rem;
-}
-
-.colla-btn{
-  background-color:rgb(243, 243, 243);
-  padding: 0.5rem;
-  padding: 0.5rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  border-radius:3px;
-  border: solid 1px rgb(226, 221, 221);
-  font-weight:500;
-  font-size: 13px;
 }
 </style>

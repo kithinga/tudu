@@ -16,7 +16,7 @@
           <div class="modal-content">
             <div class="modal-header">
               <h6 class="modal-title" id="exampleModalLabel">
-                <span class="material-icons syi">task </span>Add-Note
+                <span class="material-icons noti shadow-sm">notes</span>Add-Note
               </h6>
             </div>
             <div class="modal-body">
@@ -34,7 +34,7 @@
                   required
                 /><br />
 
-                <label for="descripti">Details-</label><br />
+                <label for="description">Description</label><br />
                 <input
                   type="text"
                   id="description"
@@ -44,7 +44,7 @@
                   required
                 />
 
-                 <label for="noteself">Details-</label><br />
+                 <label for="noteself">Noteself</label><br />
                 <input
                   type="text"
                   id="noteself"
@@ -54,7 +54,7 @@
                   required
                 />
 
-                <button type="submit" class="submit shadow-sm" @click="addNote" >Addnote</button>
+                <button type="submit" class="submit shadow" @click="addNote" >Addnote</button>
               </form>
             </div>
             <div class="modal-footer"></div>
@@ -92,7 +92,7 @@ export default {
       const noteres = await axios.post(`http://localhost:3000/notes`, {
         title: this.noteTitle,
         description: this.noteDes,
-        description: this.noteSelf,
+        noteself: this.noteSelf,
     
       });
       this.notes = [...this.notes, noteres.data];
