@@ -20,15 +20,29 @@
       <div class="col-lg-4" v-for="note of notes" :key="note.id">
         <div class="notes shadow-sm">
           <p class="avat">{{ note.id }} This could be an avatar</p>
-          <h5 class="n-title">{{ note.title }}</h5>
-          <h6 class="n-des">{{ note.description }}</h6>
+          <br />
+          <p>
+            <a
+              class="colla-btn"
+              data-bs-toggle="collapse"
+              href="#collapseExample"
+              role="button"
+              aria-expanded="false"
+              aria-controls="collapseExample"
+            >
+              view notes
+            </a>
+          </p>
+          <div class="collapse" id="collapseExample">
+            <h5 class="n-title">{{ note.title }}</h5>
+            <h6 class="n-des">{{ note.description }}</h6>
+          </div>
           <br />
           <button class="note-delete" @click="removeNote(note.id)">
             Delete-note
           </button>
-         
-         <button class="update-note">to update page</button>
 
+          <button class="update-note">to update page</button>
         </div>
       </div>
     </div>
@@ -139,7 +153,7 @@ export default {
   padding-right: 1rem;
 }
 
-.update-note{
+.update-note {
   padding: 0.5rem;
   border-radius: 1rem;
   color: white;
@@ -149,6 +163,18 @@ export default {
   font-weight: 600;
   padding-left: 1rem;
   padding-right: 1rem;
-  margin-left:1rem;
+  margin-left: 1rem;
+}
+
+.colla-btn{
+  background-color:rgb(243, 243, 243);
+  padding: 0.5rem;
+  padding: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius:3px;
+  border: solid 1px rgb(226, 221, 221);
+  font-weight:500;
+  font-size: 13px;
 }
 </style>
