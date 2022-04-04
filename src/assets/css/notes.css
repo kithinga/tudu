@@ -1,3 +1,9 @@
+ *{
+   padding:0;
+   margin: 0;
+   font-family: Poppins;
+ }
+
 .notes{
     background-color:rgb(255, 255, 255);
     /* height:20rem; */
@@ -5,6 +11,64 @@
     padding:2rem;
     border: solid 1px rgb(234, 234, 241);
     margin-top:1.5rem;
+}
+
+.note-stat{
+  color:rgb(40, 98, 124);
+  font-size:11px;
+}
+
+.tid-task{
+  text-align:center;
+  padding-top:2rem;
+  font-weight: 300;
+  /* padding: 2rem;    */
+  /* padding-top:4.2rem; */
+}
+
+.note-tihead{
+  margin-bottom:none;
+  color: rgb(55, 52, 80);
+  font-size:1.3rem;   
+  font-weight:900;    
+}
+.note-tic{
+  color:rgb(63, 87, 107);
+  font-size:13px;
+  padding:1px;
+  border: solid 1px rgb(184, 218, 181);
+  border-radius:3px;
+  margin-left: 0.4rem;
+}
+.note-tod{
+  color: rgb(48, 89, 116);
+  font-size:10px;
+  margin-top:none;
+}
+.note-avar{
+  padding-top:1.3rem;
+  width:13rem;
+  height:5rem;
+  text-align:center;  
+  background-color:rgb(255, 255, 255);
+  border-radius:5px;
+}
+.note-des{
+  padding:3rem;
+
+}
+
+.note-des h5{
+  font-size:13px;
+  font-weight: 500;
+   color: rgb(48, 60, 68);
+   background-color:white;
+   padding:7px;
+   padding-left:11px;
+   padding-right:11px;
+   border-radius:4px;
+   width:16rem;
+   /* width:fit-content; */
 }
 
 
@@ -88,10 +152,15 @@
     padding:3rem;
     margin-top:4rem;
 }
+.add{
+  border: solid 2px rgb(167, 159, 184);
+  padding:1px;
+  border-radius:2rem;
+}
 
 .crno-btn{
     margin-top:2rem;
-    background-color:black;
+    background-color:rgb(83, 81, 97);
     /* height:3rem; */
     font-weight:600;
     font-size:14px;
@@ -99,7 +168,7 @@
     padding-left:1.2rem;
     padding-right:1.2rem;
     border: none;
-    border-radius:23px;
+    border-radius:7px;
     color: white;
 }
 span{

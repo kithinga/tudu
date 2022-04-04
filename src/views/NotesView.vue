@@ -1,25 +1,40 @@
 <template>
   <Navigator />
-  <div class="div">
-    <button
-      class="crno-btn shadow-sm"
-      data-bs-toggle="modal"
-      data-bs-target="#exampleModal"
-    >
-      <p>
-        Create note
-        <span class="material-icons"> drive_file_rename_outline </span>
-      </p>
-    </button>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="tid-task">
+          <div class="note-avar">
+            <h4 class="note-tihead">
+              Notes<span class="material-icons note-tic">notes</span>
+            </h4>
+            <h5 class="note-stat">overdue-tasks</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="div">
+          <button
+            class="crno-btn shadow"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            <p>
+              Create note
+              <span class="material-icons add"> add</span>
+            </p>
+          </button>
+        </div>
+      </div>
+    </div>
   </div>
-
   <AddNote />
 
   <div class="container-fluid">
     <div class="row noterow no-gutters justify-content-center">
       <div class="col-lg-4" v-for="note of notes" :key="note.id">
         <div class="notes shadow-sm">
-          <h5 class="n-self">{{ note.noteself}}</h5>
+          <h5 class="n-self">{{ note.noteself }}</h5>
           <br />
           <p>
             <a
@@ -38,10 +53,10 @@
               <h5 class="n-title">{{ note.title }}</h5>
               <h6 class="n-des">{{ note.description }}</h6>
               <div class="bott">
-                 <span class="note-delete" @click="removeNote(note.id)">
-                Delete
-              </span>
-              <span class="update-note">Update</span>
+                <span class="note-delete" @click="removeNote(note.id)">
+                  Delete
+                </span>
+                <span class="update-note">Update</span>
               </div>
             </div>
           </div>

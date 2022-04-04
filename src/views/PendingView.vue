@@ -49,6 +49,7 @@
                       <h5 class="shadow-sm">
                         Task statistics to mark progress
                       </h5>
+                      <p>more stuff on the way</p>
                     </div>
                   </div>
                 </div>
@@ -65,14 +66,6 @@
                       full-stack applications by making HTTP requests to a
                       backend server. It is popular with Node.js and the
                       Express(MEVN stack). JSON server is an npm package that
-                      lets you create mock REST APIs with zero coding. It is
-                      used to create a simple JSON file that can be used as a
-                      database and responds to HTTP requests. Axios is the HTTP
-                      client that we will use to make HTTP requests to the JSON
-                      server. In this article, we will build a shopping list
-                      application. We will start with a blank Vue.js
-                      application, then add the JSON server for local data
-                      storage, and Axios for making HTTP requests:
                     </text>
                   </div>
                 </div>
