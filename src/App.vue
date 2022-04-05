@@ -1,4 +1,7 @@
 <template>
+ 
+
+ 
   <nav>
     <div class="container-fluid">
       <div class="row no-gutters cnav">
@@ -26,6 +29,21 @@
       </div>
     </div>
   </nav>
+
+
+  <!-- Mobile responsive content -->
+  <div class="mobile-header">
+          <div class="mb-logo" >
+            <router-link to="/">tudu !</router-link>
+          </div>
+          <div class="mb-logo" >
+            <router-link to="/">tudu !</router-link>
+          </div>
+          <div class="mb-logo" >
+            <router-link to="/">tudu !</router-link>
+          </div>
+  </div>
+
   <router-view />
 </template>
 
@@ -42,9 +60,14 @@ nav a {
   font-weight: bold;
   color: #07a2d1;
 }
-
 nav a.router-link-exact-active {
   color: #0f99cf;
+}
+
+
+.mobile-header{
+  background-color: red;
+  display: grid;
 }
 </style>
 

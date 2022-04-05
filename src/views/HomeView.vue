@@ -112,26 +112,33 @@
                 </div>
               </router-link>
             </div>
-            <!-- Event calendar -->
-            <!-- <div class="col-lg-2">
-              <router-link to="/perfomance">
-                <div class="card event shadow-sm">
-                  <div class="card-body">
-                    <h5 class="card-title">Event-Calendar</h5>
-                    <p class="material-icons icn">event</p>
-                    <img
-                      src="../assets/images/Perfomance01.png"
-                      class="img-fluid"
-                      alt=""
-                    />
-                  </div>
-                </div>
-              </router-link>
-            </div> -->
+      </div>
+    </div>
+  </div>
 
 
-         
 
+
+  <!-- Mobile responsivw view home page -->
+  <div class="mobile-home">
+    <div class="container-fluid">
+      <div class="row intros no-gutters">
+        <div class="col-sm-6">
+          <div class="titles">
+            <p class="titl">TODOS FOR <span class="sel"> Better me</span></p>
+            <p class="ru">
+              Consistency for - <span class="selm">Self Mastery . .</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="col-sm-6">
+          <div class="period">
+            <p class="time">00 10</p>
+            <p class="day">Sunday</p>
+            <p class="date">13 03 2022</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -149,3 +156,11 @@ export default {
   },
 };
 </script>
+
+
+<style scoped>
+    .mobile-home{
+      background-color:red;
+      height:100vh;
+    }
+</style>

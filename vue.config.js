@@ -1,7 +1,8 @@
 const bootstrapSassAbstractsImports = require('vue-cli-plugin-bootstrap-vue/sassAbstractsImports.js')
 const { defineConfig } = require('@vue/cli-service')
 module.exports = defineConfig({
-  transpileDependencies: true
+  transpileDependencies: true,
+ 
 })
 	css: {
 		loaderOptions: {
@@ -11,9 +12,7 @@ module.exports = defineConfig({
 			scss: {
 				additionalData: [...bootstrapSassAbstractsImports, ''].join(';\n')
 			}
-			devServer: {
-				disableHostCheck: true
-			  }
+			
 		   
 		}
 	}
