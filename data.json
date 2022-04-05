@@ -17,12 +17,6 @@
       "description": "It is perfectly fine if you want to go with the display: table-cell solution. But instead of hacking it out, we have a better way to accomplish the same using display: flex;. flex is something which has a decent support.",
       "noteself": "ewsrewe",
       "id": 4
-    },
-    {
-      "title": "ASA",
-      "description": "ASasa",
-      "noteself": "asasa",
-      "id": 5
     }
   ]
 }

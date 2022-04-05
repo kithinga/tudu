@@ -32,23 +32,11 @@
 
   <div class="container-fluid">
     <div class="row noterow no-gutters justify-content-center">
-      <div class="col-lg-4" v-for="note of notes" :key="note.id">
+      <div class="col-lg-3" v-for="note of notes" :key="note.id">
         <div class="notes shadow-sm">
           <h5 class="n-self">{{ note.noteself }}</h5>
           <br />
-          <p>
-            <a
-              class="colla-btn"
-              data-bs-toggle="collapse"
-              href="#collapseExample"
-              role="button"
-              aria-expanded="false"
-              aria-controls="collapseExample"
-            >
-              View notes
-            </a>
-          </p>
-          <div class="collapse wrap" id="collapseExample">
+  
             <div class="note-body">
               <h5 class="n-title">{{ note.title }}</h5>
               <h6 class="n-des">{{ note.description }}</h6>
@@ -59,7 +47,7 @@
                 <span class="update-note">Update</span>
               </div>
             </div>
-          </div>
+      
           <br />
         </div>
       </div>

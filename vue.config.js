@@ -11,5 +11,12 @@ module.exports = defineConfig({
 			scss: {
 				additionalData: [...bootstrapSassAbstractsImports, ''].join(';\n')
 			}
+			devServer: {
+				disableHostCheck: true
+			  }
+		   
 		}
 	}
+
+	
+	
