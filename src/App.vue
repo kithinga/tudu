@@ -36,11 +36,8 @@
           <div class="mb-logo" >
             <router-link to="/">tudu !</router-link>
           </div>
-          <div class="mb-logo" >
-            <router-link to="/">tudu !</router-link>
-          </div>
-          <div class="mb-logo" >
-            <router-link to="/">tudu !</router-link>
+          <div class="mb-login" >
+            <p>Login</p>
           </div>
   </div>
 
@@ -66,7 +63,7 @@ nav a.router-link-exact-active {
 
 
 .mobile-header{
-  background-color: red;
+  background-color: rgb(182, 189, 201);
   display: grid;
 }
 </style>
