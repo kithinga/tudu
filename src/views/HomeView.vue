@@ -116,14 +116,14 @@
 
     <!-- Mobile responsivw view home page -->
     <div class="all-mobile">
-      <div class="mobile-home shadow">
-        <div class="mb-title mbls shadow">
+      <div class="mobile-home">
+        <div class="mb-title mbls">
           <h5>Else</h5>
           <h6>got no</h6>
           <span class="material-icons"> data_thresholding </span>
         </div>
 
-        <div class="mb-period mbls shadow">
+        <div class="mb-period mbls">
           <h5>Prior to</h5>
           <h6>got no</h6>
           <span class="material-icons"> fingerprint </span>
@@ -213,10 +213,8 @@ export default {
   .mobile-home {
     display: grid;
     grid-gap: 1rem;
-    grid-template-columns: 1fr 2fr;
-    /* padding:0.6rem; */
-    /* background-color: rgb(39, 38, 63); */
     margin: 1rem;
+    grid-template-columns: 1fr 1fr;
     border-radius:15px;
   }
 
@@ -249,6 +247,7 @@ export default {
     grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
   }
+
   .homca {
     padding: 1.3rem;
     background-color: rgb(34, 33, 49);
@@ -257,6 +256,7 @@ export default {
     min-height: 6rem;
     border: none;
   }
+
   .homca h4 {
     font-size: 16px;
     font-weight: 600;
@@ -269,6 +269,6 @@ export default {
     padding-bottom: 1rem;
     color: rgb(191, 209, 212);
   }
-  
+
 }
 </style>

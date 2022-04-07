@@ -2,7 +2,7 @@
  
 
  
-  <nav>
+  <nav class="navchecker">
     <div class="container-fluid">
       <div class="row no-gutters cnav">
         <div class="col-sm-4">
@@ -30,19 +30,26 @@
     </div>
   </nav>
 
-
   <!-- Mobile responsive content -->
   <div class="mobile-header">
           <div class="mb-logo" >
-            <router-link to="/"><h6>tudu !</h6></router-link>
+            <router-link to="/">
+             <img src="@/assets/images/tudulogo.png" alt="" />
+            </router-link>
           </div>
           <div class="mb-login" >
             <button class="logbtn"> <h6>Login</h6></button>
           </div>
   </div>
+  <div class="mobile-searcher">
+          <div class="mb-serc" >
+              <input type="text" class="ser-input" placeholder="search . . ." />
+              <button type="submit" class="ser-btn material-icons md-32">
+                search
+              </button>
+          </div>
+  </div>
 
-
- 
 
   <router-view />
 </template>
@@ -60,47 +67,81 @@ nav a {
   font-weight: bold;
   color: #07a2d1;
 }
+
 nav a.router-link-exact-active {
   color: #0f99cf;
 }
 
+.mb-serc{
+
+  padding: 18px;
+}
+
+
+img{
+ height: 2rem;
+ border-radius:0.5rem;
+ width: 3rem;
+}
+.mobile-searcher{
+  text-align: center;
+  padding-right: 55px;
+  background-color:rgb(9, 8, 14);
+}
 
 .mobile-header{
   background-color: rgb(9, 8, 15);
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding:0.3rem;
+  border: solid 1px rgb(0, 0, 0);
 }
+
 .mb-logo{
-  color: rgb(151, 169, 226);;
+ 
   height:5rem;
-  padding:1rem;
+  padding:0.6rem;
   padding-top:2rem;
+  text-align: left;
+  padding-left: 2rem;
 }
+
 .mb-logo h6{
     font-weight:900;
-  font-size:17px;
+  font-size:30px;
+  color:rgb(58, 153, 182);
 }
+
 .mb-login{
   color: rgb(15, 145, 206);;
   height:5rem;
   padding:1rem;
   padding-top:1.5rem;
+  text-align:right;
 }
+
 .mb-login h6{
   font-weight:600;
   font-size:15px;
 }
+
 .logbtn{
   padding:0.5rem;
   color:rgb(223, 221, 221);
   width:7rem;
   border-radius:1.3rem;
   border: none;
-  background-color:transparent;
-  border: solid 2px rgb(41, 132, 160);
+  background-color:rgb(41, 41, 53);
+  /*  border: solid 2px rgb(41, 132, 160);  */
   padding-top: 0.7rem;
 }
+
+@media (max-width: 575.98px) {
+      .navchecker{
+  display: none;
+}
+}
+
 </style>
 
 
