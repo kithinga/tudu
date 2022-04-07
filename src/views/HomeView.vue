@@ -169,9 +169,10 @@
         <div class="icone">
           <p class="material-icons">person</p>
         </div>
+      <router-link to="/">
         <div class="ictwo">
           <p class="material-icons">notifications</p>
-        </div>
+        </div></router-link>
         <div class="icthree">
           <p class="material-icons">priority_high</p>
         </div>
@@ -198,6 +199,7 @@ export default {
 @media (max-width: 575.98px) {
   .device-responsive {
     display: none;
+    
   }
 
   .home-page {

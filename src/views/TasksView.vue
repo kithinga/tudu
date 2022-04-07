@@ -1,9 +1,8 @@
 <template>
   <Navigator />
 
-  <div class="container-fluid">
+  <div class="container-fluid ">
     <div class="row no-gutters">
-
       <!-- Decoy div not needed anyway -->
       <div class="col-lg-2">
         <div class="row no-gutters">
@@ -12,19 +11,19 @@
               <ul>
                 <h5>Task status</h5>
                 <li class="check-text shadow-sm">
-                    <router-link to="/tasks">
-                        Ongoing <span class="ong check-span"></span>
-                    </router-link>
+                  <router-link to="/tasks">
+                    Ongoing <span class="ong check-span"></span>
+                  </router-link>
                 </li>
                 <li class="check-text shadow-sm">
-                    <router-link to="/pending">
-                        Overdue <span class="ovd check-span"></span>
-                    </router-link>
+                  <router-link to="/pending">
+                    Overdue <span class="ovd check-span"></span>
+                  </router-link>
                 </li>
                 <li class="check-text shadow-sm">
-                    <router-link to="/future">
-                        Complete <span class="com check-span"></span>
-                    </router-link>
+                  <router-link to="/future">
+                    Complete <span class="com check-span"></span>
+                  </router-link>
                 </li>
               </ul>
             </div>
@@ -33,7 +32,8 @@
       </div>
 
       <div class="col-md-8 tacent">
-        <div class="container-fluid">
+        <!-- Device pretask -->
+        <div class="container-fluid device-pretask">
           <div class="row no-gutters checker">
             <div class="col-lg-6">
               <div class="tid-task">
@@ -64,6 +64,34 @@
           </div>
         </div>
 
+        <!-- Mobile section responsive -->
+        <div class="mobile-pretask">
+                <div class="tid-task">
+                  <div class="avar shadow-sm">
+                    <h4 class="tihead">
+                      Tasks <span class="material-icons tic">task</span>
+                    </h4>
+                    <h5 class="tod">todo</h5>
+                  </div>
+                </div>
+             
+              
+                <div class="tid-btn">
+                  <!-- Button to trigger modal -->
+                  <button
+                    type="button"
+                    class="btn-addtask shadow-sm"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  >
+                    <p class="addsi">
+                      Add-task
+                      <span class="material-icons icona">add</span>
+                    </p>
+                  </button>
+                </div>
+        </div>
+
         <!-- Modal for adding here -->
         <AddTask />
 
@@ -74,7 +102,11 @@
                 <div class="tsk-head">
                   <!-- Drop-down menu starts here -->
                   <div class="btn-group dropstart">
-                    <button type="button" class="btn-drop" data-bs-toggle="dropdown">
+                    <button
+                      type="button"
+                      class="btn-drop"
+                      data-bs-toggle="dropdown"
+                    >
                       <span class="material-icons ver">more_vert</span>
                     </button>
 
@@ -201,6 +233,17 @@ export default {
 </script>
 
 <style scoped>
+
+@media (max-width: 575.98px) {
+  .device-pretask {
+    display: none;
+  }
+
+.mobile-pretask{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+}
+}
 .tacent {
   background-color: rgb(241, 241, 248);
   /* background-color:rgb(44, 36, 83); */
@@ -209,6 +252,7 @@ export default {
   border: solid 1px rgb(250, 243, 243);
   padding-bottom: 1.6rem;
 }
+
 </style>
 
 
