@@ -116,7 +116,7 @@
 
     <!-- Mobile responsivw view home page -->
     <div class="all-mobile">
-      <div class="mobile-home">
+      <div class="mobile-home shadow">
         <div class="mb-title mbls shadow">
           <h5>Else</h5>
           <h6>got no</h6>
@@ -207,23 +207,26 @@ export default {
   .all-mobile {
     background-color: rgb(0, 0, 0);
     border-radius: 9px;
+    padding-top:1rem;
     /* background-color: red; */
   }
   .mobile-home {
-    padding-left: 0.7rem;
-    padding-right: 0.7rem;
     display: grid;
     grid-gap: 1rem;
-    grid-template-columns: 1fr 1fr;
-    padding-top: 2rem;
+    grid-template-columns: 1fr 2fr;
+    /* padding:0.6rem; */
+    /* background-color: rgb(39, 38, 63); */
+    margin: 1rem;
+    border-radius:15px;
   }
 
   .mbls {
-    background-color: rgb(39, 38, 63);
-    min-height: 8rem;
+    background-color: rgb(44, 43, 68);
+    min-height:10rem;
+    border: solid 1px rgb(44, 43, 68);
     padding: 1.2rem;
     color: rgb(219, 208, 208);
-    border-radius: 1.5rem;
+    border-radius: 16px;
   }
 
   .mbls h5 {
@@ -248,7 +251,7 @@ export default {
   }
   .homca {
     padding: 1.3rem;
-    background-color: rgb(27, 29, 43);
+    background-color: rgb(34, 33, 49);
     color: rgb(11, 175, 224);
     border-radius: 15px;
     min-height: 6rem;

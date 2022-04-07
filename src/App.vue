@@ -75,7 +75,7 @@ nav a.router-link-exact-active {
   color: rgb(151, 169, 226);;
   height:5rem;
   padding:1rem;
-  padding-top:1.5rem;
+  padding-top:2rem;
 }
 .mb-logo h6{
     font-weight:900;
@@ -92,12 +92,14 @@ nav a.router-link-exact-active {
   font-size:15px;
 }
 .logbtn{
-  padding:0.6rem;
+  padding:0.5rem;
   color:rgb(223, 221, 221);
   width:7rem;
   border-radius:1.3rem;
+  border: none;
   background-color:transparent;
-  border: solid 1px rgb(41, 132, 160);
+  border: solid 2px rgb(41, 132, 160);
+  padding-top: 0.7rem;
 }
 </style>
 
