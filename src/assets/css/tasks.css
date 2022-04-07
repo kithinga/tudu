@@ -62,7 +62,6 @@ li:hover {
 
 .tid-task {
   text-align: left;
-  padding-top: 2rem;
   /* padding: 2rem;    */
   /* padding-top:4.2rem; */
 }
@@ -92,14 +91,11 @@ li:hover {
   text-align: center;
   background-color: rgb(255, 255, 255);
   border-radius: 5px;
-  /* border-bottom-left-radius: 0.6rem; */
-  /* border-bottom-right-radius: 1rem; */
-  /* border-top-left-radius: 0.6rem;  */
+
 }
 
 .tid-btn {
   text-align: center;
-  padding: 3rem;
 }
 
 .tid-btn span {

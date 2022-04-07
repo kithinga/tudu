@@ -76,27 +76,27 @@
                 </div>
              
               
-                <div class="tid-btn">
-                  <!-- Button to trigger modal -->
-                  <button
-                    type="button"
-                    class="btn-addtask shadow-sm"
-                    data-bs-toggle="modal"
-                    data-bs-target="#exampleModal"
-                  >
-                    <p class="addsi">
+                      <div               class="tid-btn">
+                      <!--               Button                to trigger modal -->
+                      <button
+                      type="button"
+                      class="btn-addtask shadow-sm"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal"
+                      >
+                      <p                 class="addsi">
                       Add-task
-                      <span class="material-icons icona">add</span>
-                    </p>
-                  </button>
+                      <span              class="material-icons icona">add</span>
+                      </p>
+                      </button>
                 </div>
         </div>
 
         <!-- Modal for adding here -->
         <AddTask />
 
-        <div class="container-fluid">
-          <div class="row no-gutters justify-content-center">
+        <div class="container-fluid ie">
+          <div class="row ii no-gutters justify-content-center">
             <div class="col-lg-3" v-for="task of tasks" :key="task.id">
               <div class="tsk01 shadow-sm">
                 <div class="tsk-head">
@@ -150,7 +150,7 @@
         </div>
       </div>
       <!-- decoy div, aslo not needed -->
-      <div class="col-md-2"></div>
+      <div class="col-md-2 mb-rem"></div>
     </div>
   </div>
 </template>
@@ -238,20 +238,47 @@ export default {
   .device-pretask {
     display: none;
   }
+  .mb-rem{
+    display: none;
+    background-color:red;
+  }
 
 .mobile-pretask{
   display:grid;
+  margin: 0.7rem;
   grid-template-columns: 1fr 1fr;
 }
-}
+
 .tacent {
   background-color: rgb(241, 241, 248);
+
   /* background-color:rgb(44, 36, 83); */
   /* opacity: 0.9; */
   border-radius: 5px;
   border: solid 1px rgb(250, 243, 243);
   padding-bottom: 1.6rem;
+  padding:0.1rem;
 }
+
+.ii{
+  padding:0;
+  margin: 0;
+}
+.ie{
+  padding:0;
+  margin: 0;
+}
+.status-check{
+  margin-bottom:1rem;
+}
+.tid-btn {
+  text-align: center;
+ margin-top:2rem;
+ margin-left: 3.5rem;
+}
+
+}
+
 
 </style>
 
