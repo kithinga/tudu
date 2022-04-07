@@ -34,12 +34,15 @@
   <!-- Mobile responsive content -->
   <div class="mobile-header">
           <div class="mb-logo" >
-            <router-link to="/">tudu !</router-link>
+            <router-link to="/"><h6>tudu !</h6></router-link>
           </div>
           <div class="mb-login" >
-            <p>Login</p>
+            <button class="logbtn"> <h6>Login</h6></button>
           </div>
   </div>
+
+
+ 
 
   <router-view />
 </template>
@@ -63,8 +66,38 @@ nav a.router-link-exact-active {
 
 
 .mobile-header{
-  background-color: rgb(182, 189, 201);
+  background-color: rgb(9, 8, 15);
   display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding:0.3rem;
+}
+.mb-logo{
+  color: rgb(151, 169, 226);;
+  height:5rem;
+  padding:1rem;
+  padding-top:1.5rem;
+}
+.mb-logo h6{
+    font-weight:900;
+  font-size:17px;
+}
+.mb-login{
+  color: rgb(15, 145, 206);;
+  height:5rem;
+  padding:1rem;
+  padding-top:1.5rem;
+}
+.mb-login h6{
+  font-weight:600;
+  font-size:15px;
+}
+.logbtn{
+  padding:0.6rem;
+  color:rgb(223, 221, 221);
+  width:7rem;
+  border-radius:1.3rem;
+  background-color:transparent;
+  border: solid 1px rgb(41, 132, 160);
 }
 </style>
 

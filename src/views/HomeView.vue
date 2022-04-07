@@ -144,7 +144,7 @@
             <p class="material-icons">notes</p>
           </div>
         </router-link>
-        <router-link to="/futures">
+        <router-link to="/future">
           <div class="mobile-future homca">
             <h4>Futures</h4>
             <p class="material-icons">next_plan</p>
@@ -170,10 +170,10 @@
           <p class="material-icons">person</p>
         </div>
         <div class="ictwo">
-          <p class="material-icons">done</p>
+          <p class="material-icons">notifications</p>
         </div>
         <div class="icthree">
-          <p class="material-icons">circle</p>
+          <p class="material-icons">priority_high</p>
         </div>
       </div>
     </div>
@@ -207,10 +207,11 @@ export default {
   .all-mobile {
     background-color: rgb(0, 0, 0);
     border-radius: 9px;
+    /* background-color: red; */
   }
   .mobile-home {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
     display: grid;
     grid-gap: 1rem;
     grid-template-columns: 1fr 1fr;
@@ -240,7 +241,7 @@ export default {
 
   .home-cards {
     margin-top: 2rem;
-    padding: 0.5rem;
+    padding: 1rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
@@ -265,5 +266,6 @@ export default {
     padding-bottom: 1rem;
     color: rgb(191, 209, 212);
   }
+  
 }
 </style>

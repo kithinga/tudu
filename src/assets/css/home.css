@@ -123,8 +123,8 @@ P {
   background-color: rgb(246, 244, 250);
    background-color: rgb(24, 16, 43); 
   /* background-color: rgb(248, 248, 248);  */
-  padding: 1rem;
-  min-height: 90vh;
+  /* padding: 1rem; */
+  min-height: 80vh;
 }
 
 /* removes the text decoration in router link */
