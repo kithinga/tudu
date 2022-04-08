@@ -137,6 +137,19 @@ img{
  .navchecker{
   display: none;
 }
+.ser-input{
+    border: none;
+    /* margin: 1rem; */
+    width:100%;
+    height:2.8rem;
+    border: solid 1px rgb(236, 236, 236);
+    padding-left: 3rem;
+    border-top-left-radius:1.2rem;
+    border-bottom-left-radius:  1.2rem;
+    border-right: none;
+    font-size:14px;
+    font-weight:400;
+}
 }
 
 </style>
