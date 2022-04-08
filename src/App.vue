@@ -32,7 +32,7 @@
   <div class="mobile-header">
           <div class="mb-logo" >
             <router-link to="/">
-             <img src="@/assets/images/tudulogo.png" alt="" />
+             <img src="@/assets/images/Tudulogo.png" alt="" />
             </router-link>
           </div>
           <div class="mb-login" >
