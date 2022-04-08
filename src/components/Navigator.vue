@@ -45,7 +45,7 @@
 
   <!-- Mobile responsive -->
   <div class="nav-black">
-  <div class="mobile-nav miko">
+  <div class="mobile-nav">
     <div class="mb-bt1">
       <router-link to="/tasks">
         <button class="nvbt task-btn shadow-sm">
@@ -150,11 +150,11 @@
     border-top-left-radius: 21px;
     border-top-right-radius: 21px;
     background-color:white;
+
     /* margin: 0.7rem; */
-    padding: 0.6rem;
+    padding: 0.5rem;
     padding-top: 1.3rem;
-    margin-bottom: 1rem;
-    
+  
   }
   .nvbt {
       /*                height:2.3rem; */
@@ -173,8 +173,11 @@
 }
 
 .nav-black{
-  background-color:black;
+  padding-left:3px;
+  padding-right:3px;
+  background-color:rgb(3, 3, 3);
   padding-top:0.4rem;
+  border-bottom: 0.3px solid rgb(255, 255, 255);
 }
 
 
