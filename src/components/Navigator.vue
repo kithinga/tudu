@@ -147,12 +147,12 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     /* border: solid 1px rgb(233, 231, 231); */
-    border-top-left-radius: 13px;
-    border-top-right-radius: 13px;
+    border-top-left-radius: 21px;
+    border-top-right-radius: 21px;
     background-color:white;
     /* margin: 0.7rem; */
     padding: 0.6rem;
-    padding-top: 1rem;
+    padding-top: 1.3rem;
     margin-bottom: 1rem;
     
   }
