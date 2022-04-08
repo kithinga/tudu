@@ -98,7 +98,7 @@ img{
   padding:0.6rem;
   padding-top:2rem;
   text-align: left;
-  padding-left: 2rem;
+  padding-left:0.3rem;
 }
 
 .mb-logo h6{
@@ -111,6 +111,7 @@ img{
   color: rgb(15, 145, 206);;
   height:5rem;
   padding:1rem;
+  padding-right: 1px;
   padding-top:1.5rem;
   text-align:right;
 }
