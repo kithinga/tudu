@@ -215,7 +215,7 @@ export default {
   .mobile-home {
     display: grid;
     grid-gap: 1rem;
-    margin: 1rem;
+    margin: 0.5rem;
     grid-template-columns: 1fr 1fr;
     border-radius:15px;
   }
@@ -252,10 +252,10 @@ export default {
 
   .homca {
     padding: 1.3rem;
-    background-color: rgb(34, 33, 49);
-    color: rgb(11, 175, 224);
+    background-color: rgb(34, 32, 49);
+    color: rgb(16, 190, 243);
     border-radius: 15px;
-    min-height: 6rem;
+    min-height: 6.4rem;
     border: none;
   }
 
