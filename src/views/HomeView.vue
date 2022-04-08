@@ -276,7 +276,7 @@ export default {
     /* border: solid 1px rgb(46, 40, 54); */
     padding: 4px;
     border-radius:9px;
-    box-shadow: 0px 3px 15px rgb(18, 15, 24);
+    box-shadow: 0px 3px 35px rgb(19, 16, 26);
   }
 
 
