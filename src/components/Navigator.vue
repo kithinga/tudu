@@ -1,5 +1,5 @@
- <template>
-  <div class="container-fluid device-nav">
+ <template > 
+  <div class="container-fluid device-nav ">
     <div class="row no-gutters">
       <div class="col">
         <div class="tsk">
@@ -44,7 +44,8 @@
   </div>
 
   <!-- Mobile responsive -->
-  <div class="mobile-nav">
+  <div class="nav-black">
+  <div class="mobile-nav miko">
     <div class="mb-bt1">
       <router-link to="/tasks">
         <button class="nvbt task-btn shadow-sm">
@@ -81,6 +82,7 @@
       </router-link>
     </div>
   </div>
+  </div>
   <router-view />
 </template>
 
@@ -91,19 +93,19 @@
 
  
 .nvbt {
-  /* height:2.3rem; */
-  border: none;
-  background-color: rgb(249, 255, 255);
-  border-radius: 8px;
-  font-weight: 500;
-  font-size: 13px;
-  padding: 0.4rem;
-  padding-left: 0.6rem;
-  padding-right: 0.6rem;
-  margin: 5px;
-  width: 6rem;
-  height: 4rem;
-  border: solid 1px rgb(232, 229, 235);
+      /*                height:2.3rem; */
+      border:           none;
+      background-color: rgb(249,       255, 255);
+      border-radius:    8px;
+      font-weight:      500;
+      font-size:        13px;
+      padding:          0.4rem;
+      padding-left:     0.6rem;
+      padding-right:    0.6rem;
+      margin:           5px;
+      width:            7rem;
+      height:           3.5rem;
+      border:           solid          1px  rgb(232, 229, 235);
 }
 .nvbt span {
   /* color: rgb(57, 156, 123); */
@@ -144,11 +146,41 @@
   .mobile-nav {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    border: solid 1px rgb(233, 231, 231);
-    border-radius: 9px;
-    margin: 0.7rem;
+    /* border: solid 1px rgb(233, 231, 231); */
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
+    background-color:white;
+    /* margin: 0.7rem; */
     padding: 0.6rem;
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+    
   }
+  .nvbt {
+      /*                height:2.3rem; */
+      border:           none;
+      background-color: rgb(249,       255, 255);
+      border-radius:    8px;
+      font-weight:      500;
+      font-size:        13px;
+      padding:          0.4rem;
+      padding-left:     0.6rem;
+      padding-right:    0.6rem;
+      margin:           5px;
+      width:            7rem;
+      height:           4rem;
+      border:           solid          1px  rgb(232, 229, 235);
+}
+
+.nav-black{
+  background-color:black;
+  padding-top:0.4rem;
+}
+
+
+
+
+ 
 }
 </style>
 

@@ -1,7 +1,5 @@
 <template>
  
-
- 
   <nav class="navchecker">
     <div class="container-fluid">
       <div class="row no-gutters cnav">
@@ -136,6 +134,7 @@ img{
 @media (max-width: 575.98px) {
  .navchecker{
   display: none;
+  
 }
 .mobile-searcher{
   padding: 0.5rem;

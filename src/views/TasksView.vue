@@ -1,7 +1,7 @@
 <template>
   <Navigator />
 
-  <div class="container-fluid ">
+  <div class="container-fluid">
     <div class="row no-gutters">
       <!-- Decoy div not needed anyway -->
       <div class="col-lg-2">
@@ -276,6 +276,7 @@ export default {
  margin-top:2rem;
  margin-left: 3.5rem;
 }
+
 
 }
 
