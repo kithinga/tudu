@@ -137,6 +137,10 @@ img{
  .navchecker{
   display: none;
 }
+.mobile-searcher{
+  padding: 0.5rem;
+  padding-right: 4rem;
+}
 .ser-input{
     border: none;
     /* margin: 1rem; */
