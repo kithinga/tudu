@@ -32,7 +32,7 @@
   <div class="mobile-header">
           <div class="mb-logo" >
             <router-link to="/">
-             <img src="@/assets/images/Tudulogo.png" alt="" />
+             <img src="@/assets/images/tudulogo.png" alt="" />
             </router-link>
           </div>
           <div class="mb-login" >
@@ -73,9 +73,11 @@ nav a.router-link-exact-active {
 
 
 img{
- height: 2rem;
- border-radius:0.5rem;
- width: 3rem;
+ height: 3rem;
+ border-radius:0.9rem;
+ width: 4rem;
+ /* border: solid 1px rgb(0, 0, 0); */
+ box-shadow: 0px 1px 3px rgb(0, 71, 104);
 }
 .mobile-searcher{
   text-align: center;
@@ -96,7 +98,7 @@ img{
  
   height:5rem;
   padding:0.6rem;
-  padding-top:2rem;
+  padding-top:1.5rem;
   text-align: left;
   padding-left:0.3rem;
 }

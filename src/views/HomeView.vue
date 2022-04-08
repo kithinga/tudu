@@ -209,7 +209,7 @@ export default {
   .all-mobile {
     background-color: rgb(0, 0, 0);
     border-radius: 9px;
-    padding-top:1rem;
+    padding-top:1.8rem;
     /* background-color: red; */
   }
   .mobile-home {
@@ -243,25 +243,25 @@ export default {
   }
 
   .home-cards {
-    margin-top: 2rem;
-    padding: 1rem;
+    margin-top:1.2rem;
+    padding: 0.6rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
   }
 
   .homca {
-    padding: 1.3rem;
+    padding: 2rem;
     background-color: rgb(34, 32, 49);
     color: rgb(16, 190, 243);
     border-radius: 15px;
-    min-height: 6.4rem;
+    min-height: 7rem;
     border: none;
   }
 
   .homca h4 {
-    font-size: 16px;
-    font-weight: 600;
+    font-size: 15px;
+    font-weight: 700;
   }
 
   .home-footer {
@@ -276,7 +276,8 @@ export default {
     /* border: solid 1px rgb(46, 40, 54); */
     padding: 4px;
     border-radius:9px;
-    box-shadow: 0px 3px 35px rgb(19, 16, 26);
+    color: rgb(250, 246, 255);
+    /* box-shadow: 0px 3px 35px rgb(19, 16, 26); */
   }
 
 
