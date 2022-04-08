@@ -135,31 +135,31 @@
         <router-link to="/tasks">
           <div class="mobile-task homca">
             <h4>Task</h4>
-            <p class="material-icons">tasks</p>
+            <p class="material-icons sd">tasks</p>
           </div>
         </router-link>
         <router-link to="/notes">
           <div class="mobile-note homca">
             <h4>Notes</h4>
-            <p class="material-icons">notes</p>
+            <p class="material-icons sd">notes</p>
           </div>
         </router-link>
         <router-link to="/future">
           <div class="mobile-future homca">
             <h4>Futures</h4>
-            <p class="material-icons">next_plan</p>
+            <p class="material-icons  sd">next_plan</p>
           </div>
         </router-link>
         <router-link to="/pending">
           <div class="mobile-pending homca">
             <h4>Pending</h4>
-            <p class="material-icons"></p>
+            <p class="material-icons sd"></p>
           </div>
         </router-link>
         <router-link to="/perfomance">
           <div class="mobile-perfomance homca">
             <h4>Perfomance</h4>
-            <p class="material-icons">timeline</p>
+            <p class="material-icons sd">timeline</p>
           </div>
         </router-link>
       </div>
@@ -173,7 +173,7 @@
         <div class="ictwo">
           <p class="material-icons">notifications</p>
         </div></router-link>
-        <div class="icthree">
+        <div class="icthree shadow">
           <p class="material-icons">priority_high</p>
         </div>
       </div>
@@ -271,6 +271,14 @@ export default {
     padding-bottom: 1rem;
     color: rgb(191, 209, 212);
   }
+
+  .sd{
+    /* border: solid 1px rgb(46, 40, 54); */
+    padding: 4px;
+    border-radius:9px;
+    box-shadow: 0px 3px 15px rgb(18, 15, 24);
+  }
+
 
 }
 </style>
