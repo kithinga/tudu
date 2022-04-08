@@ -72,10 +72,6 @@ nav a.router-link-exact-active {
   color: #0f99cf;
 }
 
-.mb-serc{
-
-  padding: 18px;
-}
 
 
 img{
@@ -85,7 +81,8 @@ img{
 }
 .mobile-searcher{
   text-align: center;
-  padding-right: 55px;
+  padding-right:30px;
+  padding-bottom: 0.6rem;
   background-color:rgb(9, 8, 14);
 }
 
@@ -137,7 +134,7 @@ img{
 }
 
 @media (max-width: 575.98px) {
-      .navchecker{
+ .navchecker{
   display: none;
 }
 }
