@@ -18,7 +18,7 @@
             </div>
           </div>
 
-          <div class="col-lg-2">
+          <div class="col-lg-2 cls">
             <div class="period">
               <p class="time">00 10</p>
               <p class="day">Sunday</p>
@@ -123,10 +123,11 @@
           <span class="material-icons"> data_thresholding </span>
         </div>
 
-        <div class="mb-period mbls">
-          <h5>Prior to</h5>
-          <h6>got no</h6>
-          <span class="material-icons"> fingerprint </span>
+        <div class="mb-period mbls clock">
+           <div class="dbls">Hour</div>
+           <div class="dbls">Hour</div>
+           <div class="dbls">Hour</div>
+           <div class="dbls">Hour</div>
         </div>
       </div>
 
@@ -278,6 +279,10 @@ export default {
     border-radius:9px;
     color: rgb(250, 246, 255);
     /* box-shadow: 0px 3px 35px rgb(19, 16, 26); */
+  }
+  .clock{
+    display: grid;
+     grid-template-columns: 1fr 1fr;
   }
 
 
