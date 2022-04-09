@@ -124,7 +124,9 @@
         </div>
 
         <div class="mb-period mbls clock">
-           <div class="dbls">Hour</div>
+           <div class="dbls">
+             Lorem 10
+           </div>
            <div class="dbls">Hour</div>
            <div class="dbls">Hour</div>
            <div class="dbls">Hour</div>
@@ -283,6 +285,10 @@ export default {
   .clock{
     display: grid;
      grid-template-columns: 1fr 1fr;
+  }
+
+  .dbls{
+    bo
   }
 
 
