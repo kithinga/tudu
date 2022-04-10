@@ -270,7 +270,7 @@ export default {
 }
 .status-check{
   margin-bottom:1rem;
-  margin-top:0.7rem;
+  margin-top:0.1rem;
 }
 .tid-btn {
   text-align: center;

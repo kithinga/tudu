@@ -5,17 +5,17 @@
 }
 
 .status-check {
-  border: solid 1px rgb(245, 245, 245);
+  border: solid 1px rgb(245, 242, 242);
   border-radius: 0.6rem;
   text-align: left;
-  padding-top: 1.7rem;
+  padding-top: 1.2rem;
 }
 
 .status-check h5 {
-  font-weight: 700;
-  font-size: 16px;
+  font-weight:600;
+  font-size: 14px;
   margin-bottom: 0.9rem;
-  color: rgb(96, 98, 128);
+  color: rgb(75, 77, 112);
 }
 
 li {

@@ -106,14 +106,14 @@
       /*                height:2.3rem; */
       border:           none;
       background-color: rgb(249,       255, 255);
-      border-radius:    8px;
+      border-radius:    7px;
       font-weight:      500;
       font-size:        13px;
       padding:          0.4rem;
       padding-left:     0.6rem;
       padding-right:    0.6rem;
       margin:           5px;
-      width:            7rem;
+      width:            7.5rem;
       height:           3.5rem;
       border:           solid          1px  rgb(232, 229, 235);
 }
@@ -160,7 +160,6 @@
     border-top-left-radius: 21px;
     border-top-right-radius: 21px;
     background-color:white;
-
     /* margin: 0.7rem; */
     padding: 0.4rem;
     padding-top: 1rem;
@@ -174,17 +173,18 @@
       font-weight:      500;
       font-size:        13px;
       padding: 2px;
-      margin:           5px;
-      min-width:            7rem;
+      /* margin:           10px; */
+      min-width:       7rem;
       height:           3rem;
       border:           solid          1px  rgb(232, 229, 235);
 }
 
 .nav-black{
-  background-color:rgb(3, 3, 3);
+  background-color:rgb(17, 17, 24);
   padding-top:0.3rem;
-  border-bottom: 0.29px solid rgb(255, 255, 255);
+  /* border-bottom: 3px solid rgb(255, 255, 255); */
 }
+
 
 }
 </style>
