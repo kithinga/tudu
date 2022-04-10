@@ -45,8 +45,9 @@
   </div>
 
   <!-- Mobile responsive -->
+  <div class="magi-exp"> 
   <p class="btn-expand">
-  <a class="btn" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+  <a class="bt" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
    <h6> All Activities <span class="material-icons">
 apps expand_more
 </span> </h6>
@@ -107,6 +108,7 @@ apps expand_more
 
   </div>
 </div>
+  </div>
   <router-view />
 </template>
 
@@ -167,24 +169,25 @@ apps expand_more
   .device-nav {
     display: none;
   }
-  .collapse{
-    padding: 1px;
-  }
+ 
+  
   .mobile-nav {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 33% 33% 33%;
     /* border: solid 1px rgb(233, 231, 231); */
     border-top-left-radius: 21px;
     border-top-right-radius: 21px;
     background-color:white;
     /* margin: 0.7rem; */
     /* padding: 0.4rem; */
-    padding-top: 1rem;
+    padding-top:0.1rem;
   
   }
-  .carda1{
+
+  /* .carda1{
     padding: 1px;
-  }
+  } */
+
   .nvbt {
       /*                height:2.3rem; */
       border:           none;
@@ -194,26 +197,29 @@ apps expand_more
       font-size:        13px;
       padding: 2px;
       /* margin:           10px; */
-      min-width:       7rem;
+      width:       7.7rem;
       height:           3rem;
       border:           solid          1px  rgb(232, 229, 235);
+      margin: 4px;
 }
 
 .nav-black{
-  background-color:rgb(245, 245, 250);
+  /* background-color:rgb(245, 245, 250); */
   padding-top:0.1rem;
   /* border-bottom: 3px solid rgb(255, 255, 255); */
 }
 .btn-expand{
-
   margin: 3px;
-  padding-top: 0.5rem;
-  margin-top: 0.6rem;
-  margin-bottom: 0.6rem;
+  padding-top:0.35rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.2rem;
+  padding-bottom: 0.3rem;
   border-radius:6px;
   width:98%;
-  border: solid 0.7px rgb(232, 234, 236);
+ 
 }
+
+
 .btn-expand span{
   margin-left: 3rem;
   color: rgb(49, 131, 151);
@@ -226,6 +232,18 @@ apps expand_more
   /* letter-spacing:-0.5px; */
   color: rgb(131, 128, 163);
   font-size: 15px;
+}
+
+.magi-exp{
+  border-radius:9px;
+  padding-bottom: 0.2rem;
+  margin: 4px;
+  padding-left: 3px;
+  border: solid 1px rgb(224, 224, 231);
+  margin-bottom: 0.5rem;
+}
+.magi-exp:hover{
+  border: solid 1px rgb(218, 218, 241);
 }
 
 }
