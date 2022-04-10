@@ -124,12 +124,18 @@
         </div>
 
         <div class="mb-period mbls clock">
-           <div class="dbls">
-             Lorem 10
+           <div class="dbls1">
+              <div class="year">2022</div>
            </div>
-           <div class="dbls">Hour</div>
-           <div class="dbls">Hour</div>
-           <div class="dbls">Hour</div>
+           <div class="dbls2">
+              <div class="month">April</div>
+           </div>
+           <div class="dbls3">
+              <div class="tarehe">12th</div>
+           </div>
+           <div class="dbls4">
+              <div class="siku">Sunday</div>
+           </div>
         </div>
       </div>
 
@@ -284,9 +290,58 @@ export default {
   }
   
   .clock{
+    background-color: rgb(0, 0, 0);
+    opacity: 0.7;
     display: grid;
      grid-template-columns: 1fr 1fr;
-     background-color: yellow;
+     /* background-color: yellow; */
+     border: solid 1px rgb(107, 131, 136);
+     padding:1.5rem;     
+    padding-top:2rem;
+  }
+
+  .year{
+    /* background-color:rgb(218, 165, 174); */
+    height: 2.5rem;
+    padding: 0.5rem;
+    /* width: 3rem; */
+     transform: rotate(2deg);
+     margin-right: 0.5rem;
+    border-radius:6px
+  }
+
+  .month{
+    /* background-color:rgb(76, 107, 133); */
+    height: 2.5rem;
+    padding: 0.5rem;
+    margin-left: 1rem;
+    /* width: 3rem; */
+     transform: rotate(4deg);
+    border-radius:3px
+  }
+
+  .dbls1{
+   border-right: 6px solid rgb(131, 46, 46);
+   transform: rotate(-2deg);
+   
+   
+  }
+  .dbls2{
+   border-bottom: 2px solid rgb(163, 53, 38);
+    transform: rotate(-4deg);
+    padding:13px;
+  }
+  .dbls3{
+   border-right: 13px solid rgb(141, 32, 32);
+   transform: rotate(4deg);
+  }
+  .tarehe{
+    transform: rotate(-4deg);
+    margin:0.5rem;
+  }
+  .dbls4{
+   /* transform: rotate(4deg); */
+   padding: 1rem;
   }
 
 

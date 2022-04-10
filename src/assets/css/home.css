@@ -63,6 +63,7 @@ P {
   word-spacing:0.4rem;
   letter-spacing:2px;
 }
+
 .day{
   color:rgb(206, 195, 255);
   margin-left: 5px;
@@ -70,6 +71,7 @@ P {
   font-weight:100;
   letter-spacing:4px;
 }
+
 .date{
   color: rgb(77, 184, 255);
   word-spacing: 0.8rem;
