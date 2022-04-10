@@ -234,7 +234,11 @@ export default {
 
 <style scoped>
 
+
 @media (max-width: 575.98px) {
+   
+
+
   .device-pretask {
     display: none;
   }
@@ -245,7 +249,9 @@ export default {
 
 .mobile-pretask{
   display:grid;
-  margin: 0.7rem;
+  /* margin: 0.7rem; */
+  margin-left: 0.7rem;
+  margin-bottom: 0.5rem;
   grid-template-columns: 1fr 1fr;
 }
 
@@ -257,7 +263,8 @@ export default {
   border-radius: 5px;
   border: solid 1px rgb(250, 243, 243);
   padding-bottom: 1.6rem;
-  padding:0.1rem;
+  padding:2px;
+ 
 }
 
 .ii{
@@ -269,8 +276,7 @@ export default {
   margin: 0;
 }
 .status-check{
-  margin-bottom:1rem;
-  margin-top:0.1rem;
+  margin-bottom:0.7rem;
 }
 .tid-btn {
   text-align: center;

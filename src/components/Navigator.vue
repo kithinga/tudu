@@ -45,6 +45,15 @@
   </div>
 
   <!-- Mobile responsive -->
+  <p>
+  <a class="btn btn-success" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+    All categories
+  </a>
+</p>
+<div class="collapse" id="collapseExample">
+  <div class=" carda1">
+     
+
   <div class="nav-black">
   <div class="mobile-nav">
 
@@ -93,6 +102,9 @@
     </div>
   </div>
   </div>
+
+  </div>
+</div>
   <router-view />
 </template>
 
@@ -153,6 +165,9 @@
   .device-nav {
     display: none;
   }
+  .collapse{
+    padding: 1px;
+  }
   .mobile-nav {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -161,9 +176,12 @@
     border-top-right-radius: 21px;
     background-color:white;
     /* margin: 0.7rem; */
-    padding: 0.4rem;
+    /* padding: 0.4rem; */
     padding-top: 1rem;
   
+  }
+  .carda1{
+    padding: 1px;
   }
   .nvbt {
       /*                height:2.3rem; */
@@ -180,8 +198,8 @@
 }
 
 .nav-black{
-  background-color:rgb(17, 17, 24);
-  padding-top:0.3rem;
+  background-color:rgb(245, 245, 250);
+  padding-top:0.1rem;
   /* border-bottom: 3px solid rgb(255, 255, 255); */
 }
 
