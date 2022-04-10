@@ -178,6 +178,7 @@ apps expand_more
     border-top-left-radius: 21px;
     border-top-right-radius: 21px;
     background-color:white;
+    grid-gap:1px;
     /* margin: 0.7rem; */
     /* padding: 0.4rem; */
     padding-top:0.1rem;
@@ -200,7 +201,11 @@ apps expand_more
       width:       7.7rem;
       height:           3rem;
       border:           solid          1px  rgb(232, 229, 235);
-      margin: 4px;
+        Margin: 1px;
+   
+    
+   
+
 }
 
 .nav-black{
@@ -215,7 +220,7 @@ apps expand_more
   margin-bottom: 0.2rem;
   padding-bottom: 0.3rem;
   border-radius:6px;
-  width:98%;
+  width:96%;
  
 }
 
@@ -235,15 +240,16 @@ apps expand_more
 }
 
 .magi-exp{
+  padding:3px;
+  background-color:rgb(254, 254, 255);
   border-radius:9px;
   padding-bottom: 0.2rem;
-  margin: 4px;
-  padding-left: 3px;
+  margin: 12px;
   border: solid 1px rgb(224, 224, 231);
   margin-bottom: 0.5rem;
 }
 .magi-exp:hover{
-  border: solid 1px rgb(218, 218, 241);
+  border: solid 1px rgb(233, 233, 241);
 }
 
 }
