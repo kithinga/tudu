@@ -47,9 +47,9 @@
   <!-- Mobile responsive -->
   <p class="btn-expand">
   <a class="btn" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-    All categories <span class="material-icons">
-apps
-</span>
+   <h6> All Activities <span class="material-icons">
+apps expand_more
+</span> </h6>
   </a>
 </p>
 <div class="collapse" id="collapseExample">
@@ -205,18 +205,28 @@ apps
   /* border-bottom: 3px solid rgb(255, 255, 255); */
 }
 .btn-expand{
+
   margin: 3px;
+  padding-top: 0.5rem;
   margin-top: 0.6rem;
   margin-bottom: 0.6rem;
-  border-radius:9px;
+  border-radius:6px;
   width:98%;
-  border: solid 0.7px rgb(224, 220, 220);
+  border: solid 0.7px rgb(232, 234, 236);
 }
 .btn-expand span{
   margin-left: 3rem;
   color: rgb(49, 131, 151);
+  line-height:10px;
+  vertical-align: middle;
 }
-
+.btn-expand h6{
+  /* margin-left: 3rem; */
+  font-weight: 600;
+  /* letter-spacing:-0.5px; */
+  color: rgb(131, 128, 163);
+  font-size: 15px;
+}
 
 }
 </style>
