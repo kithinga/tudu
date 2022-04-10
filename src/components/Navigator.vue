@@ -46,12 +46,14 @@
 
   <!-- Mobile responsive -->
   <p>
-  <a class="btn btn-success" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-    All categories
+  <a class="btn btn-expand " data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+    All categories <span class="material-icons">
+apps
+</span>
   </a>
 </p>
 <div class="collapse" id="collapseExample">
-  <div class=" carda1">
+  <div class="carda1">
      
 
   <div class="nav-black">
@@ -201,6 +203,11 @@
   background-color:rgb(245, 245, 250);
   padding-top:0.1rem;
   /* border-bottom: 3px solid rgb(255, 255, 255); */
+}
+.btn-expand{
+  margin-top: 0.4rem;
+  width:98%;
+  border: solid 1px grey;
 }
 
 
