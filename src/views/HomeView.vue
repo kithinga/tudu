@@ -126,9 +126,11 @@
         <div class="mb-period mbls clock">
            <div class="dbls1">
               <div class="year">2022</div>
+               <h3 class="minutes">54</h3>
            </div>
            <div class="dbls2">
               <div class="month">April</div>
+              <h5 class="seconds">12</h5>
            </div>
            <div class="dbls3">
               <div class="tarehe">12th</div>
@@ -210,7 +212,6 @@ export default {
 @media (max-width: 575.98px) {
   .device-responsive {
     display: none;
-    
   }
 
   .home-page {
@@ -292,15 +293,14 @@ export default {
   }
   
   .clock{
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(33, 28, 51);
     opacity: 0.7;
     border-radius:20px;
     display: grid;
      grid-template-columns: 1fr 1fr;
-     /* background-color: yellow; */
-     border: solid 3px rgb(82, 100, 104);
+     border: solid 2px rgb(45, 57, 59);
      padding:1.5rem;     
-    padding-top:2rem;
+    /* padding-top:2rem; */
   }
 
   .year{
@@ -314,47 +314,72 @@ export default {
   }
 
   .month{
-    /* background-color:rgb(76, 107, 133); */
     height: 2.5rem;
     padding: 0.5rem;
     margin-left: 1rem;
-    /* width: 3rem; */
      transform: rotate(4deg);
     border-radius:3px
   }
+  
 
   .dbls1{
-   border-right: 6px solid rgb(131, 46, 46);
+   border-right: 7px solid rgb(194, 37, 37);
+  border-radius:5px;
    transform: rotate(-2deg);
-   
    
   }
   .dbls2{
-   border-bottom: 2px solid rgb(163, 53, 38);
+    border-radius:5px;
+   border-bottom: 2px solid rgb(192, 66, 50);
     transform: rotate(-4deg);
     padding:13px;
   }
+
   .dbls3{
-   border-right: 13px solid rgb(141, 32, 32);
-   transform: rotate(4deg);
+   border-right: 15px solid rgb(155, 24, 24);
+   transform: rotate(4deg); 
+    border-radius:5px;
   }
-  .tarehe{
-    transform: rotate(-4deg);
-    color: rgb(17, 204, 236);
-    margin:0.5rem;
-  }
+
   .dbls4{
    transform: rotate(1deg);
   }
+
   .hour{
     font-weight: 800;
     font-size:2rem;
   }
+
+  .dbls2 h5{
+    font-size:3rem;
+    font-weight:300;
+    margin-left:1.67rem;
+    /* background-color:red; */
+  }
+
+  .dbls1,.dbls2,.dbls3,.dbls4{
+  /* background-color:red */
+  }
+
+  .dbls1 h3{
+    font-size:2rem;
+    font-weight:600;
+    margin-right:1.67rem;
+  }
+
   .siku{
     margin-top:1rem;
     margin-left:1rem;
   }
-
+  .tarehe{
+    transform: rotate(-4deg); 
+  }
+  .minutes{
+         transform: rotate(4deg);
+  }
+  .seconds{
+         transform: rotate(4deg);
+  }
 
 }
 </style>
