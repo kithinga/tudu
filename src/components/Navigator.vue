@@ -173,16 +173,11 @@
 }
 
 .nav-black{
-
   background-color:rgb(3, 3, 3);
   padding-top:0.4rem;
-  border-bottom: 0.3px solid rgb(255, 255, 255);
+  border-bottom: 0.29px solid rgb(255, 255, 255);
 }
 
-
-
-
- 
 }
 </style>
 
