@@ -1,4 +1,5 @@
  <template > 
+ 
   <div class="container-fluid device-nav ">
     <div class="row no-gutters">
       <div class="col">
@@ -46,6 +47,15 @@
   <!-- Mobile responsive -->
   <div class="nav-black">
   <div class="mobile-nav">
+
+    <div class="mb-bt0">
+      <router-link to="/">
+        <button class="nvbt home-btn shadow-sm">
+          <span class="material-icons">home</span>Home
+        </button>
+      </router-link>
+    </div>
+
     <div class="mb-bt1">
       <router-link to="/tasks">
         <button class="nvbt task-btn shadow-sm">
@@ -152,8 +162,8 @@
     background-color:white;
 
     /* margin: 0.7rem; */
-    padding: 0.5rem;
-    padding-top: 1.3rem;
+    padding: 0.4rem;
+    padding-top: 1rem;
   
   }
   .nvbt {
@@ -163,18 +173,16 @@
       border-radius:    8px;
       font-weight:      500;
       font-size:        13px;
-      padding:          0.4rem;
-      padding-left:     0.6rem;
-      padding-right:    0.6rem;
+      padding: 2px;
       margin:           5px;
-      width:            7rem;
-      height:           4rem;
+      min-width:            7rem;
+      height:           3rem;
       border:           solid          1px  rgb(232, 229, 235);
 }
 
 .nav-black{
   background-color:rgb(3, 3, 3);
-  padding-top:0.4rem;
+  padding-top:0.3rem;
   border-bottom: 0.29px solid rgb(255, 255, 255);
 }
 
