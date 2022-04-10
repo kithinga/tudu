@@ -45,8 +45,8 @@
   </div>
 
   <!-- Mobile responsive -->
-  <p>
-  <a class="btn btn-expand " data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+  <p class="btn-expand">
+  <a class="btn" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
     All categories <span class="material-icons">
 apps
 </span>
@@ -205,9 +205,16 @@ apps
   /* border-bottom: 3px solid rgb(255, 255, 255); */
 }
 .btn-expand{
-  margin-top: 0.4rem;
+  margin: 3px;
+  margin-top: 0.6rem;
+  margin-bottom: 0.6rem;
+  border-radius:9px;
   width:98%;
-  border: solid 1px grey;
+  border: solid 0.7px rgb(224, 220, 220);
+}
+.btn-expand span{
+  margin-left: 3rem;
+  color: rgb(49, 131, 151);
 }
 
 
