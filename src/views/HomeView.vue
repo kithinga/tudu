@@ -123,7 +123,7 @@
           <span class="material-icons"> data_thresholding </span>
         </div>
 
-        <div class="mb-period mbls clock">
+        <div class="mb-period clock">
            <div class="dbls1">
               <div class="year">2022</div>
                <h3 class="minutes">54</h3>
@@ -234,7 +234,7 @@ export default {
 
   .mbls {
     background-color: rgb(47, 46, 73);
-    min-height:10rem;
+    min-height:5rem;
     border: solid 1px rgb(44, 43, 68);
     padding: 1.2rem;
     color: rgb(219, 208, 208);
@@ -313,7 +313,7 @@ export default {
   }
 
   .month{
-    height: 2.5rem;
+    /* height: 2.5rem; */
     padding: 0.5rem;
     margin-left: 1rem;
      transform: rotate(4deg);
