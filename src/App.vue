@@ -48,7 +48,6 @@
           </div>
   </div>
 
-
   <router-view />
 </template>
 
@@ -70,15 +69,14 @@ nav a.router-link-exact-active {
   color: #0f99cf;
 }
 
-
-
 img{
- height: 3rem;
- border-radius:0.9rem;
- width: 4rem;
+ height: 3.6rem;
+ border-radius:1.5rem;
+ width: 3.8rem;
  /* border: solid 1px rgb(0, 0, 0); */
  box-shadow: 0px 1px 3px rgb(0, 71, 104);
 }
+
 .mobile-searcher{
   text-align: center;
   padding-right:30px;
@@ -139,6 +137,7 @@ img{
   display: none;
   
 }
+
 .mobile-searcher{
   padding: 0.5rem;
   padding-right: 4rem;
@@ -158,6 +157,7 @@ img{
     font-size:14px;
     font-weight:400;
 }
+
 }
 
 </style>
