@@ -143,9 +143,11 @@ img{
   padding: 0.5rem;
   padding-right: 4rem;
 }
+
 .ser-input{
     border: none;
     /* margin: 1rem; */
+    background-color:rgb(219, 214, 224);
     width:100%;
     height:2.8rem;
     border: solid 1px rgb(236, 236, 236);

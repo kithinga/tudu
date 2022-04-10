@@ -227,13 +227,13 @@ export default {
   .mobile-home {
     display: grid;
     grid-gap: 1rem;
-    margin: 0.5rem;
+    margin: 1rem;
     grid-template-columns: 1fr 1fr;
     border-radius:15px;
   }
 
   .mbls {
-    background-color: rgb(44, 43, 68);
+    background-color: rgb(47, 46, 73);
     min-height:10rem;
     border: solid 1px rgb(44, 43, 68);
     padding: 1.2rem;
@@ -248,24 +248,24 @@ export default {
   }
 
   .mbls h6 {
-    color: rgb(20, 184, 224);
+    color: rgb(9, 180, 223);
     font-weight: 600;
     letter-spacing: -0.5px;
-    font-size: 15px;
+    font-size: 14px;
   }
 
   .home-cards {
     margin-top:1.2rem;
-    padding: 0.6rem;
+    padding: 1rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 10px;
+    grid-gap: 13px;
   }
 
   .homca {
     padding: 2rem;
-    background-color: rgb(34, 32, 49);
-    color: rgb(16, 190, 243);
+    background-color: rgb(45, 42, 65);
+    color: rgb(11, 190, 221);
     border-radius: 15px;
     min-height: 7rem;
     border: none;
@@ -293,19 +293,18 @@ export default {
   }
   
   .clock{
-    background-color: rgb(33, 28, 51);
+    background-color: rgb(37, 31, 58);
     opacity: 0.7;
     border-radius:20px;
     display: grid;
      grid-template-columns: 1fr 1fr;
      border: solid 2px rgb(45, 57, 59);
-     padding:1.5rem;     
+     padding:1rem;     
     /* padding-top:2rem; */
   }
 
   .year{
-    /* background-color:rgb(218, 165, 174); */
-    height: 2.5rem;
+    color: rgb(17, 173, 201);
     padding: 0.5rem;
     /* width: 3rem; */
      transform: rotate(2deg);
