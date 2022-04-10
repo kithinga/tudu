@@ -132,9 +132,11 @@
            </div>
            <div class="dbls3">
               <div class="tarehe">12th</div>
+                  <!-- <h4 class="hour">4</h4> -->
            </div>
            <div class="dbls4">
               <div class="siku">Sunday</div>
+              <h4 class="hour">4</h4>
            </div>
         </div>
       </div>
@@ -292,10 +294,11 @@ export default {
   .clock{
     background-color: rgb(0, 0, 0);
     opacity: 0.7;
+    border-radius:20px;
     display: grid;
      grid-template-columns: 1fr 1fr;
      /* background-color: yellow; */
-     border: solid 1px rgb(107, 131, 136);
+     border: solid 3px rgb(82, 100, 104);
      padding:1.5rem;     
     padding-top:2rem;
   }
@@ -337,11 +340,19 @@ export default {
   }
   .tarehe{
     transform: rotate(-4deg);
+    color: rgb(17, 204, 236);
     margin:0.5rem;
   }
   .dbls4{
-   /* transform: rotate(4deg); */
-   padding: 1rem;
+   transform: rotate(1deg);
+  }
+  .hour{
+    font-weight: 800;
+    font-size:2rem;
+  }
+  .siku{
+    margin-top:1rem;
+    margin-left:1rem;
   }
 
 
