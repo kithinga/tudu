@@ -282,13 +282,11 @@ export default {
     color: rgb(250, 246, 255);
     /* box-shadow: 0px 3px 35px rgb(19, 16, 26); */
   }
+  
   .clock{
     display: grid;
      grid-template-columns: 1fr 1fr;
-  }
-
-  .dbls{
-    bo
+     background-color: yellow;
   }
 
 
