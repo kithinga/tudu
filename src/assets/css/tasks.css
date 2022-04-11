@@ -91,7 +91,7 @@ li:hover {
   height: 5rem;
   text-align: center;
   background-color: rgb(255, 255, 255);
-  border-radius: 5px;
+  border-radius: 9px;
 
 }
 
@@ -113,9 +113,10 @@ li:hover {
 .btn-addtask {
   border: none;
   background-color: rgb(255, 255, 255);
-  border-radius: 19px;
+  border-radius: 25px;
   padding-left: 1rem;
   padding-right: 0.5rem;
+  height: 5rem;
   text-align: center;
 }
 .btn-addtask:hover {
